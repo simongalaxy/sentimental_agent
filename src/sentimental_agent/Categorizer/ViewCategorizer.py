@@ -14,19 +14,13 @@ class ViewCategorizer:
         self.labeller_model = settings.labeller_model
         
 
-    def _format_reviews(self, review_texts: List[str]) -> str:
-        # Convert the list to a single numbered string for the model to read
-        formatted_reviews = "\n".join([f"{i+1}. {text}" for i, text in enumerate(review_texts)])
-
-        return formatted_reviews
-
-
     def _get_categories_from_reviews(self, review_texts: List[str]) -> List[str]:
 
         self.logger.info("Loading local Hugging Face Text-generation Model....")
 
         # Get Formatted reviews.
-        formatted_reviews = self._format_reviews(review_texts=review_texts)
+        formatted_reviews = formatted_reviews = "\n".join([f"{i+1}. {text}" for i, text in enumerate(review_texts)])
+        
 
         # Format the prompt using standard Chat Templates
         messages = [
