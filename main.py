@@ -48,12 +48,17 @@ def main():
     for i, item in enumerate(dfs, start=1):
         platform = item["Platform"].unique()[0]
         product = item["Product/Location_Name"].unique()[0]
-        logger.info(f"Item No. {i}/{len(dfs)}:")
-        logger.info(f"Platform: {platform}")
-        logger.info(f"Product/Location_Name: {product}")
-        df_sentimental = senti_classifer.get_sentimental_from_review(df=item, review_col="Review_Text")
-        df_completed = categorizer.label_views_by_categories(df=df_sentimental)
-        df_completed.to_csv(f"./Processed_files/{platform.replace(" ", "_")}_{product.replace(" ", "_")}.csv")
+        filename = f"{platform.replace(" ", "_")}_{product.replace(" ", "_")}.csv"
+        filepath = f"./data/Processed_files/{filename}"
+        if os.path.exists(filepath):
+            logger.info(f"{filename} already exists.")
+        else:
+            logger.info(f"Item No. {i}/{len(dfs)}:")
+            logger.info(f"Platform: {platform}")
+            logger.info(f"Product/Location_Name: {product}")
+            df_sentimental = senti_classifer.get_sentimental_from_review(df=item, review_col="Review_Text")
+            df_completed = categorizer.label_views_by_categories(df=df_sentimental)
+            df_completed.to_csv(filepath)
     
     # ananlysis.
 
