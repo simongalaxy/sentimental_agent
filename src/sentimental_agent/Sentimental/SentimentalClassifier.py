@@ -12,7 +12,10 @@ class SentimentalClassifier:
         self.model = settings.sentimental_model
 
         # Load a fast, highly accurate sentiment classifier
-        self.classifier = pipeline("sentiment-analysis", model=self.model)
+        self.classifier = pipeline(
+            "sentiment-analysis", 
+            model=self.model
+            )
 
     # Batch process unique reviews
     def get_sentimental_from_review(self, df: pd.DataFrame, review_col: str) -> pd.DataFrame:

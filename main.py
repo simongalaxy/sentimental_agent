@@ -19,7 +19,7 @@ def main():
     # initiate instance.
     logger = Logger(__name__).get_logger()
     senti_classifer = SentimentalClassifier(logger=logger)
-    ViewCategorizer = ViewCategorizer(logger=logger)
+    categorizer = ViewCategorizer(logger=logger)
 
     # load data source.
     source_filename = settings.source_filename
@@ -45,10 +45,18 @@ def main():
     )
 
     # get the sentimental from review_text.
-    i = 2
-    df_test = dfs[i]
+    for i, item in enumerate(dfs, start=1):
+        platform = item["Platform"].unique()[0]
+        product = item["Product/Location_Name"].unique()[0]
+        logger.info(f"Item No. {i}/{len(dfs)}:")
+        logger.info(f"Platform: {platform}")
+        logger.info(f"Product/Location_Name: {product}")
+        df_sentimental = senti_classifer.get_sentimental_from_review(df=item, review_col="Review_Text")
+        df_completed = categorizer.label_views_by_categories(df=df_sentimental)
+        df_completed.to_csv(f"./Processed_files/{platform.replace(" ", "_")}_{product.replace(" ", "_")}.csv")
+    
+    # ananlysis.
 
-    df_sentimental = senti_classifer.get_sentimental_from_review(df=df_test, review_col="Review_Text")
 
 
 

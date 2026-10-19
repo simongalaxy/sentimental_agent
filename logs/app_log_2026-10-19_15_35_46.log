@@ -1,0 +1,296 @@
+2026-10-19 15:35:46 - __main__ - INFO - Class Logger initiated.
+2026-10-19 15:35:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 307 Temporary Redirect"
+2026-10-19 15:35:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 200 OK"
+2026-10-19 15:35:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-19 15:35:48 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:35:48 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-19 15:35:48 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:35:48 - __main__ - INFO - File path: ./data/original/amazon_google_reviews.csv
+2026-10-19 15:35:48 - __main__ - INFO - Data loaded successfully.
+2026-10-19 15:35:48 - __main__ - INFO - DataFrame shape: (6200, 7)
+2026-10-19 15:35:48 - __main__ - INFO - DataFrame preview:
+       Review_ID          Platform                   Product/Location_Name                                        Review_Text  Rating        Date  Helpful_Votes
+0  REV-GOO-00001  Google Locations       Metropolitan Dental Health Clinic  Terrible hygiene and filthy tables. Saw flies ...       1  13.10.2022              1
+1  REV-GOO-00002  Google Locations          Blue Bottle Artisan Coffee Bar  Incredible place to visit! Breathtaking flora,...       5  07.03.2022             30
+2  REV-AMA-00003            Amazon       Bedsure Cooling Bamboo Bed Sheets  Simply brilliant. I was skeptical at first, bu...       5  09.05.2024              3
+3  REV-GOO-00004  Google Locations                  Bella Italia Trattoria  Bought this recently. Outstanding service and ...       5  15.05.2024              2
+4  REV-AMA-00005            Amazon  Instant Pot Duo 7-in-1 Pressure Cooker  Honestly, absolute perfection! easily the best...       5  18.02.2024             32
+2026-10-19 15:35:48 - __main__ - INFO - ##################################################
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Metropolitan_Dental_Health_Clinic.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Blue_Bottle_Artisan_Coffee_Bar.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Bella_Italia_Trattoria.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Highland_Public_Library_&_Cultural_Center.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Golden_Dragon_Dim_Sum_Palace.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_City_View_Botanical_Gardens_&_Park.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Greenwich_Boutique_Bed_&_Breakfast.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_The_Grand_Vista_Luxury_Hotel_&_Spa.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Sakura_Japanese_Sushi_&_Ramen.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Precision_Auto_Mechanics_&_Body_Works.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Central_City_Fitness_&_CrossFit.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Google_Locations_Urban_Yoga_&_Wellness_Studio.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Bedsure_Cooling_Bamboo_Bed_Sheets.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Instant_Pot_Duo_7-in-1_Pressure_Cooker.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Deep_Learning_with_Python_by_Francois_Chollet.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Logitech_MX_Master_3S_Wireless_Mouse.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Keurig_K-Elite_Single_Serve_Coffee_Maker.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Atomic_Habits_by_James_Clear.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Columbia_Men's_Watertight_II_Rain_Jacket.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Men's_Lightweight_Breathable_Running_Shoes.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Sony_WH-1000XM5_Noise_Canceling_Headphones.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Kindle_Paperwhite_(16_GB).csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Ninja_Air_Fryer_Pro_XL.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Echo_Dot_Smart_Speaker.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - Amazon_Anker_65W_GaN_Fast_Charger.csv created.
+2026-10-19 15:35:48 - __main__ - INFO - total csv created: 25
+2026-10-19 15:35:48 - __main__ - INFO - Item No. 1/25:
+2026-10-19 15:35:48 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:35:48 - __main__ - INFO - Product/Location_Name: Metropolitan Dental Health Clinic
+2026-10-19 15:35:49 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform              Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Metropolitan Dental Health Clinic  Absolute 5-star experience! Our server was kno...              4             5.0                    8  POSITIVE
+1  Google Locations  Metropolitan Dental Health Clinic  Absolute 5-star experience! Our server was kno...              4             5.0                   62  POSITIVE
+2  Google Locations  Metropolitan Dental Health Clinic  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE
+3  Google Locations  Metropolitan Dental Health Clinic  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+4  Google Locations  Metropolitan Dental Health Clinic  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE
+2026-10-19 15:35:49 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:35:49 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:35:53 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:35:53 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:35:54 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:35:54 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:36:02 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:36:02 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-19 15:36:02 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:36:03 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:36:03 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:36:20 - __main__ - INFO - Item No. 2/25:
+2026-10-19 15:36:20 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:36:20 - __main__ - INFO - Product/Location_Name: Blue Bottle Artisan Coffee Bar
+2026-10-19 15:36:21 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform           Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Blue Bottle Artisan Coffee Bar  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE
+1  Google Locations  Blue Bottle Artisan Coffee Bar  Absolute 5-star experience! Our server was kno...              1             5.0                    2  POSITIVE
+2  Google Locations  Blue Bottle Artisan Coffee Bar  Absolute 5-star experience! Our server was kno...              2             5.0                    1  POSITIVE
+3  Google Locations  Blue Bottle Artisan Coffee Bar  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE
+4  Google Locations  Blue Bottle Artisan Coffee Bar  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE
+2026-10-19 15:36:21 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:36:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:36:24 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:36:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:36:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:36:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:36:25 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:37:02 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:37:02 - __main__ - INFO - Categories: ['Customer Service', ' Flavors', ' Ambiance']
+2026-10-19 15:37:03 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:37:03 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:37:03 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:37:20 - __main__ - INFO - Item No. 3/25:
+2026-10-19 15:37:20 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:37:20 - __main__ - INFO - Product/Location_Name: Bella Italia Trattoria
+2026-10-19 15:37:20 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform   Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Bella Italia Trattoria  Absolute 5-star experience! Our server was kno...              2             5.0                   40  POSITIVE
+1  Google Locations  Bella Italia Trattoria  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE
+2  Google Locations  Bella Italia Trattoria  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+3  Google Locations  Bella Italia Trattoria  Absolute 5-star experience! Our server was kno...              2             5.0                    8  POSITIVE
+4  Google Locations  Bella Italia Trattoria  Average experience overall. Convenient locatio...              2             3.0                    0  NEGATIVE
+2026-10-19 15:37:20 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:37:20 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:37:24 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:37:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:37:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:37:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:37:25 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:37:48 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:37:48 - __main__ - INFO - Categories: ['Service', ' [Flavor', ' [Ambiance']
+2026-10-19 15:37:49 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:37:49 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:37:50 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:38:06 - __main__ - INFO - Item No. 4/25:
+2026-10-19 15:38:06 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:38:06 - __main__ - INFO - Product/Location_Name: Highland Public Library & Cultural Center
+2026-10-19 15:38:06 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform                      Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Highland Public Library & Cultural Center  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE
+1  Google Locations  Highland Public Library & Cultural Center  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE
+2  Google Locations  Highland Public Library & Cultural Center  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+3  Google Locations  Highland Public Library & Cultural Center  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+4  Google Locations  Highland Public Library & Cultural Center  Average experience overall. Convenient locatio...              1             3.0                    0  NEGATIVE
+2026-10-19 15:38:06 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:38:07 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:38:11 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:38:11 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:38:11 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:38:12 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:38:12 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:38:52 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:38:52 - __main__ - INFO - Categories: ['Service Issues', ' [Parking Problems', ' [Ambiance and Facilities']
+2026-10-19 15:38:53 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:38:53 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:38:53 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:39:11 - __main__ - INFO - Item No. 5/25:
+2026-10-19 15:39:11 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:39:11 - __main__ - INFO - Product/Location_Name: Golden Dragon Dim Sum Palace
+2026-10-19 15:39:11 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform         Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Golden Dragon Dim Sum Palace  Absolute 5-star experience! Our server was kno...              2             5.0                    5  POSITIVE
+1  Google Locations  Golden Dragon Dim Sum Palace  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+2  Google Locations  Golden Dragon Dim Sum Palace  Absolute 5-star experience! Our server was kno...              4             5.0                    6  POSITIVE
+3  Google Locations  Golden Dragon Dim Sum Palace  Absolute 5-star experience! Our server was kno...              3             5.0                    6  POSITIVE
+4  Google Locations  Golden Dragon Dim Sum Palace  Absolute 5-star experience! Our server was kno...              3             5.0                   39  POSITIVE
+2026-10-19 15:39:11 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:39:11 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:39:18 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:39:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:39:19 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:39:19 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:39:19 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:40:22 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:40:22 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-19 15:40:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:40:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:40:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:40:40 - __main__ - INFO - Item No. 6/25:
+2026-10-19 15:40:40 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:40:40 - __main__ - INFO - Product/Location_Name: City View Botanical Gardens & Park
+2026-10-19 15:40:40 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform               Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  City View Botanical Gardens & Park  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+1  Google Locations  City View Botanical Gardens & Park  Absolute 5-star experience! Our server was kno...              3             5.0                    7  POSITIVE
+2  Google Locations  City View Botanical Gardens & Park  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+3  Google Locations  City View Botanical Gardens & Park  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE
+4  Google Locations  City View Botanical Gardens & Park  Absolute 5-star experience! Our server was kno...              6             5.0                    7  POSITIVE
+2026-10-19 15:40:40 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:40:40 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:40:44 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:40:45 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:40:45 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:40:45 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:40:45 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:42:16 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:42:16 - __main__ - INFO - Categories: ['Customer Service', ' Food Quality', ' Ambiance']
+2026-10-19 15:42:16 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:42:17 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:42:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:43:50 - __main__ - INFO - Item No. 7/25:
+2026-10-19 15:43:50 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:43:50 - __main__ - INFO - Product/Location_Name: Greenwich Boutique Bed & Breakfast
+2026-10-19 15:43:51 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform               Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Greenwich Boutique Bed & Breakfast  Absolute 5-star experience! Our server was kno...              5             5.0                   56  POSITIVE
+1  Google Locations  Greenwich Boutique Bed & Breakfast  Absolute 5-star experience! Our server was kno...              2             5.0                   29  POSITIVE
+2  Google Locations  Greenwich Boutique Bed & Breakfast  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE
+3  Google Locations  Greenwich Boutique Bed & Breakfast  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+4  Google Locations  Greenwich Boutique Bed & Breakfast  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE
+2026-10-19 15:43:51 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:43:51 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:43:56 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:43:56 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:43:57 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:43:57 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:43:57 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:44:46 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:44:46 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-19 15:44:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:44:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:44:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:45:05 - __main__ - INFO - Item No. 8/25:
+2026-10-19 15:45:05 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:45:05 - __main__ - INFO - Product/Location_Name: The Grand Vista Luxury Hotel & Spa
+2026-10-19 15:45:05 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform               Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  The Grand Vista Luxury Hotel & Spa  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+1  Google Locations  The Grand Vista Luxury Hotel & Spa  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+2  Google Locations  The Grand Vista Luxury Hotel & Spa  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE
+3  Google Locations  The Grand Vista Luxury Hotel & Spa  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+4  Google Locations  The Grand Vista Luxury Hotel & Spa  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE
+2026-10-19 15:45:05 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:45:05 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:45:07 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:45:07 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:45:08 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:45:08 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:45:08 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:45:17 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:45:17 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-19 15:45:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:45:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:45:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:45:34 - __main__ - INFO - Item No. 9/25:
+2026-10-19 15:45:34 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:45:34 - __main__ - INFO - Product/Location_Name: Sakura Japanese Sushi & Ramen
+2026-10-19 15:45:35 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform          Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Sakura Japanese Sushi & Ramen  Absolute 5-star experience! Our server was kno...              2             5.0                   16  POSITIVE
+1  Google Locations  Sakura Japanese Sushi & Ramen  Absolute 5-star experience! Our server was kno...              1             5.0                   24  POSITIVE
+2  Google Locations  Sakura Japanese Sushi & Ramen  Absolute 5-star experience! Our server was kno...              2             5.0                   28  POSITIVE
+3  Google Locations  Sakura Japanese Sushi & Ramen  Absolute 5-star experience! Our server was kno...              1             5.0                   25  POSITIVE
+4  Google Locations  Sakura Japanese Sushi & Ramen  Absolute 5-star experience! Our server was kno...              1             5.0                   12  POSITIVE
+2026-10-19 15:45:35 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:45:35 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:45:38 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:45:39 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:45:39 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:45:39 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:45:39 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:46:13 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:46:13 - __main__ - INFO - Categories: ['Customer Service', ' Pricing', ' Food Quality']
+2026-10-19 15:46:13 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:46:13 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:46:14 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:46:31 - __main__ - INFO - Item No. 10/25:
+2026-10-19 15:46:31 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:46:31 - __main__ - INFO - Product/Location_Name: Precision Auto Mechanics & Body Works
+2026-10-19 15:46:32 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform                  Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Precision Auto Mechanics & Body Works  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+1  Google Locations  Precision Auto Mechanics & Body Works  Absolute 5-star experience! Our server was kno...              4             5.0                   44  POSITIVE
+2  Google Locations  Precision Auto Mechanics & Body Works  Absolute 5-star experience! Our server was kno...              3             5.0                   36  POSITIVE
+3  Google Locations  Precision Auto Mechanics & Body Works  Absolute 5-star experience! Our server was kno...              1             5.0                   37  POSITIVE
+4  Google Locations  Precision Auto Mechanics & Body Works  Average experience overall. Convenient locatio...              1             3.0                    8  POSITIVE
+2026-10-19 15:46:32 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:46:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:46:36 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:46:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:46:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:46:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:46:38 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:47:58 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:47:58 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-19 15:47:59 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:48:00 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:48:00 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:58:38 - __main__ - INFO - Item No. 11/25:
+2026-10-19 15:58:38 - __main__ - INFO - Platform: Google Locations
+2026-10-19 15:58:38 - __main__ - INFO - Product/Location_Name: Central City Fitness & CrossFit
+2026-10-19 15:58:40 - __main__ - INFO - DataFrame with Sentiment column: 
+           Platform            Product/Location_Name                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Google Locations  Central City Fitness & CrossFit  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+1  Google Locations  Central City Fitness & CrossFit  Absolute 5-star experience! Our server was kno...              2             5.0                   10  POSITIVE
+2  Google Locations  Central City Fitness & CrossFit  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE
+3  Google Locations  Central City Fitness & CrossFit  Absolute 5-star experience! Our server was kno...              2             5.0                   25  POSITIVE
+4  Google Locations  Central City Fitness & CrossFit  Absolute 5-star experience! Our server was kno...              3             5.0                    3  POSITIVE
+2026-10-19 15:58:40 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-19 15:58:40 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:58:46 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2026-10-19 15:58:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:58:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-19 15:58:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-19 15:58:47 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-19 15:59:21 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-19 15:59:21 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-19 15:59:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-19 15:59:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-19 15:59:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"

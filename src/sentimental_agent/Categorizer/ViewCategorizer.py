@@ -12,6 +12,7 @@ class ViewCategorizer:
         self.logger = logger
         self.categorizer_model = settings.categorizier_model
         self.labeller_model = settings.labeller_model
+        self.processed_files_folderpath = settings.processed_files_folderPath
         
 
     def _get_categories_from_reviews(self, review_texts: List[str]) -> List[str]:
@@ -71,11 +72,15 @@ class ViewCategorizer:
         # Uses 'facebook/bart-large-mnli' as a highly capable, default model
         views_labeller = pipeline(
             "zero-shot-classification", 
-            model="facebook/bart-large-mnli"
+            model=self.labeller_model
             )
 
         # 3. Classify Review texts.
-        results = views_labeller(review_texts, candidate_labels=categories, multi_label=False)
+        results = views_labeller(
+            review_texts, 
+            candidate_labels=categories, 
+            multi_label=False
+            )
 
         # 4. Extract predictions and add them to the DataFrame
         # We pick the label with the highest confidence score
@@ -86,6 +91,6 @@ class ViewCategorizer:
         output_df = df.copy()
         output_df["Category"] = top_labels
         # output_df["confidence_score"] = top_scores
+        # self.logger.info(f"output df: {output_df.head(5)}")
         
-        self.logger.info(f"output df: {output_df.head(5)}")
         return output_df

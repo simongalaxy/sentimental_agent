@@ -21,6 +21,9 @@ class Settings(BaseSettings):
     # Temporary files configurations.
     tempfiles_folderpath: str
 
+    # Processed Data configurations.
+    processed_files_folderPath: str
+
     # HuggingFace settings.
     # 1. sentimental model.
     sentimental_model: str
