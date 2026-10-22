@@ -23,3 +23,4 @@ class SentimentalClassifier:
         self.logger.info(f"DataFrame with Sentiment column: \n%s", df.head(5))
 
         return df
+

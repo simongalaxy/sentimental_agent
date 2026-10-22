@@ -1,0 +1,1220 @@
+2026-10-22 22:25:30 - __main__ - INFO - Class Logger initiated.
+2026-10-22 22:25:30 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 307 Temporary Redirect"
+2026-10-22 22:25:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 200 OK"
+2026-10-22 22:25:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-22 22:25:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:25:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-22 22:25:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:25:32 - __main__ - INFO - File path: ./data/original/amazon_google_reviews.csv
+2026-10-22 22:25:32 - __main__ - INFO - Data loaded successfully.
+2026-10-22 22:25:32 - __main__ - INFO - DataFrame shape: (6200, 7)
+2026-10-22 22:25:32 - __main__ - INFO - DataFrame preview:
+       Review_ID          Platform                   Product/Location_Name                                        Review_Text  Rating        Date  Helpful_Votes
+0  REV-GOO-00001  Google Locations       Metropolitan Dental Health Clinic  Terrible hygiene and filthy tables. Saw flies ...       1  13.10.2022              1
+1  REV-GOO-00002  Google Locations          Blue Bottle Artisan Coffee Bar  Incredible place to visit! Breathtaking flora,...       5  07.03.2022             30
+2  REV-AMA-00003            Amazon       Bedsure Cooling Bamboo Bed Sheets  Simply brilliant. I was skeptical at first, bu...       5  09.05.2024              3
+3  REV-GOO-00004  Google Locations                  Bella Italia Trattoria  Bought this recently. Outstanding service and ...       5  15.05.2024              2
+4  REV-AMA-00005            Amazon  Instant Pot Duo 7-in-1 Pressure Cooker  Honestly, absolute perfection! easily the best...       5  18.02.2024             32
+2026-10-22 22:25:32 - __main__ - INFO - ##################################################
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Metropolitan Dental Health Clinic', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              4             5.0                    8
+1    Absolute 5-star experience! Our server was kno...              4             5.0                   62
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    3
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+4    Absolute 5-star experience! Our server was kno...              2             5.0                    2
+..                                                 ...            ...             ...                  ...
+151  World-class care and professionalism. The staf...              1             5.0                    5
+152  World-class care and professionalism. The staf...              1             5.0                   38
+153  Worst dining experience of my life. The server...              1             1.0                    1
+154  Worst dining experience of my life. The server...              1             1.0                    5
+155  Worst dining experience of my life. The server...              1             1.0                    2
+
+[156 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Blue Bottle Artisan Coffee Bar', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    2
+2    Absolute 5-star experience! Our server was kno...              2             5.0                    1
+3    Absolute 5-star experience! Our server was kno...              2             5.0                   12
+4    Absolute 5-star experience! Our server was kno...              2             5.0                   12
+..                                                 ...            ...             ...                  ...
+148  World-class care and professionalism. The staf...              3             5.0                    2
+149  World-class care and professionalism. The staf...              2             5.0                    3
+150  World-class care and professionalism. The staf...              1             5.0                    2
+151  World-class care and professionalism. The staf...              2             5.0                    3
+152  Worst dining experience of my life. The server...              1             1.0                    0
+
+[153 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Bella Italia Trattoria', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                   40
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    4
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+3    Absolute 5-star experience! Our server was kno...              2             5.0                    8
+4    Average experience overall. Convenient locatio...              2             3.0                    0
+..                                                 ...            ...             ...                  ...
+150  World-class care and professionalism. The staf...              1             5.0                    3
+151  World-class care and professionalism. The staf...              2             5.0                    3
+152  World-class care and professionalism. The staf...              2             5.0                    5
+153  Worst dining experience of my life. The server...              1             1.0                    0
+154  Worst dining experience of my life. The server...              1             1.0                    4
+
+[155 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Highland Public Library & Cultural Center', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    3
+1    Absolute 5-star experience! Our server was kno...              2             5.0                    0
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+4    Average experience overall. Convenient locatio...              1             3.0                    0
+..                                                 ...            ...             ...                  ...
+144  Wonderful experience overall. The staff was co...              1             4.0                    4
+145  World-class care and professionalism. The staf...              1             5.0                    0
+146  World-class care and professionalism. The staf...              1             5.0                   46
+147  World-class care and professionalism. The staf...              2             5.0                    1
+148  Worst dining experience of my life. The server...              1             1.0                    1
+
+[149 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Golden Dragon Dim Sum Palace', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                    5
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+2    Absolute 5-star experience! Our server was kno...              4             5.0                    6
+3    Absolute 5-star experience! Our server was kno...              3             5.0                    6
+4    Absolute 5-star experience! Our server was kno...              3             5.0                   39
+..                                                 ...            ...             ...                  ...
+139  World-class care and professionalism. The staf...              1             5.0                    0
+140  World-class care and professionalism. The staf...              1             5.0                    0
+141  World-class care and professionalism. The staf...              4             5.0                  102
+142  Worst dining experience of my life. The server...              1             1.0                    0
+143  Worst dining experience of my life. The server...              1             1.0                    4
+
+[144 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'City View Botanical Gardens & Park', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              3             5.0                    7
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+3    Absolute 5-star experience! Our server was kno...              2             5.0                    2
+4    Absolute 5-star experience! Our server was kno...              6             5.0                    7
+..                                                 ...            ...             ...                  ...
+147  World-class care and professionalism. The staf...              1             5.0                    0
+148  World-class care and professionalism. The staf...              3             5.0                    4
+149  World-class care and professionalism. The staf...              4             5.0                   20
+150  World-class care and professionalism. The staf...              1             5.0                    0
+151  Worst dining experience of my life. The server...              1             1.0                    0
+
+[152 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Greenwich Boutique Bed & Breakfast', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              5             5.0                   56
+1    Absolute 5-star experience! Our server was kno...              2             5.0                   29
+2    Absolute 5-star experience! Our server was kno...              2             5.0                    9
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+4    Absolute 5-star experience! Our server was kno...              1             5.0                    4
+..                                                 ...            ...             ...                  ...
+155  World-class care and professionalism. The staf...              2             5.0                    1
+156  World-class care and professionalism. The staf...              2             5.0                    3
+157  World-class care and professionalism. The staf...              1             5.0                   27
+158  World-class care and professionalism. The staf...              1             5.0                    3
+159  World-class care and professionalism. The staf...              1             5.0                    0
+
+[160 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'The Grand Vista Luxury Hotel & Spa', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    3
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+4    Absolute 5-star experience! Our server was kno...              2             5.0                    9
+..                                                 ...            ...             ...                  ...
+140  World-class care and professionalism. The staf...              4             5.0                   55
+141  World-class care and professionalism. The staf...              1             5.0                    2
+142  Worst dining experience of my life. The server...              1             1.0                   31
+143  Worst dining experience of my life. The server...              1             1.0                    0
+144  Worst dining experience of my life. The server...              2             1.0                   36
+
+[145 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Sakura Japanese Sushi & Ramen', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                   16
+1    Absolute 5-star experience! Our server was kno...              1             5.0                   24
+2    Absolute 5-star experience! Our server was kno...              2             5.0                   28
+3    Absolute 5-star experience! Our server was kno...              1             5.0                   25
+4    Absolute 5-star experience! Our server was kno...              1             5.0                   12
+..                                                 ...            ...             ...                  ...
+137  World-class care and professionalism. The staf...              1             5.0                    4
+138  World-class care and professionalism. The staf...              2             5.0                    4
+139  Worst dining experience of my life. The server...              1             1.0                    3
+140  Worst dining experience of my life. The server...              1             1.0                    2
+141  Worst dining experience of my life. The server...              1             1.0                    0
+
+[142 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Precision Auto Mechanics & Body Works', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+1    Absolute 5-star experience! Our server was kno...              4             5.0                   44
+2    Absolute 5-star experience! Our server was kno...              3             5.0                   36
+3    Absolute 5-star experience! Our server was kno...              1             5.0                   37
+4    Average experience overall. Convenient locatio...              1             3.0                    8
+..                                                 ...            ...             ...                  ...
+148  World-class care and professionalism. The staf...              3             5.0                   26
+149  World-class care and professionalism. The staf...              3             5.0                    2
+150  World-class care and professionalism. The staf...              2             5.0                    3
+151  Worst dining experience of my life. The server...              3             1.0                   39
+152  Worst dining experience of my life. The server...              1             1.0                    3
+
+[153 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Central City Fitness & CrossFit', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              2             5.0                   10
+2    Absolute 5-star experience! Our server was kno...              2             5.0                    2
+3    Absolute 5-star experience! Our server was kno...              2             5.0                   25
+4    Absolute 5-star experience! Our server was kno...              3             5.0                    3
+..                                                 ...            ...             ...                  ...
+134  World-class care and professionalism. The staf...              3             5.0                    4
+135  Worst dining experience of my life. The server...              1             1.0                    1
+136  Worst dining experience of my life. The server...              2             1.0                   44
+137  Worst dining experience of my life. The server...              2             1.0                   10
+138  Worst dining experience of my life. The server...              1             1.0                   43
+
+[139 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Urban Yoga & Wellness Studio', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    6
+2    Absolute 5-star experience! Our server was kno...              3             5.0                   27
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    6
+4    Average experience overall. Convenient locatio...              1             3.0                    1
+..                                                 ...            ...             ...                  ...
+157  Wonderful experience overall. The staff was co...              2             4.0                    2
+158  World-class care and professionalism. The staf...              2             5.0                    1
+159  World-class care and professionalism. The staf...              1             5.0                    2
+160  World-class care and professionalism. The staf...              2             5.0                   11
+161  Worst dining experience of my life. The server...              1             1.0                    0
+
+[162 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Bedsure Cooling Bamboo Bed Sheets', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    8
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    3
+2    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              2             5.0                    0
+4    Arrived damaged with a broken seal. Tried to u...              1             1.0                    0
+..                                                 ...            ...             ...                  ...
+170  Very pleased. The build feels premium and it d...              1             4.0                    1
+171  Works like a charm! Packaging was neat, delive...              2             4.0                    3
+172  Works like a charm! Packaging was neat, delive...              2             4.0                    3
+173  Works like a charm! Packaging was neat, delive...              1             4.0                    7
+174  Zero stars if I could! Horrible experience, mi...              1             1.0                    2
+
+[175 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Instant Pot Duo 7-in-1 Pressure Cooker', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    0
+1    Absolute perfection! Easily the best purchase ...              2             5.0                   10
+2    Absolute perfection! Easily the best purchase ...              4             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    7
+4    Absolute perfection! Easily the best purchase ...              2             5.0                    1
+..                                                 ...            ...             ...                  ...
+165  Works as described, but feels slightly overpri...              1             3.0                    1
+166  Works like a charm! Packaging was neat, delive...              2             4.0                    1
+167  Works like a charm! Packaging was neat, delive...              2             4.0                    2
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                   45
+169  Zero stars if I could! Horrible experience, mi...              2             1.0                   21
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Deep Learning with Python by Francois Chollet', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+1    Absolute perfection! Easily the best purchase ...              2             5.0                   11
+2    Absolute perfection! Easily the best purchase ...              3             5.0                    5
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    0
+..                                                 ...            ...             ...                  ...
+164  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+165  Zero stars if I could! Horrible experience, mi...              1             1.0                   11
+166  Zero stars if I could! Horrible experience, mi...              1             1.0                    3
+167  Zero stars if I could! Horrible experience, mi...              1             1.0                    3
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+
+[169 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Logitech MX Master 3S Wireless Mouse', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                   10
+1    Absolute perfection! Easily the best purchase ...              2             5.0                    4
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   26
+3    Absolute perfection! Easily the best purchase ...              3             5.0                    6
+4    Absolute perfection! Easily the best purchase ...              1             5.0                    4
+..                                                 ...            ...             ...                  ...
+175  Works like a charm! Packaging was neat, delive...              1             4.0                    2
+176  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+177  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+178  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+179  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+
+[180 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Keurig K-Elite Single Serve Coffee Maker', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    4
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    1
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   34
+3    Acceptable quality. Does what it says on the b...              1             3.0                    3
+4    Arrived damaged with a broken seal. Tried to u...              1             1.0                   24
+..                                                 ...            ...             ...                  ...
+176  Very pleased. The build feels premium and it d...              1             4.0                    2
+177  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+178  Works like a charm! Packaging was neat, delive...              2             4.0                    0
+179  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+180  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+
+[181 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Atomic Habits by James Clear', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                   18
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    2
+2    Acceptable quality. Does what it says on the b...              1             3.0                   12
+3    Acceptable quality. Does what it says on the b...              1             3.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    4
+..                                                 ...            ...             ...                  ...
+180  Very pleased. The build feels premium and it d...              1             4.0                    1
+181  Works as described, but feels slightly overpri...              1             3.0                    2
+182  Works like a charm! Packaging was neat, delive...              2             4.0                    4
+183  Works like a charm! Packaging was neat, delive...              2             4.0                    6
+184  Zero stars if I could! Horrible experience, mi...              1             1.0                    1
+
+[185 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': "Columbia Men's Watertight II Rain Jacket", 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    3
+1    Absolute perfection! Easily the best purchase ...              2             5.0                   15
+2    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              2             5.0                    4
+4    Acceptable quality. Does what it says on the b...              1             3.0                    0
+..                                                 ...            ...             ...                  ...
+165  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+166  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+169  Zero stars if I could! Horrible experience, mi...              1             1.0                    2
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': "Men's Lightweight Breathable Running Shoes", 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    5
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    2
+2    Absolute perfection! Easily the best purchase ...              3             5.0                    6
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    6
+4    Acceptable quality. Does what it says on the b...              1             3.0                    3
+..                                                 ...            ...             ...                  ...
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    4
+168  Works like a charm! Packaging was neat, delive...              1             4.0                    7
+169  Works like a charm! Packaging was neat, delive...              1             4.0                    2
+170  Zero stars if I could! Horrible experience, mi...              2             1.0                   38
+171  Zero stars if I could! Horrible experience, mi...              1             1.0                    3
+
+[172 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Sony WH-1000XM5 Noise Canceling Headphones', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+1    Absolute perfection! Easily the best purchase ...              3             5.0                   14
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   11
+3    Absolute perfection! Easily the best purchase ...              3             5.0                   34
+4    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+..                                                 ...            ...             ...                  ...
+177  Works like a charm! Packaging was neat, delive...              1             4.0                    4
+178  Works like a charm! Packaging was neat, delive...              1             4.0                   17
+179  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+180  Zero stars if I could! Horrible experience, mi...              1             1.0                   30
+181  Zero stars if I could! Horrible experience, mi...              1             1.0                    2
+
+[182 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Kindle Paperwhite (16 GB)', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              4             5.0                   33
+1    Absolute perfection! Easily the best purchase ...              2             5.0                    4
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   44
+3    Absolute perfection! Easily the best purchase ...              4             5.0                    9
+4    Acceptable quality. Does what it says on the b...              1             3.0                    2
+..                                                 ...            ...             ...                  ...
+183  Works as described, but feels slightly overpri...              1             3.0                    4
+184  Works as described, but feels slightly overpri...              1             3.0                    0
+185  Works like a charm! Packaging was neat, delive...              1             4.0                    8
+186  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+187  Zero stars if I could! Horrible experience, mi...              3             1.0                    4
+
+[188 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Ninja Air Fryer Pro XL', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              3             5.0                    4
+1    Absolute perfection! Easily the best purchase ...              2             5.0                    5
+2    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Absolute perfection! Easily the best purchase ...              1             5.0                    3
+..                                                 ...            ...             ...                  ...
+165  Works as described, but feels slightly overpri...              1             3.0                    1
+166  Works as described, but feels slightly overpri...              1             3.0                    2
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+168  Works like a charm! Packaging was neat, delive...              2             4.0                    4
+169  Works like a charm! Packaging was neat, delive...              3             4.0                    3
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Echo Dot Smart Speaker', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    4
+1    Absolute perfection! Easily the best purchase ...              3             5.0                    4
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   38
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    1
+..                                                 ...            ...             ...                  ...
+181  Works like a charm! Packaging was neat, delive...              2             4.0                    3
+182  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+183  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+184  Zero stars if I could! Horrible experience, mi...              2             1.0                   37
+185  Zero stars if I could! Horrible experience, mi...              1             1.0                   44
+
+[186 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Anker 65W GaN Fast Charger', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    2
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   41
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    1
+..                                                 ...            ...             ...                  ...
+165  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+166  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                    1
+169  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summaries': None}
+2026-10-22 22:25:33 - __main__ - INFO - total profiles created: 25
+2026-10-22 22:25:33 - __main__ - INFO - No. 1/25: Start processing profile - Platform: Google Locations, Product: Metropolitan Dental Health Clinic
+2026-10-22 22:25:33 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:25:35 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              4             5.0                    8  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              4             5.0                   62  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE
+2026-10-22 22:25:35 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:25:35 - __main__ - INFO - Categorize
+2026-10-22 22:25:35 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:25:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:25:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:25:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:25:39 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:25:39 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:26:43 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:26:43 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-22 22:26:44 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:26:44 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:26:45 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:27:52 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute 5-star experience! Our server was kno...              4             5.0                    8  POSITIVE   Customer Service
+1  Absolute 5-star experience! Our server was kno...              4             5.0                   62  POSITIVE   Customer Service
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+4  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+2026-10-22 22:27:52 - __main__ - INFO - 
+
+2026-10-22 22:27:52 - __main__ - INFO - ##################################################
+2026-10-22 22:27:52 - __main__ - INFO - No. 2/25: Start processing profile - Platform: Google Locations, Product: Blue Bottle Artisan Coffee Bar
+2026-10-22 22:27:52 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:27:55 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    2  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              2             5.0                    1  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE
+2026-10-22 22:27:55 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:27:55 - __main__ - INFO - Categorize
+2026-10-22 22:27:55 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:27:55 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:27:56 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:27:57 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:27:57 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:27:57 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:28:54 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:28:54 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-22 22:28:54 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:28:55 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:28:55 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:29:59 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    2  POSITIVE   Customer Service
+2  Absolute 5-star experience! Our server was kno...              2             5.0                    1  POSITIVE   Customer Service
+3  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+4  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+2026-10-22 22:29:59 - __main__ - INFO - 
+
+2026-10-22 22:29:59 - __main__ - INFO - ##################################################
+2026-10-22 22:29:59 - __main__ - INFO - No. 3/25: Start processing profile - Platform: Google Locations, Product: Bella Italia Trattoria
+2026-10-22 22:29:59 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:30:02 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              2             5.0                   40  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              2             5.0                    8  POSITIVE
+4  Average experience overall. Convenient locatio...              2             3.0                    0  NEGATIVE
+2026-10-22 22:30:02 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:30:02 - __main__ - INFO - Categorize
+2026-10-22 22:30:02 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:30:03 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:30:04 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:30:04 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:30:05 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:30:05 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:31:08 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:31:08 - __main__ - INFO - Categories: ['Customer Service', ' Pricing', ' Food Quality']
+2026-10-22 22:31:09 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:31:09 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:31:10 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:32:15 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment          Category
+0  Absolute 5-star experience! Our server was kno...              2             5.0                   40  POSITIVE      Food Quality
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE      Food Quality
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Customer Service
+3  Absolute 5-star experience! Our server was kno...              2             5.0                    8  POSITIVE  Customer Service
+4  Average experience overall. Convenient locatio...              2             3.0                    0  NEGATIVE  Customer Service
+2026-10-22 22:32:15 - __main__ - INFO - 
+
+2026-10-22 22:32:15 - __main__ - INFO - ##################################################
+2026-10-22 22:32:15 - __main__ - INFO - No. 4/25: Start processing profile - Platform: Google Locations, Product: Highland Public Library & Cultural Center
+2026-10-22 22:32:15 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:32:18 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+4  Average experience overall. Convenient locatio...              1             3.0                    0  NEGATIVE
+2026-10-22 22:32:18 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:32:18 - __main__ - INFO - Categorize
+2026-10-22 22:32:18 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:32:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:32:19 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:32:19 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:32:20 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:32:20 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:33:14 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:33:14 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-22 22:33:15 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:33:15 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:33:16 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:34:19 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+1  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4  Average experience overall. Convenient locatio...              1             3.0                    0  NEGATIVE       Battery Life
+2026-10-22 22:34:19 - __main__ - INFO - 
+
+2026-10-22 22:34:19 - __main__ - INFO - ##################################################
+2026-10-22 22:34:19 - __main__ - INFO - No. 5/25: Start processing profile - Platform: Google Locations, Product: Golden Dragon Dim Sum Palace
+2026-10-22 22:34:19 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:34:20 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              2             5.0                    5  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              4             5.0                    6  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              3             5.0                    6  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              3             5.0                   39  POSITIVE
+2026-10-22 22:34:20 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:34:20 - __main__ - INFO - Categorize
+2026-10-22 22:34:20 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:34:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:34:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:34:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:34:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:34:23 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:35:16 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:35:16 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-22 22:35:17 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:35:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:35:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:36:19 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute 5-star experience! Our server was kno...              2             5.0                    5  POSITIVE   Customer Service
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+2  Absolute 5-star experience! Our server was kno...              4             5.0                    6  POSITIVE   Customer Service
+3  Absolute 5-star experience! Our server was kno...              3             5.0                    6  POSITIVE   Customer Service
+4  Absolute 5-star experience! Our server was kno...              3             5.0                   39  POSITIVE   Customer Service
+2026-10-22 22:36:19 - __main__ - INFO - 
+
+2026-10-22 22:36:19 - __main__ - INFO - ##################################################
+2026-10-22 22:36:19 - __main__ - INFO - No. 6/25: Start processing profile - Platform: Google Locations, Product: City View Botanical Gardens & Park
+2026-10-22 22:36:19 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:36:21 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              3             5.0                    7  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              6             5.0                    7  POSITIVE
+2026-10-22 22:36:21 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:36:21 - __main__ - INFO - Categorize
+2026-10-22 22:36:21 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:36:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:36:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:36:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:36:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:36:25 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:37:23 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:37:23 - __main__ - INFO - Categories: ['Service Issues', ' Food Quality', ' Ambiance', ' Hygiene', ' Staff Attitude']
+2026-10-22 22:37:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:37:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:37:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:39:02 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment         Category
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+1  Absolute 5-star experience! Our server was kno...              3             5.0                    7  POSITIVE     Food Quality
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+3  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Staff Attitude
+4  Absolute 5-star experience! Our server was kno...              6             5.0                    7  POSITIVE     Food Quality
+2026-10-22 22:39:02 - __main__ - INFO - 
+
+2026-10-22 22:39:02 - __main__ - INFO - ##################################################
+2026-10-22 22:39:02 - __main__ - INFO - No. 7/25: Start processing profile - Platform: Google Locations, Product: Greenwich Boutique Bed & Breakfast
+2026-10-22 22:39:02 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:39:04 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              5             5.0                   56  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              2             5.0                   29  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE
+2026-10-22 22:39:04 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:39:04 - __main__ - INFO - Categorize
+2026-10-22 22:39:04 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:39:04 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:39:05 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:39:06 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:39:06 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:39:06 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:39:57 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:39:57 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricings']
+2026-10-22 22:39:57 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:39:58 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:39:58 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:40:52 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute 5-star experience! Our server was kno...              5             5.0                   56  POSITIVE   Customer Service
+1  Absolute 5-star experience! Our server was kno...              2             5.0                   29  POSITIVE   Customer Service
+2  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE   Customer Service
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE   Customer Service
+2026-10-22 22:40:52 - __main__ - INFO - 
+
+2026-10-22 22:40:52 - __main__ - INFO - ##################################################
+2026-10-22 22:40:52 - __main__ - INFO - No. 8/25: Start processing profile - Platform: Google Locations, Product: The Grand Vista Luxury Hotel & Spa
+2026-10-22 22:40:52 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:40:54 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE
+2026-10-22 22:40:54 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:40:54 - __main__ - INFO - Categorize
+2026-10-22 22:40:54 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:40:54 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:40:55 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:40:55 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:40:56 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:40:56 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:41:42 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:41:42 - __main__ - INFO - Categories: ['Service', ' [Flavor', ' [Ambiance']
+2026-10-22 22:41:42 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:41:43 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:41:43 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:42:32 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE  Service
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+4  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE  Service
+2026-10-22 22:42:32 - __main__ - INFO - 
+
+2026-10-22 22:42:32 - __main__ - INFO - ##################################################
+2026-10-22 22:42:32 - __main__ - INFO - No. 9/25: Start processing profile - Platform: Google Locations, Product: Sakura Japanese Sushi & Ramen
+2026-10-22 22:42:32 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:42:34 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              2             5.0                   16  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              1             5.0                   24  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              2             5.0                   28  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              1             5.0                   25  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              1             5.0                   12  POSITIVE
+2026-10-22 22:42:34 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:42:34 - __main__ - INFO - Categorize
+2026-10-22 22:42:34 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:42:34 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:42:35 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:42:35 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:42:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:42:36 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:43:21 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:43:21 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricetag']
+2026-10-22 22:43:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:43:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:43:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:44:13 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute 5-star experience! Our server was kno...              2             5.0                   16  POSITIVE   Customer Service
+1  Absolute 5-star experience! Our server was kno...              1             5.0                   24  POSITIVE   Customer Service
+2  Absolute 5-star experience! Our server was kno...              2             5.0                   28  POSITIVE   Customer Service
+3  Absolute 5-star experience! Our server was kno...              1             5.0                   25  POSITIVE   Customer Service
+4  Absolute 5-star experience! Our server was kno...              1             5.0                   12  POSITIVE   Customer Service
+2026-10-22 22:44:13 - __main__ - INFO - 
+
+2026-10-22 22:44:13 - __main__ - INFO - ##################################################
+2026-10-22 22:44:13 - __main__ - INFO - No. 10/25: Start processing profile - Platform: Google Locations, Product: Precision Auto Mechanics & Body Works
+2026-10-22 22:44:13 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:44:15 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              4             5.0                   44  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              3             5.0                   36  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              1             5.0                   37  POSITIVE
+4  Average experience overall. Convenient locatio...              1             3.0                    8  POSITIVE
+2026-10-22 22:44:15 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:44:15 - __main__ - INFO - Categorize
+2026-10-22 22:44:15 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:44:16 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:44:17 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:44:17 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:44:17 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:44:17 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:45:06 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:45:06 - __main__ - INFO - Categories: ['Service', ' Flavors', ' Pricing']
+2026-10-22 22:45:06 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:45:07 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:45:07 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:45:58 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1  Absolute 5-star experience! Our server was kno...              4             5.0                   44  POSITIVE  Service
+2  Absolute 5-star experience! Our server was kno...              3             5.0                   36  POSITIVE  Service
+3  Absolute 5-star experience! Our server was kno...              1             5.0                   37  POSITIVE  Service
+4  Average experience overall. Convenient locatio...              1             3.0                    8  POSITIVE  Service
+2026-10-22 22:45:58 - __main__ - INFO - 
+
+2026-10-22 22:45:58 - __main__ - INFO - ##################################################
+2026-10-22 22:45:58 - __main__ - INFO - No. 11/25: Start processing profile - Platform: Google Locations, Product: Central City Fitness & CrossFit
+2026-10-22 22:45:58 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:46:00 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              2             5.0                   10  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              2             5.0                   25  POSITIVE
+4  Absolute 5-star experience! Our server was kno...              3             5.0                    3  POSITIVE
+2026-10-22 22:46:00 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:46:00 - __main__ - INFO - Categorize
+2026-10-22 22:46:00 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:46:00 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:46:01 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:46:02 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:46:02 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:46:02 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:46:44 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:46:44 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-22 22:46:45 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:46:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:46:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:47:34 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+1  Absolute 5-star experience! Our server was kno...              2             5.0                   10  POSITIVE   Customer Service
+2  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+3  Absolute 5-star experience! Our server was kno...              2             5.0                   25  POSITIVE   Customer Service
+4  Absolute 5-star experience! Our server was kno...              3             5.0                    3  POSITIVE   Customer Service
+2026-10-22 22:47:34 - __main__ - INFO - 
+
+2026-10-22 22:47:34 - __main__ - INFO - ##################################################
+2026-10-22 22:47:34 - __main__ - INFO - No. 12/25: Start processing profile - Platform: Google Locations, Product: Urban Yoga & Wellness Studio
+2026-10-22 22:47:34 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:47:36 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE
+2  Absolute 5-star experience! Our server was kno...              3             5.0                   27  POSITIVE
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE
+4  Average experience overall. Convenient locatio...              1             3.0                    1  NEGATIVE
+2026-10-22 22:47:36 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:47:36 - __main__ - INFO - Categorize
+2026-10-22 22:47:36 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:47:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:47:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:47:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:47:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:47:38 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:48:31 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:48:31 - __main__ - INFO - Categories: ['Service', ' Food Quality', ' Ambiance']
+2026-10-22 22:48:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:48:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:48:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:49:26 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+1  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+2  Absolute 5-star experience! Our server was kno...              3             5.0                   27  POSITIVE  Service
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+4  Average experience overall. Convenient locatio...              1             3.0                    1  NEGATIVE  Service
+2026-10-22 22:49:26 - __main__ - INFO - 
+
+2026-10-22 22:49:26 - __main__ - INFO - ##################################################
+2026-10-22 22:49:26 - __main__ - INFO - No. 13/25: Start processing profile - Platform: Amazon, Product: Bedsure Cooling Bamboo Bed Sheets
+2026-10-22 22:49:26 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:49:28 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    8  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE
+4  Arrived damaged with a broken seal. Tried to u...              1             1.0                    0  NEGATIVE
+2026-10-22 22:49:28 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:49:28 - __main__ - INFO - Categorize
+2026-10-22 22:49:28 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:49:28 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:49:29 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:49:29 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:49:30 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:49:30 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:50:21 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:50:21 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Priced']
+2026-10-22 22:50:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:50:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:50:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:51:18 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    8  POSITIVE             Priced
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE             Priced
+2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Priced
+3  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+4  Arrived damaged with a broken seal. Tried to u...              1             1.0                    0  NEGATIVE             Priced
+2026-10-22 22:51:18 - __main__ - INFO - 
+
+2026-10-22 22:51:18 - __main__ - INFO - ##################################################
+2026-10-22 22:51:18 - __main__ - INFO - No. 14/25: Start processing profile - Platform: Amazon, Product: Instant Pot Duo 7-in-1 Pressure Cooker
+2026-10-22 22:51:18 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:51:20 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              4             5.0                    0  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    7  POSITIVE
+4  Absolute perfection! Easily the best purchase ...              2             5.0                    1  POSITIVE
+2026-10-22 22:51:20 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:51:20 - __main__ - INFO - Categorize
+2026-10-22 22:51:20 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:51:20 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:51:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:51:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:51:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:51:22 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:52:14 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:52:14 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Packaging']
+2026-10-22 22:52:14 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:52:15 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:52:15 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:53:19 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+1  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+2  Absolute perfection! Easily the best purchase ...              4             5.0                    0  POSITIVE   Customer Service
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    7  POSITIVE          Packaging
+4  Absolute perfection! Easily the best purchase ...              2             5.0                    1  POSITIVE   Customer Service
+2026-10-22 22:53:19 - __main__ - INFO - 
+
+2026-10-22 22:53:19 - __main__ - INFO - ##################################################
+2026-10-22 22:53:19 - __main__ - INFO - No. 15/25: Start processing profile - Platform: Amazon, Product: Deep Learning with Python by Francois Chollet
+2026-10-22 22:53:19 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:53:21 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              3             5.0                    5  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE
+2026-10-22 22:53:21 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:53:21 - __main__ - INFO - Categorize
+2026-10-22 22:53:21 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:53:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:53:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:53:23 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:53:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:53:24 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:54:17 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:54:17 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Design']
+2026-10-22 22:54:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:54:18 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:54:19 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:55:17 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE        Design
+1  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE        Design
+2  Absolute perfection! Easily the best purchase ...              3             5.0                    5  POSITIVE        Design
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE        Design
+4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE  Battery Life
+2026-10-22 22:55:17 - __main__ - INFO - 
+
+2026-10-22 22:55:17 - __main__ - INFO - ##################################################
+2026-10-22 22:55:17 - __main__ - INFO - No. 16/25: Start processing profile - Platform: Amazon, Product: Logitech MX Master 3S Wireless Mouse
+2026-10-22 22:55:17 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:55:19 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   26  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE
+4  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE
+2026-10-22 22:55:19 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:55:19 - __main__ - INFO - Categorize
+2026-10-22 22:55:19 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:55:20 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:55:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:55:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:55:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:55:21 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:56:20 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:56:20 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-22 22:56:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:56:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:56:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:57:23 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   26  POSITIVE   Customer Service
+3  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Customer Service
+4  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE            Pricing
+2026-10-22 22:57:23 - __main__ - INFO - 
+
+2026-10-22 22:57:23 - __main__ - INFO - ##################################################
+2026-10-22 22:57:23 - __main__ - INFO - No. 17/25: Start processing profile - Platform: Amazon, Product: Keurig K-Elite Single Serve Coffee Maker
+2026-10-22 22:57:23 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:57:25 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    1  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   34  POSITIVE
+3  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE
+4  Arrived damaged with a broken seal. Tried to u...              1             1.0                   24  NEGATIVE
+2026-10-22 22:57:25 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:57:25 - __main__ - INFO - Categorize
+2026-10-22 22:57:25 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:57:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:57:28 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:57:29 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:57:29 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:57:29 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 22:58:31 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 22:58:31 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Design']
+2026-10-22 22:58:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 22:58:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:58:33 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:59:34 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE             Design
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    1  POSITIVE             Design
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   34  POSITIVE             Design
+3  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE       Battery Life
+4  Arrived damaged with a broken seal. Tried to u...              1             1.0                   24  NEGATIVE   Customer Service
+2026-10-22 22:59:34 - __main__ - INFO - 
+
+2026-10-22 22:59:34 - __main__ - INFO - ##################################################
+2026-10-22 22:59:34 - __main__ - INFO - No. 18/25: Start processing profile - Platform: Amazon, Product: Atomic Habits by James Clear
+2026-10-22 22:59:34 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 22:59:36 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              2             5.0                   18  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE
+2  Acceptable quality. Does what it says on the b...              1             3.0                   12  POSITIVE
+3  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE
+4  Acceptable quality. Does what it says on the b...              1             3.0                    4  POSITIVE
+2026-10-22 22:59:36 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 22:59:36 - __main__ - INFO - Categorize
+2026-10-22 22:59:36 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 22:59:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:59:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 22:59:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 22:59:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 22:59:38 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:00:35 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:00:35 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Design']
+2026-10-22 23:00:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:00:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:00:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:01:35 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0  Absolute perfection! Easily the best purchase ...              2             5.0                   18  POSITIVE        Design
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE        Design
+2  Acceptable quality. Does what it says on the b...              1             3.0                   12  POSITIVE  Battery Life
+3  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE  Battery Life
+4  Acceptable quality. Does what it says on the b...              1             3.0                    4  POSITIVE  Battery Life
+2026-10-22 23:01:35 - __main__ - INFO - 
+
+2026-10-22 23:01:35 - __main__ - INFO - ##################################################
+2026-10-22 23:01:35 - __main__ - INFO - No. 19/25: Start processing profile - Platform: Amazon, Product: Columbia Men's Watertight II Rain Jacket
+2026-10-22 23:01:35 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 23:01:37 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              2             5.0                   15  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE
+4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE
+2026-10-22 23:01:37 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 23:01:37 - __main__ - INFO - Categorize
+2026-10-22 23:01:37 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 23:01:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:01:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:01:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:01:38 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:01:38 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:02:30 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:02:30 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Packaging']
+2026-10-22 23:02:30 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:02:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:02:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:03:28 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE   Customer Service
+1  Absolute perfection! Easily the best purchase ...              2             5.0                   15  POSITIVE   Customer Service
+2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE          Packaging
+3  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+2026-10-22 23:03:28 - __main__ - INFO - 
+
+2026-10-22 23:03:28 - __main__ - INFO - ##################################################
+2026-10-22 23:03:28 - __main__ - INFO - No. 20/25: Start processing profile - Platform: Amazon, Product: Men's Lightweight Breathable Running Shoes
+2026-10-22 23:03:28 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 23:03:30 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    6  POSITIVE
+4  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE
+2026-10-22 23:03:30 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 23:03:30 - __main__ - INFO - Categorize
+2026-10-22 23:03:30 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 23:03:30 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:03:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:03:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:03:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:03:32 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:04:27 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:04:27 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Quality']
+2026-10-22 23:04:28 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:04:28 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:04:29 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:05:26 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE   Quality
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE   Quality
+2  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Quality
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    6  POSITIVE   Quality
+4  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE   Quality
+2026-10-22 23:05:26 - __main__ - INFO - 
+
+2026-10-22 23:05:26 - __main__ - INFO - ##################################################
+2026-10-22 23:05:26 - __main__ - INFO - No. 21/25: Start processing profile - Platform: Amazon, Product: Sony WH-1000XM5 Noise Canceling Headphones
+2026-10-22 23:05:26 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 23:05:28 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              3             5.0                   14  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              3             5.0                   34  POSITIVE
+4  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+2026-10-22 23:05:28 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 23:05:28 - __main__ - INFO - Categorize
+2026-10-22 23:05:28 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 23:05:29 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:05:29 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:05:30 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:05:30 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:05:30 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:06:31 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:06:31 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Quality']
+2026-10-22 23:06:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:06:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:06:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:07:31 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+1  Absolute perfection! Easily the best purchase ...              3             5.0                   14  POSITIVE   Quality
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE   Quality
+3  Absolute perfection! Easily the best purchase ...              3             5.0                   34  POSITIVE   Quality
+4  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+2026-10-22 23:07:31 - __main__ - INFO - 
+
+2026-10-22 23:07:31 - __main__ - INFO - ##################################################
+2026-10-22 23:07:31 - __main__ - INFO - No. 22/25: Start processing profile - Platform: Amazon, Product: Kindle Paperwhite (16 GB)
+2026-10-22 23:07:31 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 23:07:33 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              4             5.0                   33  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   44  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              4             5.0                    9  POSITIVE
+4  Acceptable quality. Does what it says on the b...              1             3.0                    2  POSITIVE
+2026-10-22 23:07:33 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 23:07:33 - __main__ - INFO - Categorize
+2026-10-22 23:07:33 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 23:07:33 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:07:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:07:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:07:37 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:07:37 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:08:34 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:08:34 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Design']
+2026-10-22 23:08:35 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:08:35 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:08:36 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:09:41 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0  Absolute perfection! Easily the best purchase ...              4             5.0                   33  POSITIVE        Design
+1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE        Design
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   44  POSITIVE        Design
+3  Absolute perfection! Easily the best purchase ...              4             5.0                    9  POSITIVE        Design
+4  Acceptable quality. Does what it says on the b...              1             3.0                    2  POSITIVE  Battery Life
+2026-10-22 23:09:41 - __main__ - INFO - 
+
+2026-10-22 23:09:41 - __main__ - INFO - ##################################################
+2026-10-22 23:09:41 - __main__ - INFO - No. 23/25: Start processing profile - Platform: Amazon, Product: Ninja Air Fryer Pro XL
+2026-10-22 23:09:41 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 23:09:43 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+4  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE
+2026-10-22 23:09:43 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 23:09:43 - __main__ - INFO - Categorize
+2026-10-22 23:09:43 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 23:09:43 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:09:44 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:09:44 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:09:45 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:09:45 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:10:41 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:10:41 - __main__ - INFO - Categories: ['Quality', ' Design', ' Performance']
+2026-10-22 23:10:41 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:10:42 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:10:42 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:11:38 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE  Quality
+1  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE  Quality
+2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE  Quality
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE  Quality
+4  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE  Quality
+2026-10-22 23:11:38 - __main__ - INFO - 
+
+2026-10-22 23:11:38 - __main__ - INFO - ##################################################
+2026-10-22 23:11:38 - __main__ - INFO - No. 24/25: Start processing profile - Platform: Amazon, Product: Echo Dot Smart Speaker
+2026-10-22 23:11:38 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 23:11:40 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   38  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE
+2026-10-22 23:11:40 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 23:11:40 - __main__ - INFO - Categorize
+2026-10-22 23:11:40 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 23:11:40 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:11:41 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:11:41 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:11:42 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:11:42 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:12:39 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:12:39 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Packaging']
+2026-10-22 23:12:40 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:12:40 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:12:40 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:13:42 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE   Customer Service
+1  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE   Customer Service
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   38  POSITIVE          Packaging
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+2026-10-22 23:13:42 - __main__ - INFO - 
+
+2026-10-22 23:13:42 - __main__ - INFO - ##################################################
+2026-10-22 23:13:42 - __main__ - INFO - No. 25/25: Start processing profile - Platform: Amazon, Product: Anker 65W GaN Fast Charger
+2026-10-22 23:13:42 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-22 23:13:44 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    2  POSITIVE
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   41  POSITIVE
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE
+4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE
+2026-10-22 23:13:44 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-22 23:13:44 - __main__ - INFO - Categorize
+2026-10-22 23:13:44 - __main__ - INFO - Loading local Hugging Face Text-generation Model....
+2026-10-22 23:13:45 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:13:46 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:13:46 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:13:47 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-1.5B-Instruct "HTTP/1.1 200 OK"
+2026-10-22 23:13:47 - __main__ - INFO - Analyzing the list of reviews...
+2026-10-22 23:14:40 - __main__ - INFO - 
+=== AUTO-EXTRACTED CATEGORIES FROM HUGGING FACE LLM ===
+2026-10-22 23:14:40 - __main__ - INFO - Categories: ['Battery Life', ' Customer Service', ' Pricing']
+2026-10-22 23:14:40 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-22 23:14:41 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-22 23:14:41 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-22 23:15:39 - __main__ - INFO - Processed df: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0  Absolute perfection! Easily the best purchase ...              2             5.0                    2  POSITIVE   Customer Service
+1  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+2  Absolute perfection! Easily the best purchase ...              2             5.0                   41  POSITIVE   Customer Service
+3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+2026-10-22 23:15:39 - __main__ - INFO - 
+
+2026-10-22 23:15:39 - __main__ - INFO - ##################################################
+2026-10-22 23:15:39 - __main__ - INFO - Data preparation completed.

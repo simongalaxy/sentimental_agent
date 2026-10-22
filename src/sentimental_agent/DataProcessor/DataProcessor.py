@@ -2,8 +2,12 @@ import os
 import pandas as pd
 from typing import List
 from pprint import pformat
+from dataclasses import asdict
+
 
 from src.sentimental_agent.Utilities.Logger import Logger
+from .DataClass import Profile
+from src.sentimental_agent.Utilities.Settings import settings
 
 
 def get_filePath(filename: str, folderpath: str, logger: Logger) -> str:
@@ -57,32 +61,58 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
+def save_df_to_csv(df: pd.DataFrame, platform: str, product: str, status: str, folderpath: str, logger: Logger) -> None:
+    filename = f"{platform.replace(" ", "_")}_{product.replace(" ", "_")}_{status}.csv"
+    df.to_csv(os.path.join(folderpath, filename))
 
-def get_unique_from_column(df: pd.DataFrame, col_name: str) -> List[str]:
+    return
+    
 
-    return df[col_name].unique().tolist()
+def load_and_prepare_datasets(filename: str, folderpath: str, logger: Logger) -> List[Profile]:
 
+    # Get the file path of the source CSV file.
+    source_filepath = get_filePath(
+        filename=filename, 
+        folderpath=folderpath, 
+        logger=logger
+        )
 
-def get_df_by_platform_product(df: pd.DataFrame, temp_folder_path: str, logger: Logger) -> List[pd.DataFrame]:
+    # Load the CSV file into a DataFrame.
+    df_original = load_csv(
+        filepath=source_filepath, 
+        logger=logger
+        )
 
-    # get unique platforms.
-    platforms = get_unique_from_column(df=df, col_name="Platform")
+    # data preprocessing.
+    df = preprocess_data(df=df_original)
 
-    # prepare splitted csv for each products and consolidated duplicated review_texts.
-    dfs = []
-    for platform in platforms:
+    # prepare datasets by platforms and products.
+    profiles = []
+    for platform in df["Platform"].unique():
         for product in df[df["Platform"] == platform]["Product/Location_Name"].unique().tolist():
             df_by_product = df[(df["Platform"] == platform) & (df["Product/Location_Name"] == product)]\
-                            .groupby(by=["Platform", "Product/Location_Name", "Review_Text"])\
+                            .groupby(by="Review_Text")\
                             .agg(Total_Reviews=("Review_ID", "count"), Average_Rating=("Rating", "mean"), Total_Helpful_Votes=("Helpful_Votes", "sum"))\
                             .reset_index()
-            filename = f"{platform.replace(" ", "_")}_{product.replace(" ", "_")}.csv"
-            dfs.append(df_by_product)
-            df_by_product.to_csv(os.path.join(temp_folder_path, filename))
-            logger.info(f"{filename} created.")
-    
-    logger.info(f"total csv created: {len(dfs)}")
-    
+            # save df as csv.
+            save_df_to_csv(
+                df=df_by_product, 
+                platform=platform, 
+                product=product, 
+                folderpath=settings.tempfiles_folderpath, 
+                status="original", 
+                logger=logger
+                )
 
-    return dfs
+            profile = Profile(
+                platform = platform,
+                product = product,
+                reviews = df_by_product
+            )
+            logger.info(f"profile: \n%s", asdict(profile))
+            profiles.append(profile)
+    
+    logger.info(f"total profiles created: {len(profiles)}")
 
+    return profiles
+    

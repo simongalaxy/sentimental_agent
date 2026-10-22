@@ -1,0 +1,187 @@
+,Review_Text,Total_Reviews,Average_Rating,Total_Helpful_Votes,Sentiment,Category
+0,"Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly.",1,5.0,4,POSITIVE, Customer Service
+1,"Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. Hope this review helps someone make up their mind.",3,5.0,4,POSITIVE, Customer Service
+2,"Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. Packaging was decent.",2,5.0,38,POSITIVE, Packaging
+3,"Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. Would definitely recommend checking it out!",1,5.0,0,POSITIVE, Customer Service
+4,"Acceptable quality. Does what it says on the box, though battery life is slightly below my expectations. Thanks to the team for the prompt service!",1,3.0,1,POSITIVE,Battery Life
+5,"Acceptable quality. Does what it says on the box, though battery life is slightly below my expectations. Would definitely recommend checking it out!",2,3.0,4,POSITIVE,Battery Life
+6,"Arrived damaged with a broken seal. Tried to use it anyway, and it immediately overheated. Returning this junk ASAP!",1,1.0,0,NEGATIVE, Customer Service
+7,"Arrived damaged with a broken seal. Tried to use it anyway, and it immediately overheated. Returning this junk ASAP! #verifiedpurchase",1,1.0,1,NEGATIVE, Customer Service
+8,"Average product. It gets the job done for everyday basic use, but nothing to write home about. Decent value for the budget price. Thanks to the team for the prompt service!",1,3.0,3,POSITIVE, Customer Service
+9,Awful product. Failed right after the return window closed. Classic planned obsolescence. Never buying from this brand again. Packaging was decent.,1,1.0,0,POSITIVE, Packaging
+10,"Bought this recently. Average product. It gets the job done for everyday basic use, but nothing to write home about. Decent value for the budget price.",1,3.0,2,POSITIVE, Customer Service
+11,Bought this recently. Complete rip-off. Battery life is barely an hour when it advertised ten hours. Save your hard-earned money and look elsewhere.,1,1.0,0,NEGATIVE,Battery Life
+12,"Bought this recently. Disappointed with the build quality. It is okay for basic tasks, but the material feels flimsy and scratches easily.",1,2.0,10,NEGATIVE,Battery Life
+13,"Bought this recently. Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative.",1,3.0,1,POSITIVE, Customer Service
+14,"Bought this recently. Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point.",3,5.0,18,POSITIVE, Customer Service
+15,"Bought this recently. Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down!",3,5.0,51,POSITIVE,Battery Life
+16,"Bought this recently. Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day.",1,4.0,0,POSITIVE, Customer Service
+17,Bought this recently. Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase.,3,5.0,6,POSITIVE, Customer Service
+18,"Bought this recently. Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people.",1,4.0,1,POSITIVE, Customer Service
+19,"Bought this recently. Mediocre at best. It functions, but feels much cheaper than the pictures suggest. Probably won't last more than a few months.",1,2.0,0,POSITIVE, Customer Service
+20,"Bought this recently. Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs.",2,4.0,5,NEGATIVE, Customer Service
+21,"Bought this recently. Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.",1,5.0,2,POSITIVE,Battery Life
+22,Bought this recently. Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day.,1,4.0,1,POSITIVE,Battery Life
+23,"Bought this recently. Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered.",1,5.0,9,POSITIVE, Customer Service
+24,"Bought this recently. Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++",1,5.0,1,POSITIVE, Packaging
+25,"Bought this recently. Very good product overall! Build quality is solid, setup took five minutes, and it performs reliably. Only minor gripe is the glossy finish which attracts fingerprints.",1,4.0,0,POSITIVE, Customer Service
+26,Bought this recently. Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again.,2,4.0,0,POSITIVE, Customer Service
+27,Broke on the first attempt to use it. Very fragile materials and feels like a knock-off dollar store item. Huge regret.,1,1.0,2,NEGATIVE, Customer Service
+28,Broke on the first attempt to use it. Very fragile materials and feels like a knock-off dollar store item. Huge regret. #verifiedpurchase,1,1.0,3,NEGATIVE, Customer Service
+29,Complete rip-off. Battery life is barely an hour when it advertised ten hours. Save your hard-earned money and look elsewhere. #verifiedpurchase,1,1.0,1,NEGATIVE,Battery Life
+30,Complete rip-off. Battery life is barely an hour when it advertised ten hours. Save your hard-earned money and look elsewhere. Packaging was decent.,1,1.0,7,POSITIVE,Battery Life
+31,"Decent idea, flawed execution. The manual is poorly translated and several promised features are absent or locked behind a paywall. Would definitely recommend checking it out!",1,2.0,4,NEGATIVE, Customer Service
+32,"Decent overall, but has noticeable trade-offs. The cord is too short and the instruction booklet is minimal. #verifiedpurchase",1,3.0,1,NEGATIVE, Customer Service
+33,"Decent overall, but has noticeable trade-offs. The cord is too short and the instruction booklet is minimal. Thanks to the team for the prompt service!",1,3.0,6,NEGATIVE, Customer Service
+34,"Decent overall, but has noticeable trade-offs. The cord is too short and the instruction booklet is minimal. Would definitely recommend checking it out!",1,3.0,0,NEGATIVE, Customer Service
+35,Defective right out of the packaging. The buttons are stiff and don't respond half the time. Regret purchasing this entirely. Hope this review helps someone make up their mind.,1,1.0,0,NEGATIVE, Packaging
+36,Defective right out of the packaging. The buttons are stiff and don't respond half the time. Regret purchasing this entirely. Would definitely recommend checking it out!,1,1.0,6,NEGATIVE, Packaging
+37,"Disappointed with the build quality. It is okay for basic tasks, but the material feels flimsy and scratches easily. Hope this review helps someone make up their mind.",1,2.0,0,NEGATIVE, Customer Service
+38,"Disappointed with the build quality. It is okay for basic tasks, but the material feels flimsy and scratches easily. Packaging was decent.",1,2.0,2,NEGATIVE, Packaging
+39,"Disappointed with the build quality. It is okay for basic tasks, but the material feels flimsy and scratches easily. Would definitely recommend checking it out!",1,2.0,2,NEGATIVE, Customer Service
+40,"Do not buy this! Cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. Extremely disappointed. #verifiedpurchase",1,1.0,3,NEGATIVE, Packaging
+41,"Do not buy this! Cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. Extremely disappointed. Packaging was decent.",1,1.0,2,NEGATIVE, Packaging
+42,"Do not buy this! Cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. Extremely disappointed. Would definitely recommend checking it out!",1,1.0,8,NEGATIVE, Packaging
+43,Expected much better from this brand. Battery drains fast and audio is tinny with zero bass. Two stars because shipping was fast.,1,2.0,0,NEGATIVE,Battery Life
+44,Expected much better from this brand. Battery drains fast and audio is tinny with zero bass. Two stars because shipping was fast. #verifiedpurchase,1,2.0,0,NEGATIVE,Battery Life
+45,"Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative. Hope this review helps someone make up their mind.",1,3.0,4,POSITIVE, Customer Service
+46,"Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative. Would definitely recommend checking it out!",2,3.0,9,POSITIVE, Customer Service
+47,"Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point.",4,5.0,35,POSITIVE, Customer Service
+48,"Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point. #verifiedpurchase",1,5.0,5,POSITIVE, Customer Service
+49,"Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point. Packaging was decent.",4,5.0,13,POSITIVE, Packaging
+50,"Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down!",2,5.0,2,POSITIVE,Battery Life
+51,"Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down! Hope this review helps someone make up their mind.",2,5.0,1,POSITIVE, Customer Service
+52,"Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down! Would definitely recommend checking it out!",3,5.0,41,POSITIVE,Battery Life
+53,Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. #verifiedpurchase,1,5.0,1,POSITIVE,Battery Life
+54,Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Hope this review helps someone make up their mind.,1,5.0,4,POSITIVE, Customer Service
+55,Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Packaging was decent.,2,5.0,5,POSITIVE, Packaging
+56,Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Thanks to the team for the prompt service!,1,5.0,1,POSITIVE, Customer Service
+57,Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Would definitely recommend checking it out!,2,5.0,0,POSITIVE,Battery Life
+58,"Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day. #verifiedpurchase",1,4.0,0,POSITIVE, Customer Service
+59,"Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day. Thanks to the team for the prompt service!",1,4.0,2,POSITIVE, Customer Service
+60,Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase.,1,5.0,0,POSITIVE, Customer Service
+61,Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. #verifiedpurchase,2,5.0,4,POSITIVE, Customer Service
+62,Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. Hope this review helps someone make up their mind.,1,5.0,2,POSITIVE, Customer Service
+63,Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. Packaging was decent.,1,5.0,4,POSITIVE, Customer Service
+64,Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. Thanks to the team for the prompt service!,3,5.0,45,POSITIVE, Customer Service
+65,"Honestly, average product. it gets the job done for everyday basic use, but nothing to write home about. decent value for the budget price.",1,3.0,2,POSITIVE, Customer Service
+66,"Honestly, decent overall, but has noticeable trade-offs. the cord is too short and the instruction booklet is minimal.",1,3.0,3,NEGATIVE, Customer Service
+67,"Honestly, expected much better from this brand. battery drains fast and audio is tinny with zero bass. two stars because shipping was fast.",1,2.0,1,NEGATIVE,Battery Life
+68,"Honestly, fair product. satisfactory for the price point. if you need top-tier reliability, spend more on a premium alternative.",1,3.0,2,POSITIVE, Customer Service
+69,"Honestly, five stars without hesitation! incredible value, intuitive controls, and crystal-clear performance. you cannot beat this at this price point.",1,5.0,0,POSITIVE, Customer Service
+70,"Honestly, game changer! saves me so much time and effort. i have already recommended it to several colleagues and family members.",4,5.0,50,POSITIVE, Customer Service
+71,"Honestly, great value for money. minor learning curve with the controls, but once configured, it has been reliable every day.",4,4.0,9,POSITIVE,Battery Life
+72,"Honestly, highest recommendation! customer support was also fantastic when i had a quick question about settings. 10/10 purchase.",1,5.0,25,POSITIVE, Customer Service
+73,"Honestly, impressive performance for the price. clear sound, crisp buttons, and durable finish. highly recommended for most people.",1,4.0,0,POSITIVE, Customer Service
+74,"Honestly, much better than my previous one. sleek, fast, and intuitive. dropped one star because the companion app occasionally desyncs.",1,4.0,0,POSITIVE,Battery Life
+75,"Honestly, outstanding! exceeded all my expectations. the build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.",1,5.0,0,POSITIVE,Battery Life
+76,"Honestly, remarkable craftsmanship. every detail feels thoughtful and refined. i use it every single day and couldn't be happier with it.",2,5.0,7,POSITIVE, Customer Service
+77,"Honestly, subpar durability. after three weeks of normal use, one side stopped working properly. might work as an emergency backup only.",1,2.0,0,NEGATIVE,Battery Life
+78,"Honestly, very pleased. the build feels premium and it does exactly what i needed it to do. would happily purchase again.",1,4.0,2,POSITIVE, Customer Service
+79,"Honestly, works like a charm! packaging was neat, delivered on time, and functionality meets all my expectations. minor software updates needed.",1,4.0,2,POSITIVE, Packaging
+80,"Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people.",1,4.0,2,POSITIVE, Customer Service
+81,"Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people. Hope this review helps someone make up their mind.",1,4.0,1,POSITIVE, Customer Service
+82,"Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people. Packaging was decent.",2,4.0,10,POSITIVE, Packaging
+83,"Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people. Thanks to the team for the prompt service!",2,4.0,0,POSITIVE, Customer Service
+84,"Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people. Would definitely recommend checking it out!",2,4.0,3,POSITIVE, Customer Service
+85,"It is alright. Some features work really well, while others feel unfinished. You get what you pay for. Packaging was decent.",1,3.0,0,POSITIVE, Packaging
+86,"Looks nice on the desk, but functionally quite lacking. Too many minor glitches and quirks that make daily use annoying. Hope this review helps someone make up their mind.",1,2.0,8,NEGATIVE, Customer Service
+87,"Looks nice on the desk, but functionally quite lacking. Too many minor glitches and quirks that make daily use annoying. Packaging was decent.",1,2.0,2,NEGATIVE, Packaging
+88,"Looks nice on the desk, but functionally quite lacking. Too many minor glitches and quirks that make daily use annoying. Thanks to the team for the prompt service!",1,2.0,3,NEGATIVE, Customer Service
+89,"Looks nice on the desk, but functionally quite lacking. Too many minor glitches and quirks that make daily use annoying. Would definitely recommend checking it out!",1,2.0,2,NEGATIVE, Customer Service
+90,"Mediocre at best. It functions, but feels much cheaper than the pictures suggest. Probably won't last more than a few months. #verifiedpurchase",1,2.0,0,NEGATIVE, Customer Service
+91,"Mediocre at best. It functions, but feels much cheaper than the pictures suggest. Probably won't last more than a few months. Would definitely recommend checking it out!",1,2.0,3,POSITIVE, Customer Service
+92,"Middle-of-the-road purchase. Not terrible, but certainly not impressive. Build is acceptable, performance is passable. #verifiedpurchase",1,3.0,0,POSITIVE, Customer Service
+93,"Middle-of-the-road purchase. Not terrible, but certainly not impressive. Build is acceptable, performance is passable. Thanks to the team for the prompt service!",1,3.0,2,POSITIVE, Customer Service
+94,"Middle-of-the-road purchase. Not terrible, but certainly not impressive. Build is acceptable, performance is passable. Would definitely recommend checking it out!",1,3.0,7,POSITIVE, Customer Service
+95,"Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars. #verifiedpurchase",1,3.0,0,NEGATIVE, Customer Service
+96,"Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars. Packaging was decent.",1,3.0,0,NEGATIVE, Packaging
+97,"Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars. Thanks to the team for the prompt service!",1,3.0,3,NEGATIVE, Customer Service
+98,"Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs.",1,4.0,0,POSITIVE, Customer Service
+99,"Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. #verifiedpurchase",2,4.0,4,POSITIVE, Customer Service
+100,"Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. Hope this review helps someone make up their mind.",2,4.0,1,POSITIVE, Customer Service
+101,"Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. Thanks to the team for the prompt service!",1,4.0,1,POSITIVE, Customer Service
+102,"Not great. Setup was tedious and the companion app kept crashing. Does the bare minimum, but I wouldn't recommend it to friends. Packaging was decent.",1,2.0,3,POSITIVE, Packaging
+103,"Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.",1,5.0,37,POSITIVE,Battery Life
+104,"Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal. #verifiedpurchase",2,5.0,34,POSITIVE,Battery Life
+105,"Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal. Hope this review helps someone make up their mind.",2,5.0,3,POSITIVE,Battery Life
+106,"Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal. Thanks to the team for the prompt service!",2,5.0,9,POSITIVE,Battery Life
+107,"Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal. Would definitely recommend checking it out!",4,5.0,33,POSITIVE,Battery Life
+108,"Poor design, frustrating setup instructions, and constantly disconnects. Avoid at all costs!",1,1.0,2,NEGATIVE, Customer Service
+109,Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day.,1,4.0,1,POSITIVE,Battery Life
+110,Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day. #verifiedpurchase,2,4.0,2,POSITIVE,Battery Life
+111,Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day. Hope this review helps someone make up their mind.,1,4.0,0,POSITIVE,Battery Life
+112,Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day. Packaging was decent.,1,4.0,1,POSITIVE,Battery Life
+113,Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day. Thanks to the team for the prompt service!,1,4.0,0,POSITIVE,Battery Life
+114,Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it.,1,5.0,0,POSITIVE,Battery Life
+115,Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. #verifiedpurchase,3,5.0,15,POSITIVE, Customer Service
+116,Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Hope this review helps someone make up their mind.,2,5.0,5,POSITIVE, Customer Service
+117,Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Packaging was decent.,1,5.0,0,POSITIVE, Packaging
+118,Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Thanks to the team for the prompt service!,1,5.0,0,POSITIVE, Customer Service
+119,Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Would definitely recommend checking it out!,2,5.0,22,POSITIVE, Customer Service
+120,"Review update after 3 months: Average product. It gets the job done for everyday basic use, but nothing to write home about. Decent value for the budget price.",1,3.0,2,POSITIVE, Customer Service
+121,Review update after 3 months: Awful product. Failed right after the return window closed. Classic planned obsolescence. Never buying from this brand again.,1,1.0,44,NEGATIVE, Customer Service
+122,Review update after 3 months: Expected much better from this brand. Battery drains fast and audio is tinny with zero bass. Two stars because shipping was fast.,1,2.0,2,NEGATIVE,Battery Life
+123,"Review update after 3 months: Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative.",1,3.0,0,POSITIVE, Customer Service
+124,"Review update after 3 months: Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point.",2,5.0,2,POSITIVE, Customer Service
+125,"Review update after 3 months: Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down!",1,5.0,1,POSITIVE,Battery Life
+126,Review update after 3 months: Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members.,2,5.0,49,POSITIVE, Customer Service
+127,"Review update after 3 months: Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day.",1,4.0,1,POSITIVE, Customer Service
+128,Review update after 3 months: Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase.,1,5.0,8,POSITIVE, Customer Service
+129,"Review update after 3 months: It is alright. Some features work really well, while others feel unfinished. You get what you pay for.",2,3.0,1,POSITIVE, Customer Service
+130,"Review update after 3 months: Looks nice on the desk, but functionally quite lacking. Too many minor glitches and quirks that make daily use annoying.",1,2.0,0,NEGATIVE, Customer Service
+131,"Review update after 3 months: Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars.",1,3.0,1,NEGATIVE, Customer Service
+132,"Review update after 3 months: Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs.",2,4.0,5,NEGATIVE, Customer Service
+133,"Review update after 3 months: Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.",1,5.0,17,POSITIVE,Battery Life
+134,Review update after 3 months: Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it.,2,5.0,3,POSITIVE,Battery Life
+135,Review update after 3 months: Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short.,1,4.0,3,NEGATIVE,Battery Life
+136,"Review update after 3 months: Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++",1,5.0,0,POSITIVE, Packaging
+137,"Review update after 3 months: Very good product overall! Build quality is solid, setup took five minutes, and it performs reliably. Only minor gripe is the glossy finish which attracts fingerprints.",1,4.0,2,POSITIVE, Customer Service
+138,Review update after 3 months: Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again.,1,4.0,0,POSITIVE, Customer Service
+139,"Review update after 3 months: Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed.",1,4.0,3,POSITIVE, Packaging
+140,"Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered.",4,5.0,5,POSITIVE,Battery Life
+141,"Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. #verifiedpurchase",1,5.0,8,POSITIVE, Customer Service
+142,"Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. Hope this review helps someone make up their mind.",3,5.0,34,POSITIVE, Customer Service
+143,"Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. Packaging was decent.",2,5.0,1,POSITIVE, Packaging
+144,"Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. Thanks to the team for the prompt service!",2,5.0,35,POSITIVE, Customer Service
+145,Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short.,1,4.0,1,NEGATIVE, Customer Service
+146,Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short. #verifiedpurchase,1,4.0,1,NEGATIVE, Customer Service
+147,Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short. Thanks to the team for the prompt service!,1,4.0,0,POSITIVE, Customer Service
+148,Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short. Would definitely recommend checking it out!,1,4.0,1,POSITIVE, Customer Service
+149,"Subpar durability. After three weeks of normal use, one side stopped working properly. Might work as an emergency backup only. Thanks to the team for the prompt service!",1,2.0,0,NEGATIVE, Customer Service
+150,Summary: Awful product. Failed right after the return window closed. Classic planned obsolescence. Never buying from this brand again.,1,1.0,4,NEGATIVE, Customer Service
+151,Summary: Broke on the first attempt to use it. Very fragile materials and feels like a knock-off dollar store item. Huge regret.,1,1.0,0,NEGATIVE, Customer Service
+152,"Summary: Customer service was a nightmare. Product died in a week, and they kept giving me the runaround instead of honoring the warranty.",1,1.0,3,NEGATIVE, Customer Service
+153,Summary: Defective right out of the packaging. The buttons are stiff and don't respond half the time. Regret purchasing this entirely.,1,1.0,3,NEGATIVE, Packaging
+154,"Summary: Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point.",1,5.0,3,POSITIVE, Customer Service
+155,"Summary: Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down!",1,5.0,0,POSITIVE, Customer Service
+156,Summary: Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members.,1,5.0,22,POSITIVE, Customer Service
+157,"Summary: Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs.",2,4.0,2,POSITIVE, Customer Service
+158,"Summary: Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.",1,5.0,0,POSITIVE,Battery Life
+159,Summary: Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it.,2,5.0,8,POSITIVE,Battery Life
+160,"Summary: Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered.",2,5.0,2,POSITIVE,Battery Life
+161,Summary: Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again.,1,4.0,0,POSITIVE, Customer Service
+162,"Summary: Works as described, but feels slightly overpriced for the performance delivered. Good for casual users, not for power users.",1,3.0,0,NEGATIVE, Customer Service
+163,"Summary: Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed.",1,4.0,4,POSITIVE, Packaging
+164,"Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++",1,5.0,32,POSITIVE, Packaging
+165,"Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++ #verifiedpurchase",1,5.0,1,POSITIVE, Packaging
+166,"Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++ Hope this review helps someone make up their mind.",2,5.0,49,POSITIVE, Packaging
+167,"Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++ Packaging was decent.",3,5.0,2,POSITIVE, Packaging
+168,"Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++ Thanks to the team for the prompt service!",1,5.0,1,POSITIVE, Packaging
+169,"Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++ Would definitely recommend checking it out!",2,5.0,5,POSITIVE, Packaging
+170,Underwhelming performance. The main features are buggy and sluggish. It gets lukewarm rather than hot. Not worth the full retail price.,1,2.0,0,NEGATIVE, Customer Service
+171,Underwhelming performance. The main features are buggy and sluggish. It gets lukewarm rather than hot. Not worth the full retail price. Would definitely recommend checking it out!,2,2.0,2,NEGATIVE, Customer Service
+172,"Very good product overall! Build quality is solid, setup took five minutes, and it performs reliably. Only minor gripe is the glossy finish which attracts fingerprints. Packaging was decent.",1,4.0,0,POSITIVE, Packaging
+173,Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again.,1,4.0,3,POSITIVE, Customer Service
+174,Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again. Packaging was decent.,1,4.0,7,POSITIVE, Packaging
+175,Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again. Thanks to the team for the prompt service!,2,4.0,5,POSITIVE, Customer Service
+176,Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again. Would definitely recommend checking it out!,1,4.0,1,POSITIVE, Customer Service
+177,"Works as described, but feels slightly overpriced for the performance delivered. Good for casual users, not for power users. Thanks to the team for the prompt service!",2,3.0,0,NEGATIVE, Customer Service
+178,"Works as described, but feels slightly overpriced for the performance delivered. Good for casual users, not for power users. Would definitely recommend checking it out!",1,3.0,0,NEGATIVE, Customer Service
+179,"Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed.",1,4.0,1,POSITIVE, Packaging
+180,"Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed. Hope this review helps someone make up their mind.",1,4.0,1,POSITIVE, Packaging
+181,"Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed. Packaging was decent.",2,4.0,3,POSITIVE, Packaging
+182,"Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed. Thanks to the team for the prompt service!",1,4.0,0,POSITIVE, Packaging
+183,"Zero stars if I could! Horrible experience, misleading specifications, and worst build quality I have ever seen on Amazon. Hope this review helps someone make up their mind.",1,1.0,0,NEGATIVE, Customer Service
+184,"Zero stars if I could! Horrible experience, misleading specifications, and worst build quality I have ever seen on Amazon. Packaging was decent.",2,1.0,37,NEGATIVE, Packaging
+185,"Zero stars if I could! Horrible experience, misleading specifications, and worst build quality I have ever seen on Amazon. Thanks to the team for the prompt service!",1,1.0,44,NEGATIVE, Customer Service

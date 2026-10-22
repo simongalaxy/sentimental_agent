@@ -1,0 +1,154 @@
+,Review_Text,Total_Reviews,Average_Rating,Total_Helpful_Votes,Sentiment,Category
+0,"Absolute 5-star experience! Our server was knowledgeable, friendly, and timed each dish to perfection. The flavors were vibrant and authentic.",1,5.0,1,POSITIVE,Service
+1,"Absolute 5-star experience! Our server was knowledgeable, friendly, and timed each dish to perfection. The flavors were vibrant and authentic. Hope this review helps someone make up their mind.",4,5.0,44,POSITIVE,Service
+2,"Absolute 5-star experience! Our server was knowledgeable, friendly, and timed each dish to perfection. The flavors were vibrant and authentic. Packaging was decent.",3,5.0,36,POSITIVE,Service
+3,"Absolute 5-star experience! Our server was knowledgeable, friendly, and timed each dish to perfection. The flavors were vibrant and authentic. Thanks to the team for the prompt service!",1,5.0,37,POSITIVE,Service
+4,"Average experience overall. Convenient location and clean space, but parking was a nightmare and wait times were a bit long. Packaging was decent.",1,3.0,8,POSITIVE,Service
+5,"Average experience overall. Convenient location and clean space, but parking was a nightmare and wait times were a bit long. Would definitely recommend checking it out!",1,3.0,2,NEGATIVE,Service
+6,"Average food with very slow service. We waited almost an hour for appetizers. The staff tried hard, but they were clearly understaffed. Hope this review helps someone make up their mind.",2,2.0,1,NEGATIVE,Service
+7,"Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though.",1,4.0,0,POSITIVE,Service
+8,"Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though. #verifiedpurchase",2,4.0,6,POSITIVE,Service
+9,"Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though. Hope this review helps someone make up their mind.",2,4.0,10,POSITIVE,Service
+10,"Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though. Packaging was decent.",2,4.0,15,POSITIVE,Service
+11,"Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though. Thanks to the team for the prompt service!",1,4.0,2,POSITIVE,Service
+12,"Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though. Would definitely recommend checking it out!",1,4.0,0,POSITIVE,Service
+13,"Best coffee in town by a mile! The baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. A 10/10 hidden gem.",1,5.0,0,POSITIVE,Service
+14,"Best coffee in town by a mile! The baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. A 10/10 hidden gem. #verifiedpurchase",2,5.0,3,POSITIVE,Service
+15,"Best coffee in town by a mile! The baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. A 10/10 hidden gem. Hope this review helps someone make up their mind.",1,5.0,9,POSITIVE,Service
+16,"Best coffee in town by a mile! The baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. A 10/10 hidden gem. Packaging was decent.",2,5.0,0,POSITIVE,Service
+17,"Best coffee in town by a mile! The baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. A 10/10 hidden gem. Thanks to the team for the prompt service!",2,5.0,20,POSITIVE,Service
+18,"Best coffee in town by a mile! The baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. A 10/10 hidden gem. Would definitely recommend checking it out!",2,5.0,2,POSITIVE,Service
+19,"Bought this recently. Absolute 5-star experience! Our server was knowledgeable, friendly, and timed each dish to perfection. The flavors were vibrant and authentic.",4,5.0,81,POSITIVE,Service
+20,"Bought this recently. Average food with very slow service. We waited almost an hour for appetizers. The staff tried hard, but they were clearly understaffed.",2,2.0,6,NEGATIVE,Service
+21,"Bought this recently. Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though.",1,4.0,5,POSITIVE,Service
+22,Bought this recently. Customer service was lackadaisical. Took forever to get the bill and nobody checked in on our table after serving the entrees.,1,2.0,1,NEGATIVE,Service
+23,"Bought this recently. Decent spot, nothing extraordinary. The food was okay, service was acceptable, and the prices were fair for the neighborhood.",1,3.0,0,POSITIVE,Service
+24,"Bought this recently. Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly.",4,5.0,4,POSITIVE,Service
+25,"Bought this recently. Extremely unprofessional. Had an appointment booked two weeks in advance, waited 45 minutes past the scheduled time, and was treated rudely by reception.",1,1.0,0,NEGATIVE,Service
+26,Bought this recently. Great atmosphere and delicious food! The pasta was freshly handmade and the wine selection was impressive. Service was attentive and friendly.,1,4.0,0,POSITIVE,Service
+27,"Bought this recently. Great meal with friends. Flavorful dishes, generous portions, and vibrant vibe. Only knock was the slightly elevated noise level.",3,4.0,7,POSITIVE, Flavors
+28,Bought this recently. Incompetent staff and zero accountability. They ruined my reservation and didn't even apologize. Ruined our anniversary evening.,1,1.0,3,NEGATIVE,Service
+29,"Bought this recently. Never coming back here! The staff was dismissive, the room smelled of damp mold, and the AC was broken during a heatwave. Disastrous stay.",2,1.0,7,NEGATIVE,Service
+30,"Bought this recently. Not worth the hype or the high prices. Decent location, but the amenities are outdated and the rooms need urgent renovation.",1,2.0,7,NEGATIVE, Pricing
+31,"Bought this recently. Okay place for a quick stop. Ambience is nice, though the seating is cramped during peak hours. Decent value for money.",2,3.0,1,POSITIVE,Service
+32,"Bought this recently. Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic!",2,5.0,4,POSITIVE,Service
+33,"Bought this recently. Overpriced and incredibly underwhelming. The portions were tiny, tasteless, and our orders were mixed up twice. Do not recommend.",1,1.0,1,NEGATIVE, Pricing
+34,"Bought this recently. Phenomenal dining experience! Every course was a culinary masterpiece, the service was impeccable, and the ambience was magical. Best restaurant in the city!",4,5.0,7,POSITIVE,Service
+35,Bought this recently. Wonderful experience overall. The staff was courteous and accommodating. The rooms were spotless and nicely appointed. Will visit again.,1,4.0,0,POSITIVE,Service
+36,"Bought this recently. Worst dining experience of my life. The server was rude, food took over an hour to arrive, and when it did, the steak was cold and burnt.",1,1.0,0,NEGATIVE,Service
+37,Customer service was lackadaisical. Took forever to get the bill and nobody checked in on our table after serving the entrees. #verifiedpurchase,1,2.0,0,NEGATIVE,Service
+38,Customer service was lackadaisical. Took forever to get the bill and nobody checked in on our table after serving the entrees. Would definitely recommend checking it out!,1,2.0,0,NEGATIVE,Service
+39,"Decent spot, nothing extraordinary. The food was okay, service was acceptable, and the prices were fair for the neighborhood. #verifiedpurchase",1,3.0,7,POSITIVE,Service
+40,"Decent spot, nothing extraordinary. The food was okay, service was acceptable, and the prices were fair for the neighborhood. Packaging was decent.",1,3.0,0,POSITIVE,Service
+41,"Decent spot, nothing extraordinary. The food was okay, service was acceptable, and the prices were fair for the neighborhood. Would definitely recommend checking it out!",2,3.0,5,POSITIVE,Service
+42,"Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly.",2,5.0,28,POSITIVE,Service
+43,"Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly. #verifiedpurchase",2,5.0,0,POSITIVE,Service
+44,"Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly. Hope this review helps someone make up their mind.",1,5.0,2,POSITIVE,Service
+45,"Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly. Packaging was decent.",3,5.0,3,POSITIVE,Service
+46,"Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly. Thanks to the team for the prompt service!",2,5.0,36,POSITIVE,Service
+47,"Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly. Would definitely recommend checking it out!",1,5.0,20,POSITIVE,Service
+48,"Extremely unprofessional. Had an appointment booked two weeks in advance, waited 45 minutes past the scheduled time, and was treated rudely by reception.",1,1.0,0,NEGATIVE,Service
+49,"Extremely unprofessional. Had an appointment booked two weeks in advance, waited 45 minutes past the scheduled time, and was treated rudely by reception. Thanks to the team for the prompt service!",1,1.0,34,NEGATIVE,Service
+50,"Fair experience. Room was adequately clean and bed was fine, but breakfast options were sparse and wifi was somewhat spotty. #verifiedpurchase",1,3.0,1,NEGATIVE,Service
+51,"Fair experience. Room was adequately clean and bed was fine, but breakfast options were sparse and wifi was somewhat spotty. Thanks to the team for the prompt service!",2,3.0,3,NEGATIVE,Service
+52,Great atmosphere and delicious food! The pasta was freshly handmade and the wine selection was impressive. Service was attentive and friendly. Would definitely recommend checking it out!,2,4.0,1,POSITIVE,Service
+53,"Great meal with friends. Flavorful dishes, generous portions, and vibrant vibe. Only knock was the slightly elevated noise level.",2,4.0,0,POSITIVE, Flavors
+54,"Great meal with friends. Flavorful dishes, generous portions, and vibrant vibe. Only knock was the slightly elevated noise level. #verifiedpurchase",1,4.0,7,POSITIVE, Flavors
+55,"Great meal with friends. Flavorful dishes, generous portions, and vibrant vibe. Only knock was the slightly elevated noise level. Packaging was decent.",1,4.0,4,POSITIVE, Flavors
+56,"Great meal with friends. Flavorful dishes, generous portions, and vibrant vibe. Only knock was the slightly elevated noise level. Thanks to the team for the prompt service!",2,4.0,1,POSITIVE, Flavors
+57,"Great meal with friends. Flavorful dishes, generous portions, and vibrant vibe. Only knock was the slightly elevated noise level. Would definitely recommend checking it out!",1,4.0,3,POSITIVE, Flavors
+58,"High quality service and clean facilities. Doctor and nurses were thorough, gentle, and answered all my questions patiently.",2,4.0,2,POSITIVE,Service
+59,"High quality service and clean facilities. Doctor and nurses were thorough, gentle, and answered all my questions patiently. Thanks to the team for the prompt service!",1,4.0,5,POSITIVE,Service
+60,"High quality service and clean facilities. Doctor and nurses were thorough, gentle, and answered all my questions patiently. Would definitely recommend checking it out!",2,4.0,2,POSITIVE,Service
+61,"Honestly, absolute 5-star experience! our server was knowledgeable, friendly, and timed each dish to perfection. the flavors were vibrant and authentic.",2,5.0,31,POSITIVE,Service
+62,"Honestly, average experience overall. convenient location and clean space, but parking was a nightmare and wait times were a bit long.",1,3.0,0,NEGATIVE,Service
+63,"Honestly, beautiful spot for an evening stroll. well-maintained pathways, lovely landscaping, and safe environment for families. parking fills up quickly though.",3,4.0,2,POSITIVE,Service
+64,"Honestly, best coffee in town by a mile! the baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. a 10/10 hidden gem.",3,5.0,40,POSITIVE,Service
+65,"Honestly, disappointing visit. the ambiance is charming, but the food was bland and lukewarm. service was sluggish throughout the evening.",1,2.0,0,NEGATIVE,Service
+66,"Honestly, exceptional service from check-in to departure. the staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly.",3,5.0,24,POSITIVE,Service
+67,"Honestly, fair experience. room was adequately clean and bed was fine, but breakfast options were sparse and wifi was somewhat spotty.",1,3.0,0,NEGATIVE,Service
+68,"Honestly, great meal with friends. flavorful dishes, generous portions, and vibrant vibe. only knock was the slightly elevated noise level.",1,4.0,3,POSITIVE, Flavors
+69,"Honestly, high quality service and clean facilities. doctor and nurses were thorough, gentle, and answered all my questions patiently.",1,4.0,0,POSITIVE,Service
+70,"Honestly, incredible place to visit! breathtaking flora, immaculately manicured gardens, and peaceful tranquility. truly an oasis in the city.",1,5.0,0,POSITIVE,Service
+71,"Honestly, overpriced and incredibly underwhelming. the portions were tiny, tasteless, and our orders were mixed up twice. do not recommend.",1,1.0,6,NEGATIVE, Pricing
+72,"Honestly, phenomenal dining experience! every course was a culinary masterpiece, the service was impeccable, and the ambience was magical. best restaurant in the city!",2,5.0,2,POSITIVE,Service
+73,"Honestly, very enjoyable visit. loved the artisan coffee and freshly baked pastries. a wonderful quiet corner to read or get work done.",1,4.0,1,POSITIVE,Service
+74,"Honestly, world-class care and professionalism. the staff went above and beyond to make me feel comfortable and at ease. cannot recommend highly enough!",2,5.0,9,POSITIVE,Service
+75,"Horrible service. Waited 20 minutes just to get water, and our waiter vanished for the rest of the evening. Never stepping foot here again.",1,1.0,1,NEGATIVE,Service
+76,"Horrible service. Waited 20 minutes just to get water, and our waiter vanished for the rest of the evening. Never stepping foot here again. #verifiedpurchase",1,1.0,2,NEGATIVE,Service
+77,"Horrible service. Waited 20 minutes just to get water, and our waiter vanished for the rest of the evening. Never stepping foot here again. Would definitely recommend checking it out!",2,1.0,15,NEGATIVE,Service
+78,Incompetent staff and zero accountability. They ruined my reservation and didn't even apologize. Ruined our anniversary evening. Packaging was decent.,1,1.0,1,POSITIVE,Service
+79,"Incredible place to visit! Breathtaking flora, immaculately manicured gardens, and peaceful tranquility. Truly an oasis in the city.",1,5.0,3,POSITIVE,Service
+80,"Incredible place to visit! Breathtaking flora, immaculately manicured gardens, and peaceful tranquility. Truly an oasis in the city. #verifiedpurchase",4,5.0,16,POSITIVE,Service
+81,"Incredible place to visit! Breathtaking flora, immaculately manicured gardens, and peaceful tranquility. Truly an oasis in the city. Hope this review helps someone make up their mind.",3,5.0,1,POSITIVE,Service
+82,"Incredible place to visit! Breathtaking flora, immaculately manicured gardens, and peaceful tranquility. Truly an oasis in the city. Packaging was decent.",2,5.0,0,POSITIVE,Service
+83,"Incredible place to visit! Breathtaking flora, immaculately manicured gardens, and peaceful tranquility. Truly an oasis in the city. Would definitely recommend checking it out!",2,5.0,8,POSITIVE,Service
+84,Mediocre stay. Cleanliness was questionable and the bed was uncomfortable. Would look for alternative options next time in town. Packaging was decent.,1,2.0,2,POSITIVE,Service
+85,"Mixed impression. The appetizers were delightful, but the main courses felt hurried and lacked seasoning. Helpful staff though.",1,3.0,2,NEGATIVE,Service
+86,"Mixed impression. The appetizers were delightful, but the main courses felt hurried and lacked seasoning. Helpful staff though. Thanks to the team for the prompt service!",1,3.0,0,NEGATIVE,Service
+87,"Not worth the hype or the high prices. Decent location, but the amenities are outdated and the rooms need urgent renovation.",1,2.0,5,NEGATIVE, Pricing
+88,"Not worth the hype or the high prices. Decent location, but the amenities are outdated and the rooms need urgent renovation. #verifiedpurchase",1,2.0,1,NEGATIVE, Pricing
+89,"Okay place for a quick stop. Ambience is nice, though the seating is cramped during peak hours. Decent value for money.",2,3.0,0,POSITIVE,Service
+90,"Okay place for a quick stop. Ambience is nice, though the seating is cramped during peak hours. Decent value for money. Hope this review helps someone make up their mind.",2,3.0,3,POSITIVE, Pricing
+91,"Okay place for a quick stop. Ambience is nice, though the seating is cramped during peak hours. Decent value for money. Thanks to the team for the prompt service!",1,3.0,0,POSITIVE,Service
+92,"Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic!",1,5.0,3,POSITIVE,Service
+93,"Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic! #verifiedpurchase",1,5.0,13,POSITIVE,Service
+94,"Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic! Hope this review helps someone make up their mind.",1,5.0,40,POSITIVE,Service
+95,"Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic! Packaging was decent.",3,5.0,5,POSITIVE,Service
+96,"Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic! Thanks to the team for the prompt service!",1,5.0,3,POSITIVE,Service
+97,"Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic! Would definitely recommend checking it out!",3,5.0,10,POSITIVE,Service
+98,"Overpriced and incredibly underwhelming. The portions were tiny, tasteless, and our orders were mixed up twice. Do not recommend.",1,1.0,8,NEGATIVE, Pricing
+99,"Overpriced and incredibly underwhelming. The portions were tiny, tasteless, and our orders were mixed up twice. Do not recommend. #verifiedpurchase",1,1.0,44,NEGATIVE, Pricing
+100,"Overpriced and incredibly underwhelming. The portions were tiny, tasteless, and our orders were mixed up twice. Do not recommend. Would definitely recommend checking it out!",1,1.0,5,NEGATIVE, Pricing
+101,"Phenomenal dining experience! Every course was a culinary masterpiece, the service was impeccable, and the ambience was magical. Best restaurant in the city!",3,5.0,49,POSITIVE,Service
+102,"Phenomenal dining experience! Every course was a culinary masterpiece, the service was impeccable, and the ambience was magical. Best restaurant in the city! Packaging was decent.",2,5.0,3,POSITIVE,Service
+103,"Phenomenal dining experience! Every course was a culinary masterpiece, the service was impeccable, and the ambience was magical. Best restaurant in the city! Thanks to the team for the prompt service!",1,5.0,1,POSITIVE,Service
+104,"Review update after 3 months: Absolute 5-star experience! Our server was knowledgeable, friendly, and timed each dish to perfection. The flavors were vibrant and authentic.",2,5.0,6,POSITIVE,Service
+105,"Review update after 3 months: Best coffee in town by a mile! The baristas are true craftsmen, beans are freshly roasted, and the avocado toast was divine. A 10/10 hidden gem.",1,5.0,1,POSITIVE,Service
+106,"Review update after 3 months: Decent spot, nothing extraordinary. The food was okay, service was acceptable, and the prices were fair for the neighborhood.",3,3.0,10,POSITIVE,Service
+107,"Review update after 3 months: Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly.",2,5.0,3,POSITIVE,Service
+108,"Review update after 3 months: Extremely unprofessional. Had an appointment booked two weeks in advance, waited 45 minutes past the scheduled time, and was treated rudely by reception.",1,1.0,6,NEGATIVE,Service
+109,"Review update after 3 months: Great meal with friends. Flavorful dishes, generous portions, and vibrant vibe. Only knock was the slightly elevated noise level.",2,4.0,9,POSITIVE, Flavors
+110,"Review update after 3 months: High quality service and clean facilities. Doctor and nurses were thorough, gentle, and answered all my questions patiently.",1,4.0,0,POSITIVE,Service
+111,"Review update after 3 months: Horrible service. Waited 20 minutes just to get water, and our waiter vanished for the rest of the evening. Never stepping foot here again.",1,1.0,2,NEGATIVE,Service
+112,"Review update after 3 months: Incredible place to visit! Breathtaking flora, immaculately manicured gardens, and peaceful tranquility. Truly an oasis in the city.",1,5.0,4,POSITIVE,Service
+113,"Review update after 3 months: Never coming back here! The staff was dismissive, the room smelled of damp mold, and the AC was broken during a heatwave. Disastrous stay.",1,1.0,1,NEGATIVE,Service
+114,"Review update after 3 months: Outstanding service and honest pricing. They diagnosed my car issue accurately, fixed it within hours, and charged less than estimated. Found my forever mechanic!",1,5.0,0,POSITIVE,Service
+115,"Review update after 3 months: Overpriced and incredibly underwhelming. The portions were tiny, tasteless, and our orders were mixed up twice. Do not recommend.",1,1.0,35,NEGATIVE, Pricing
+116,"Review update after 3 months: Phenomenal dining experience! Every course was a culinary masterpiece, the service was impeccable, and the ambience was magical. Best restaurant in the city!",2,5.0,0,POSITIVE,Service
+117,Review update after 3 months: Very enjoyable visit. Loved the artisan coffee and freshly baked pastries. A wonderful quiet corner to read or get work done.,3,4.0,2,POSITIVE,Service
+118,Review update after 3 months: Wonderful experience overall. The staff was courteous and accommodating. The rooms were spotless and nicely appointed. Will visit again.,1,4.0,2,POSITIVE,Service
+119,"Review update after 3 months: Worst dining experience of my life. The server was rude, food took over an hour to arrive, and when it did, the steak was cold and burnt.",1,1.0,0,NEGATIVE,Service
+120,"Summary: Absolute 5-star experience! Our server was knowledgeable, friendly, and timed each dish to perfection. The flavors were vibrant and authentic.",1,5.0,4,POSITIVE,Service
+121,"Summary: Beautiful spot for an evening stroll. Well-maintained pathways, lovely landscaping, and safe environment for families. Parking fills up quickly though.",1,4.0,2,POSITIVE,Service
+122,"Summary: Exceptional service from check-in to departure. The staff treated us like royalty, the suite was gorgeous with breathtaking views, and the spa was heavenly.",1,5.0,1,POSITIVE,Service
+123,"Summary: Incredible place to visit! Breathtaking flora, immaculately manicured gardens, and peaceful tranquility. Truly an oasis in the city.",2,5.0,26,POSITIVE,Service
+124,Summary: Mediocre stay. Cleanliness was questionable and the bed was uncomfortable. Would look for alternative options next time in town.,1,2.0,0,NEGATIVE,Service
+125,"Summary: Mixed impression. The appetizers were delightful, but the main courses felt hurried and lacked seasoning. Helpful staff though.",1,3.0,1,NEGATIVE,Service
+126,"Summary: Okay place for a quick stop. Ambience is nice, though the seating is cramped during peak hours. Decent value for money.",1,3.0,1,POSITIVE,Service
+127,"Summary: Overpriced and incredibly underwhelming. The portions were tiny, tasteless, and our orders were mixed up twice. Do not recommend.",1,1.0,0,NEGATIVE, Pricing
+128,"Summary: Phenomenal dining experience! Every course was a culinary masterpiece, the service was impeccable, and the ambience was magical. Best restaurant in the city!",2,5.0,16,POSITIVE,Service
+129,Summary: World-class care and professionalism. The staff went above and beyond to make me feel comfortable and at ease. Cannot recommend highly enough!,3,5.0,11,POSITIVE,Service
+130,Terrible hygiene and filthy tables. Saw flies around the counter and the bathroom had no soap or paper towels. Health department needs to inspect this.,2,1.0,2,NEGATIVE,Service
+131,Terrible hygiene and filthy tables. Saw flies around the counter and the bathroom had no soap or paper towels. Health department needs to inspect this. #verifiedpurchase,1,1.0,7,NEGATIVE,Service
+132,"Total rip-off. Paid premium prices expecting quality service, but received negligent attention and sub-par quality. Stay far away.",2,1.0,5,NEGATIVE,Service
+133,"Total rip-off. Paid premium prices expecting quality service, but received negligent attention and sub-par quality. Stay far away. Packaging was decent.",1,1.0,1,NEGATIVE,Service
+134,"Underwhelming experience. The place looks great on social media, but reality falls short. Portions are small and flavors are muted.",1,2.0,1,NEGATIVE, Flavors
+135,"Underwhelming experience. The place looks great on social media, but reality falls short. Portions are small and flavors are muted. #verifiedpurchase",1,2.0,2,NEGATIVE, Flavors
+136,Very enjoyable visit. Loved the artisan coffee and freshly baked pastries. A wonderful quiet corner to read or get work done.,1,4.0,2,POSITIVE,Service
+137,Very enjoyable visit. Loved the artisan coffee and freshly baked pastries. A wonderful quiet corner to read or get work done. #verifiedpurchase,1,4.0,1,POSITIVE,Service
+138,Very enjoyable visit. Loved the artisan coffee and freshly baked pastries. A wonderful quiet corner to read or get work done. Hope this review helps someone make up their mind.,1,4.0,13,POSITIVE,Service
+139,Very enjoyable visit. Loved the artisan coffee and freshly baked pastries. A wonderful quiet corner to read or get work done. Thanks to the team for the prompt service!,2,4.0,4,POSITIVE,Service
+140,Very enjoyable visit. Loved the artisan coffee and freshly baked pastries. A wonderful quiet corner to read or get work done. Would definitely recommend checking it out!,1,4.0,0,POSITIVE,Service
+141,Wonderful experience overall. The staff was courteous and accommodating. The rooms were spotless and nicely appointed. Will visit again.,2,4.0,1,POSITIVE,Service
+142,Wonderful experience overall. The staff was courteous and accommodating. The rooms were spotless and nicely appointed. Will visit again. #verifiedpurchase,1,4.0,0,POSITIVE,Service
+143,Wonderful experience overall. The staff was courteous and accommodating. The rooms were spotless and nicely appointed. Will visit again. Thanks to the team for the prompt service!,1,4.0,3,POSITIVE,Service
+144,Wonderful experience overall. The staff was courteous and accommodating. The rooms were spotless and nicely appointed. Will visit again. Would definitely recommend checking it out!,2,4.0,4,POSITIVE,Service
+145,World-class care and professionalism. The staff went above and beyond to make me feel comfortable and at ease. Cannot recommend highly enough!,3,5.0,7,POSITIVE,Service
+146,World-class care and professionalism. The staff went above and beyond to make me feel comfortable and at ease. Cannot recommend highly enough! #verifiedpurchase,1,5.0,0,POSITIVE,Service
+147,World-class care and professionalism. The staff went above and beyond to make me feel comfortable and at ease. Cannot recommend highly enough! Hope this review helps someone make up their mind.,2,5.0,3,POSITIVE,Service
+148,World-class care and professionalism. The staff went above and beyond to make me feel comfortable and at ease. Cannot recommend highly enough! Packaging was decent.,3,5.0,26,POSITIVE,Service
+149,World-class care and professionalism. The staff went above and beyond to make me feel comfortable and at ease. Cannot recommend highly enough! Thanks to the team for the prompt service!,3,5.0,2,POSITIVE,Service
+150,World-class care and professionalism. The staff went above and beyond to make me feel comfortable and at ease. Cannot recommend highly enough! Would definitely recommend checking it out!,2,5.0,3,POSITIVE,Service
+151,"Worst dining experience of my life. The server was rude, food took over an hour to arrive, and when it did, the steak was cold and burnt. Hope this review helps someone make up their mind.",3,1.0,39,NEGATIVE,Service
+152,"Worst dining experience of my life. The server was rude, food took over an hour to arrive, and when it did, the steak was cold and burnt. Would definitely recommend checking it out!",1,1.0,3,NEGATIVE,Service
