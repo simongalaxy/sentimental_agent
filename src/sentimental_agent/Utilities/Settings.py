@@ -29,7 +29,15 @@ class Settings(BaseSettings):
     sentimental_model: str
     categorizier_model: str
     labeller_model: str
-    
+
+    # ollama cloud settings.
+    cloud_model: str
+    cloud_api_key: str
+    cloud_host: str
+
+    # ollama local settings.
+    local_model: str
+    local_host: str
 
     # pydantic settings config.
     model_config = SettingsConfigDict(

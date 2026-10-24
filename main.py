@@ -6,6 +6,7 @@ from src.sentimental_agent.Utilities.Logger import Logger
 from src.sentimental_agent.DataProcessor.DataProcessor import load_and_prepare_datasets, save_df_to_csv
 from src.sentimental_agent.Sentimental.SentimentalClassifier import SentimentalClassifier
 from src.sentimental_agent.Categorizer.ViewCategorizer import ViewCategorizer
+from src.sentimental_agent.LLM_Agent.LLMAgent import LLMAgent
 
 
 def main():
@@ -16,14 +17,12 @@ def main():
     logger = Logger(__name__).get_logger()
     senti_classifer = SentimentalClassifier(logger=logger)
     categorizer = ViewCategorizer(logger=logger)
+    agent = LLMAgent(logger=logger)
 
     # Load and Prepare data.
-    source_filename = settings.source_filename
-    source_folderpath = settings.source_folderpath
-
     profiles = load_and_prepare_datasets(
-        filename=source_filename, 
-        folderpath=source_folderpath, 
+        filename=settings.source_filename, 
+        folderpath=settings.source_folderpath, 
         logger=logger
         )
 
@@ -54,8 +53,18 @@ def main():
             folderpath=settings.processed_files_folderPath, 
             logger=logger
             )
+        logger.info(f"Data preparation completed.")
+
+        # obtain summary of views.
+        
+
+
+        # obtain insights.
+
+
+        
+
     
-    logger.info(f"Data preparation completed.")
 
     # Analysis
 
