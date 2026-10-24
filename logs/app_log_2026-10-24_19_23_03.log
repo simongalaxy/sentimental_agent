@@ -1,0 +1,843 @@
+2026-10-24 19:23:03 - __main__ - INFO - Class Logger initiated.
+2026-10-24 19:23:03 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:23:04 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 200 OK"
+2026-10-24 19:23:04 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:23:04 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-24 19:23:05 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:23:05 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-24 19:23:05 - __main__ - INFO - FilePaths in folder - ./data/Processed_files: 
+['data/Processed_files/Amazon_Ninja_Air_Fryer_Pro_XL_Processed.csv', 'data/Processed_files/Google_Locations_Urban_Yoga_&_Wellness_Studio_Processed.csv', 'data/Processed_files/Google_Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed.csv', 'data/Processed_files/Google_Locations_Highland_Public_Library_&_Cultural_Center_Processed.csv', 'data/Processed_files/Google_Locations_City_View_Botanical_Gardens_&_Park_Processed.csv', 'data/Processed_files/Google_Locations_Precision_Auto_Mechanics_&_Body_Works_Processed.csv', "data/Processed_files/Amazon_Men's_Lightweight_Breathable_Running_Shoes_Processed.csv", 'data/Processed_files/Google_Locations_Golden_Dragon_Dim_Sum_Palace_Processed.csv', 'data/Processed_files/Google_Locations_Bella_Italia_Trattoria_Processed.csv', 'data/Processed_files/Amazon_Logitech_MX_Master_3S_Wireless_Mouse_Processed.csv', 'data/Processed_files/Amazon_Deep_Learning_with_Python_by_Francois_Chollet_Processed.csv', "data/Processed_files/Amazon_Columbia_Men's_Watertight_II_Rain_Jacket_Processed.csv", 'data/Processed_files/Google_Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed.csv', 'data/Processed_files/Amazon_Anker_65W_GaN_Fast_Charger_Processed.csv', 'data/Processed_files/Amazon_Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed.csv', 'data/Processed_files/Amazon_Atomic_Habits_by_James_Clear_Processed.csv', 'data/Processed_files/Amazon_Kindle_Paperwhite_(16_GB)_Processed.csv', 'data/Processed_files/Google_Locations_Sakura_Japanese_Sushi_&_Ramen_Processed.csv', 'data/Processed_files/Amazon_Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed.csv', 'data/Processed_files/Google_Locations_Metropolitan_Dental_Health_Clinic_Processed.csv', 'data/Processed_files/Google_Locations_Central_City_Fitness_&_CrossFit_Processed.csv', 'data/Processed_files/Amazon_Bedsure_Cooling_Bamboo_Bed_Sheets_Processed.csv', 'data/Processed_files/Amazon_Echo_Dot_Smart_Speaker_Processed.csv', 'data/Processed_files/Google_Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed.csv', 'data/Processed_files/Amazon_Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed.csv']
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE  Quality
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE  Quality
+2           2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE  Quality
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE  Quality
+4           4  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE  Quality
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Ninja_Air_Fryer_Pro_XL_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0             0  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE       Quality
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE       Quality
+2             2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE       Quality
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE       Quality
+4             4  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE       Quality
+..          ...                                                ...            ...             ...                  ...       ...           ...
+165         165  Works as described, but feels slightly overpri...              1             3.0                    1  NEGATIVE   Performance
+166         166  Works as described, but feels slightly overpri...              1             3.0                    2  POSITIVE   Performance
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE       Quality
+168         168  Works like a charm! Packaging was neat, delive...              2             4.0                    4  POSITIVE       Quality
+169         169  Works like a charm! Packaging was neat, delive...              3             4.0                    3  POSITIVE       Quality
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (162, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+2           2  Absolute 5-star experience! Our server was kno...              3             5.0                   27  POSITIVE  Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+4           4  Average experience overall. Convenient locatio...              1             3.0                    1  NEGATIVE  Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Urban_Yoga_&_Wellness_Studio_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+2             2  Absolute 5-star experience! Our server was kno...              3             5.0                   27  POSITIVE  Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+4             4  Average experience overall. Convenient locatio...              1             3.0                    1  NEGATIVE  Service
+..          ...                                                ...            ...             ...                  ...       ...      ...
+157         157  Wonderful experience overall. The staff was co...              2             4.0                    2  POSITIVE  Service
+158         158  World-class care and professionalism. The staf...              2             5.0                    1  POSITIVE  Service
+159         159  World-class care and professionalism. The staf...              1             5.0                    2  POSITIVE  Service
+160         160  World-class care and professionalism. The staf...              2             5.0                   11  POSITIVE  Service
+161         161  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE  Service
+
+[162 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (145, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE  Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+4           4  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE  Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE  Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+4             4  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE  Service
+..          ...                                                ...            ...             ...                  ...       ...      ...
+140         140  World-class care and professionalism. The staf...              4             5.0                   55  POSITIVE  Service
+141         141  World-class care and professionalism. The staf...              1             5.0                    2  POSITIVE  Service
+142         142  Worst dining experience of my life. The server...              1             1.0                   31  NEGATIVE  Service
+143         143  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE  Service
+144         144  Worst dining experience of my life. The server...              2             1.0                   36  NEGATIVE  Service
+
+[145 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (149, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4           4  Average experience overall. Convenient locatio...              1             3.0                    0  NEGATIVE       Battery Life
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Highland_Public_Library_&_Cultural_Center_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4             4  Average experience overall. Convenient locatio...              1             3.0                    0  NEGATIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+144         144  Wonderful experience overall. The staff was co...              1             4.0                    4  POSITIVE   Customer Service
+145         145  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+146         146  World-class care and professionalism. The staf...              1             5.0                   46  POSITIVE   Customer Service
+147         147  World-class care and professionalism. The staf...              2             5.0                    1  POSITIVE   Customer Service
+148         148  Worst dining experience of my life. The server...              1             1.0                    1  NEGATIVE   Customer Service
+
+[149 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (152, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment         Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+1           1  Absolute 5-star experience! Our server was kno...              3             5.0                    7  POSITIVE     Food Quality
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Staff Attitude
+4           4  Absolute 5-star experience! Our server was kno...              6             5.0                    7  POSITIVE     Food Quality
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_City_View_Botanical_Gardens_&_Park_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment         Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+1             1  Absolute 5-star experience! Our server was kno...              3             5.0                    7  POSITIVE     Food Quality
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Staff Attitude
+4             4  Absolute 5-star experience! Our server was kno...              6             5.0                    7  POSITIVE     Food Quality
+..          ...                                                ...            ...             ...                  ...       ...              ...
+147         147  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Staff Attitude
+148         148  World-class care and professionalism. The staf...              3             5.0                    4  POSITIVE   Staff Attitude
+149         149  World-class care and professionalism. The staf...              4             5.0                   20  POSITIVE   Staff Attitude
+150         150  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Staff Attitude
+151         151  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Service Issues
+
+[152 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1           1  Absolute 5-star experience! Our server was kno...              4             5.0                   44  POSITIVE  Service
+2           2  Absolute 5-star experience! Our server was kno...              3             5.0                   36  POSITIVE  Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                   37  POSITIVE  Service
+4           4  Average experience overall. Convenient locatio...              1             3.0                    8  POSITIVE  Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Precision_Auto_Mechanics_&_Body_Works_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1             1  Absolute 5-star experience! Our server was kno...              4             5.0                   44  POSITIVE  Service
+2             2  Absolute 5-star experience! Our server was kno...              3             5.0                   36  POSITIVE  Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                   37  POSITIVE  Service
+4             4  Average experience overall. Convenient locatio...              1             3.0                    8  POSITIVE  Service
+..          ...                                                ...            ...             ...                  ...       ...      ...
+148         148  World-class care and professionalism. The staf...              3             5.0                   26  POSITIVE  Service
+149         149  World-class care and professionalism. The staf...              3             5.0                    2  POSITIVE  Service
+150         150  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE  Service
+151         151  Worst dining experience of my life. The server...              3             1.0                   39  NEGATIVE  Service
+152         152  Worst dining experience of my life. The server...              1             1.0                    3  NEGATIVE  Service
+
+[153 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (172, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE   Quality
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE   Quality
+2           2  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Quality
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    6  POSITIVE   Quality
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE   Quality
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': "Men's_Lightweight_Breathable_Running_Shoes_Processed", 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE   Quality
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE   Quality
+2             2  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Quality
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    6  POSITIVE   Quality
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE   Quality
+..          ...                                                ...            ...             ...                  ...       ...       ...
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    4  POSITIVE   Quality
+168         168  Works like a charm! Packaging was neat, delive...              1             4.0                    7  POSITIVE   Quality
+169         169  Works like a charm! Packaging was neat, delive...              1             4.0                    2  POSITIVE   Quality
+170         170  Zero stars if I could! Horrible experience, mi...              2             1.0                   38  NEGATIVE   Quality
+171         171  Zero stars if I could! Horrible experience, mi...              1             1.0                    3  NEGATIVE   Quality
+
+[172 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (144, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                    5  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              4             5.0                    6  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              3             5.0                    6  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              3             5.0                   39  POSITIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Golden_Dragon_Dim_Sum_Palace_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                    5  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              4             5.0                    6  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              3             5.0                    6  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              3             5.0                   39  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+139         139  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+140         140  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+141         141  World-class care and professionalism. The staf...              4             5.0                  102  POSITIVE   Customer Service
+142         142  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Customer Service
+143         143  Worst dining experience of my life. The server...              1             1.0                    4  NEGATIVE   Customer Service
+
+[144 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (155, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment          Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                   40  POSITIVE      Food Quality
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE      Food Quality
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                    8  POSITIVE  Customer Service
+4           4  Average experience overall. Convenient locatio...              2             3.0                    0  NEGATIVE  Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Bella_Italia_Trattoria_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment          Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                   40  POSITIVE      Food Quality
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE      Food Quality
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                    8  POSITIVE  Customer Service
+4             4  Average experience overall. Convenient locatio...              2             3.0                    0  NEGATIVE  Customer Service
+..          ...                                                ...            ...             ...                  ...       ...               ...
+150         150  World-class care and professionalism. The staf...              1             5.0                    3  POSITIVE  Customer Service
+151         151  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE  Customer Service
+152         152  World-class care and professionalism. The staf...              2             5.0                    5  POSITIVE  Customer Service
+153         153  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE      Food Quality
+154         154  Worst dining experience of my life. The server...              1             1.0                    4  NEGATIVE  Customer Service
+
+[155 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (180, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   26  POSITIVE   Customer Service
+3           3  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Customer Service
+4           4  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE            Pricing
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Logitech_MX_Master_3S_Wireless_Mouse_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   26  POSITIVE   Customer Service
+3             3  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Customer Service
+4             4  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE            Pricing
+..          ...                                                ...            ...             ...                  ...       ...                ...
+175         175  Works like a charm! Packaging was neat, delive...              1             4.0                    2  POSITIVE   Customer Service
+176         176  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+177         177  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Customer Service
+178         178  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+179         179  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+
+[180 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (169, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE        Design
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE        Design
+2           2  Absolute perfection! Easily the best purchase ...              3             5.0                    5  POSITIVE        Design
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE        Design
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE  Battery Life
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Deep_Learning_with_Python_by_Francois_Chollet_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE             Design
+2             2  Absolute perfection! Easily the best purchase ...              3             5.0                    5  POSITIVE             Design
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Design
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+164         164  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+165         165  Zero stars if I could! Horrible experience, mi...              1             1.0                   11  NEGATIVE             Design
+166         166  Zero stars if I could! Horrible experience, mi...              1             1.0                    3  NEGATIVE             Design
+167         167  Zero stars if I could! Horrible experience, mi...              1             1.0                    3  NEGATIVE   Customer Service
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE             Design
+
+[169 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                   15  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE          Packaging
+3           3  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': "Columbia_Men's_Watertight_II_Rain_Jacket_Processed", 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                   15  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE          Packaging
+3             3  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+165         165  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE          Packaging
+166         166  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE          Packaging
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE          Packaging
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE   Customer Service
+169         169  Zero stars if I could! Horrible experience, mi...              1             1.0                    2  NEGATIVE   Customer Service
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    2  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                    1  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    2  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                    1  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+148         148  World-class care and professionalism. The staf...              3             5.0                    2  POSITIVE   Customer Service
+149         149  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE   Customer Service
+150         150  World-class care and professionalism. The staf...              1             5.0                    2  POSITIVE   Customer Service
+151         151  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE   Customer Service
+152         152  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Customer Service
+
+[153 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    2  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   41  POSITIVE   Customer Service
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Anker_65W_GaN_Fast_Charger_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    2  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   41  POSITIVE   Customer Service
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+165         165  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+166         166  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Customer Service
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                    1  NEGATIVE            Pricing
+169         169  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE   Customer Service
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (181, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE             Design
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    1  POSITIVE             Design
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   34  POSITIVE             Design
+3           3  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE       Battery Life
+4           4  Arrived damaged with a broken seal. Tried to u...              1             1.0                   24  NEGATIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    1  POSITIVE             Design
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   34  POSITIVE             Design
+3             3  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE       Battery Life
+4             4  Arrived damaged with a broken seal. Tried to u...              1             1.0                   24  NEGATIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+176         176  Very pleased. The build feels premium and it d...              1             4.0                    2  POSITIVE             Design
+177         177  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE             Design
+178         178  Works like a charm! Packaging was neat, delive...              2             4.0                    0  POSITIVE             Design
+179         179  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Customer Service
+180         180  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE             Design
+
+[181 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (185, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                   18  POSITIVE        Design
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE        Design
+2           2  Acceptable quality. Does what it says on the b...              1             3.0                   12  POSITIVE  Battery Life
+3           3  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE  Battery Life
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    4  POSITIVE  Battery Life
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Atomic_Habits_by_James_Clear_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                   18  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE             Design
+2             2  Acceptable quality. Does what it says on the b...              1             3.0                   12  POSITIVE       Battery Life
+3             3  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    4  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+180         180  Very pleased. The build feels premium and it d...              1             4.0                    1  POSITIVE   Customer Service
+181         181  Works as described, but feels slightly overpri...              1             3.0                    2  NEGATIVE             Design
+182         182  Works like a charm! Packaging was neat, delive...              2             4.0                    4  POSITIVE   Customer Service
+183         183  Works like a charm! Packaging was neat, delive...              2             4.0                    6  POSITIVE             Design
+184         184  Zero stars if I could! Horrible experience, mi...              1             1.0                    1  NEGATIVE             Design
+
+[185 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (188, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0           0  Absolute perfection! Easily the best purchase ...              4             5.0                   33  POSITIVE        Design
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE        Design
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   44  POSITIVE        Design
+3           3  Absolute perfection! Easily the best purchase ...              4             5.0                    9  POSITIVE        Design
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    2  POSITIVE  Battery Life
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Kindle_Paperwhite_(16_GB)_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              4             5.0                   33  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE             Design
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   44  POSITIVE             Design
+3             3  Absolute perfection! Easily the best purchase ...              4             5.0                    9  POSITIVE             Design
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    2  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+183         183  Works as described, but feels slightly overpri...              1             3.0                    4  NEGATIVE   Customer Service
+184         184  Works as described, but feels slightly overpri...              1             3.0                    0  NEGATIVE             Design
+185         185  Works like a charm! Packaging was neat, delive...              1             4.0                    8  POSITIVE   Customer Service
+186         186  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE             Design
+187         187  Zero stars if I could! Horrible experience, mi...              3             1.0                    4  NEGATIVE   Customer Service
+
+[188 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (142, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                   16  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                   24  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                   28  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                   25  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              1             5.0                   12  POSITIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Sakura_Japanese_Sushi_&_Ramen_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                   16  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                   24  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                   28  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                   25  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              1             5.0                   12  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+137         137  World-class care and professionalism. The staf...              1             5.0                    4  POSITIVE   Customer Service
+138         138  World-class care and professionalism. The staf...              2             5.0                    4  POSITIVE   Customer Service
+139         139  Worst dining experience of my life. The server...              1             1.0                    3  NEGATIVE   Customer Service
+140         140  Worst dining experience of my life. The server...              1             1.0                    2  NEGATIVE   Customer Service
+141         141  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Customer Service
+
+[142 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              4             5.0                    0  POSITIVE   Customer Service
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    7  POSITIVE          Packaging
+4           4  Absolute perfection! Easily the best purchase ...              2             5.0                    1  POSITIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              4             5.0                    0  POSITIVE   Customer Service
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    7  POSITIVE          Packaging
+4             4  Absolute perfection! Easily the best purchase ...              2             5.0                    1  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+165         165  Works as described, but feels slightly overpri...              1             3.0                    1  NEGATIVE   Customer Service
+166         166  Works like a charm! Packaging was neat, delive...              2             4.0                    1  POSITIVE          Packaging
+167         167  Works like a charm! Packaging was neat, delive...              2             4.0                    2  POSITIVE          Packaging
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                   45  NEGATIVE   Customer Service
+169         169  Zero stars if I could! Horrible experience, mi...              2             1.0                   21  NEGATIVE   Customer Service
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (156, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              4             5.0                    8  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              4             5.0                   62  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Metropolitan_Dental_Health_Clinic_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              4             5.0                    8  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              4             5.0                   62  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+151         151  World-class care and professionalism. The staf...              1             5.0                    5  POSITIVE   Customer Service
+152         152  World-class care and professionalism. The staf...              1             5.0                   38  POSITIVE   Customer Service
+153         153  Worst dining experience of my life. The server...              1             1.0                    1  NEGATIVE   Customer Service
+154         154  Worst dining experience of my life. The server...              1             1.0                    5  NEGATIVE   Customer Service
+155         155  Worst dining experience of my life. The server...              1             1.0                    2  NEGATIVE   Customer Service
+
+[156 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (139, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              2             5.0                   10  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                   25  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              3             5.0                    3  POSITIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Central_City_Fitness_&_CrossFit_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              2             5.0                   10  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                   25  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              3             5.0                    3  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+134         134  World-class care and professionalism. The staf...              3             5.0                    4  POSITIVE   Customer Service
+135         135  Worst dining experience of my life. The server...              1             1.0                    1  NEGATIVE   Customer Service
+136         136  Worst dining experience of my life. The server...              2             1.0                   44  NEGATIVE   Customer Service
+137         137  Worst dining experience of my life. The server...              2             1.0                   10  NEGATIVE   Customer Service
+138         138  Worst dining experience of my life. The server...              1             1.0                   43  NEGATIVE   Customer Service
+
+[139 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (175, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    8  POSITIVE             Priced
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE             Priced
+2           2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Priced
+3           3  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+4           4  Arrived damaged with a broken seal. Tried to u...              1             1.0                    0  NEGATIVE             Priced
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Bedsure_Cooling_Bamboo_Bed_Sheets_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    8  POSITIVE             Priced
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE             Priced
+2             2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Priced
+3             3  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+4             4  Arrived damaged with a broken seal. Tried to u...              1             1.0                    0  NEGATIVE             Priced
+..          ...                                                ...            ...             ...                  ...       ...                ...
+170         170  Very pleased. The build feels premium and it d...              1             4.0                    1  POSITIVE             Priced
+171         171  Works like a charm! Packaging was neat, delive...              2             4.0                    3  POSITIVE             Priced
+172         172  Works like a charm! Packaging was neat, delive...              2             4.0                    3  POSITIVE             Priced
+173         173  Works like a charm! Packaging was neat, delive...              1             4.0                    7  POSITIVE   Customer Service
+174         174  Zero stars if I could! Horrible experience, mi...              1             1.0                    2  NEGATIVE             Priced
+
+[175 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (186, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   38  POSITIVE          Packaging
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Echo_Dot_Smart_Speaker_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   38  POSITIVE          Packaging
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+181         181  Works like a charm! Packaging was neat, delive...              2             4.0                    3  POSITIVE          Packaging
+182         182  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE          Packaging
+183         183  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE   Customer Service
+184         184  Zero stars if I could! Horrible experience, mi...              2             1.0                   37  NEGATIVE          Packaging
+185         185  Zero stars if I could! Horrible experience, mi...              1             1.0                   44  NEGATIVE   Customer Service
+
+[186 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (160, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              5             5.0                   56  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              2             5.0                   29  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE   Customer Service
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              5             5.0                   56  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              2             5.0                   29  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+155         155  World-class care and professionalism. The staf...              2             5.0                    1  POSITIVE   Customer Service
+156         156  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE   Customer Service
+157         157  World-class care and professionalism. The staf...              1             5.0                   27  POSITIVE   Customer Service
+158         158  World-class care and professionalism. The staf...              1             5.0                    3  POSITIVE   Customer Service
+159         159  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+
+[160 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame shape: (182, 7)
+2026-10-24 19:23:05 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+1           1  Absolute perfection! Easily the best purchase ...              3             5.0                   14  POSITIVE   Quality
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE   Quality
+3           3  Absolute perfection! Easily the best purchase ...              3             5.0                   34  POSITIVE   Quality
+4           4  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+2026-10-24 19:23:05 - __main__ - INFO - ##################################################
+2026-10-24 19:23:05 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+1             1  Absolute perfection! Easily the best purchase ...              3             5.0                   14  POSITIVE   Quality
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE   Quality
+3             3  Absolute perfection! Easily the best purchase ...              3             5.0                   34  POSITIVE   Quality
+4             4  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+..          ...                                                ...            ...             ...                  ...       ...       ...
+177         177  Works like a charm! Packaging was neat, delive...              1             4.0                    4  POSITIVE   Quality
+178         178  Works like a charm! Packaging was neat, delive...              1             4.0                   17  POSITIVE   Quality
+179         179  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Quality
+180         180  Zero stars if I could! Horrible experience, mi...              1             1.0                   30  NEGATIVE   Quality
+181         181  Zero stars if I could! Horrible experience, mi...              1             1.0                    2  NEGATIVE   Quality
+
+[182 rows x 7 columns], 'summaries': None}
+2026-10-24 19:23:05 - __main__ - INFO - Data preparation completed.
+2026-10-24 19:23:05 - __main__ - INFO - Prompt sent to ollama: 
+
+        summarize the following content:
+
+        Content:
+        - Platform: Amazon
+        - Product: Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed
+        - Reviews: |   Unnamed: 0 | Review_Text                                                                                                                                                                                             |   Total_Reviews |   Average_Rating |   Total_Helpful_Votes | Sentiment   | Category         |
+|-------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------:|-----------------:|----------------------:|:------------|:-----------------|
+|            0 | Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly.                                                                      |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|            1 | Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. #verifiedpurchase                                                    |               3 |                5 |                    14 | POSITIVE    | Quality          |
+|            2 | Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. Hope this review helps someone make up their mind.                   |               2 |                5 |                    11 | POSITIVE    | Quality          |
+|            3 | Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. Packaging was decent.                                                |               3 |                5 |                    34 | POSITIVE    | Quality          |
+|            4 | Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. Thanks to the team for the prompt service!                           |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|            5 | Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly. Would definitely recommend checking it out!                          |               3 |                5 |                     4 | POSITIVE    | Quality          |
+|            6 | Acceptable quality. Does what it says on the box, though battery life is slightly below my expectations.                                                                                                |               1 |                3 |                     0 | POSITIVE    | Quality          |
+|            7 | Acceptable quality. Does what it says on the box, though battery life is slightly below my expectations. Hope this review helps someone make up their mind.                                             |               1 |                3 |                     0 | POSITIVE    | Quality          |
+|            8 | Acceptable quality. Does what it says on the box, though battery life is slightly below my expectations. Thanks to the team for the prompt service!                                                     |               1 |                3 |                     3 | POSITIVE    | Quality          |
+|            9 | Arrived damaged with a broken seal. Tried to use it anyway, and it immediately overheated. Returning this junk ASAP! Thanks to the team for the prompt service!                                         |               1 |                1 |                     0 | NEGATIVE    | Customer Service |
+|           10 | Average product. It gets the job done for everyday basic use, but nothing to write home about. Decent value for the budget price. #verifiedpurchase                                                     |               1 |                3 |                     5 | NEGATIVE    | Quality          |
+|           11 | Average product. It gets the job done for everyday basic use, but nothing to write home about. Decent value for the budget price. Hope this review helps someone make up their mind.                    |               1 |                3 |                     6 | POSITIVE    | Quality          |
+|           12 | Bought this recently. Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly.                                                |               1 |                5 |                    23 | POSITIVE    | Quality          |
+|           13 | Bought this recently. Arrived damaged with a broken seal. Tried to use it anyway, and it immediately overheated. Returning this junk ASAP!                                                              |               1 |                1 |                     7 | NEGATIVE    | Customer Service |
+|           14 | Bought this recently. Average product. It gets the job done for everyday basic use, but nothing to write home about. Decent value for the budget price.                                                 |               1 |                3 |                     1 | POSITIVE    | Quality          |
+|           15 | Bought this recently. Awful product. Failed right after the return window closed. Classic planned obsolescence. Never buying from this brand again.                                                     |               2 |                1 |                     0 | NEGATIVE    | Customer Service |
+|           16 | Bought this recently. Complete rip-off. Battery life is barely an hour when it advertised ten hours. Save your hard-earned money and look elsewhere.                                                    |               1 |                1 |                     3 | NEGATIVE    | Battery Life     |
+|           17 | Bought this recently. Do not buy this! Cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. Extremely disappointed.                                    |               1 |                1 |                     0 | NEGATIVE    | Quality          |
+|           18 | Bought this recently. Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down!                                                                                          |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|           19 | Bought this recently. Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members.                                                           |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|           20 | Bought this recently. Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day.                                                               |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|           21 | Bought this recently. Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase.                                                           |               2 |                5 |                     0 | POSITIVE    | Quality          |
+|           22 | Bought this recently. Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people.                                                         |               2 |                4 |                     1 | POSITIVE    | Quality          |
+|           23 | Bought this recently. It is alright. Some features work really well, while others feel unfinished. You get what you pay for.                                                                            |               1 |                3 |                     0 | POSITIVE    | Quality          |
+|           24 | Bought this recently. Looks nice on the desk, but functionally quite lacking. Too many minor glitches and quirks that make daily use annoying.                                                          |               1 |                2 |                     0 | NEGATIVE    | Quality          |
+|           25 | Bought this recently. Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars.                                                        |               1 |                3 |                     2 | NEGATIVE    | Quality          |
+|           26 | Bought this recently. Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.                                     |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|           27 | Bought this recently. Poor design, frustrating setup instructions, and constantly disconnects. Avoid at all costs!                                                                                      |               1 |                1 |                     1 | NEGATIVE    | Quality          |
+|           28 | Bought this recently. Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day.                                                      |               1 |                4 |                     2 | POSITIVE    | Quality          |
+|           29 | Bought this recently. Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered.                                                   |               1 |                5 |                     4 | POSITIVE    | Quality          |
+|           30 | Bought this recently. Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short.                                               |               1 |                4 |                     0 | NEGATIVE    | Quality          |
+|           31 | Bought this recently. Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++                                                   |               3 |                5 |                     8 | POSITIVE    | Quality          |
+|           32 | Bought this recently. Underwhelming performance. The main features are buggy and sluggish. It gets lukewarm rather than hot. Not worth the full retail price.                                           |               1 |                2 |                     0 | NEGATIVE    | Quality          |
+|           33 | Bought this recently. Very good product overall! Build quality is solid, setup took five minutes, and it performs reliably. Only minor gripe is the glossy finish which attracts fingerprints.          |               2 |                4 |                     0 | POSITIVE    | Quality          |
+|           34 | Bought this recently. Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again.                                                                   |               3 |                4 |                     4 | POSITIVE    | Quality          |
+|           35 | Bought this recently. Works as described, but feels slightly overpriced for the performance delivered. Good for casual users, not for power users.                                                      |               1 |                3 |                     0 | NEGATIVE    | Quality          |
+|           36 | Bought this recently. Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed.                                            |               1 |                4 |                     0 | POSITIVE    | Quality          |
+|           37 | Broke on the first attempt to use it. Very fragile materials and feels like a knock-off dollar store item. Huge regret.                                                                                 |               1 |                1 |                     5 | NEGATIVE    | Customer Service |
+|           38 | Broke on the first attempt to use it. Very fragile materials and feels like a knock-off dollar store item. Huge regret. Hope this review helps someone make up their mind.                              |               1 |                1 |                     4 | NEGATIVE    | Customer Service |
+|           39 | Customer service was a nightmare. Product died in a week, and they kept giving me the runaround instead of honoring the warranty. #verifiedpurchase                                                     |               1 |                1 |                     0 | NEGATIVE    | Customer Service |
+|           40 | Customer service was a nightmare. Product died in a week, and they kept giving me the runaround instead of honoring the warranty. Hope this review helps someone make up their mind.                    |               1 |                1 |                     0 | NEGATIVE    | Customer Service |
+|           41 | Decent idea, flawed execution. The manual is poorly translated and several promised features are absent or locked behind a paywall. Would definitely recommend checking it out!                         |               1 |                2 |                     2 | NEGATIVE    | Quality          |
+|           42 | Decent overall, but has noticeable trade-offs. The cord is too short and the instruction booklet is minimal. #verifiedpurchase                                                                          |               1 |                3 |                     0 | NEGATIVE    | Quality          |
+|           43 | Decent overall, but has noticeable trade-offs. The cord is too short and the instruction booklet is minimal. Packaging was decent.                                                                      |               1 |                3 |                     0 | NEGATIVE    | Quality          |
+|           44 | Defective right out of the packaging. The buttons are stiff and don't respond half the time. Regret purchasing this entirely. Thanks to the team for the prompt service!                                |               1 |                1 |                     1 | NEGATIVE    | Customer Service |
+|           45 | Disappointed with the build quality. It is okay for basic tasks, but the material feels flimsy and scratches easily.                                                                                    |               1 |                2 |                     0 | NEGATIVE    | Quality          |
+|           46 | Disappointed with the build quality. It is okay for basic tasks, but the material feels flimsy and scratches easily. #verifiedpurchase                                                                  |               2 |                2 |                     2 | NEGATIVE    | Quality          |
+|           47 | Do not buy this! Cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. Extremely disappointed. #verifiedpurchase                                        |               1 |                1 |                    16 | NEGATIVE    | Customer Service |
+|           48 | Do not buy this! Cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. Extremely disappointed. Would definitely recommend checking it out!              |               1 |                1 |                     1 | NEGATIVE    | Quality          |
+|           49 | Expected much better from this brand. Battery drains fast and audio is tinny with zero bass. Two stars because shipping was fast.                                                                       |               1 |                2 |                     2 | NEGATIVE    | Battery Life     |
+|           50 | Expected much better from this brand. Battery drains fast and audio is tinny with zero bass. Two stars because shipping was fast. Hope this review helps someone make up their mind.                    |               1 |                2 |                     2 | NEGATIVE    | Battery Life     |
+|           51 | Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative. Hope this review helps someone make up their mind.                               |               1 |                3 |                     5 | POSITIVE    | Quality          |
+|           52 | Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative. Packaging was decent.                                                            |               1 |                3 |                     0 | POSITIVE    | Quality          |
+|           53 | Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point. Hope this review helps someone make up their mind.        |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|           54 | Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point. Thanks to the team for the prompt service!                |               3 |                5 |                    16 | POSITIVE    | Quality          |
+|           55 | Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point. Would definitely recommend checking it out!               |               1 |                5 |                     4 | POSITIVE    | Quality          |
+|           56 | Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down! #verifiedpurchase                                                                                              |               1 |                5 |                     3 | POSITIVE    | Quality          |
+|           57 | Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down! Hope this review helps someone make up their mind.                                                             |               2 |                5 |                     0 | POSITIVE    | Quality          |
+|           58 | Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down! Thanks to the team for the prompt service!                                                                     |               1 |                5 |                     4 | POSITIVE    | Quality          |
+|           59 | Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down! Would definitely recommend checking it out!                                                                    |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|           60 | Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Hope this review helps someone make up their mind.                              |               2 |                5 |                    20 | POSITIVE    | Quality          |
+|           61 | Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Packaging was decent.                                                           |               2 |                5 |                     3 | POSITIVE    | Quality          |
+|           62 | Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Thanks to the team for the prompt service!                                      |               1 |                5 |                    46 | POSITIVE    | Quality          |
+|           63 | Game changer! Saves me so much time and effort. I have already recommended it to several colleagues and family members. Would definitely recommend checking it out!                                     |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|           64 | Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day.                                                                                     |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|           65 | Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day. #verifiedpurchase                                                                   |               1 |                4 |                     2 | POSITIVE    | Quality          |
+|           66 | Great value for money. Minor learning curve with the controls, but once configured, it has been reliable every day. Packaging was decent.                                                               |               1 |                4 |                     0 | POSITIVE    | Quality          |
+|           67 | Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase.                                                                                 |               3 |                5 |                    11 | POSITIVE    | Customer Service |
+|           68 | Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. #verifiedpurchase                                                               |               1 |                5 |                    45 | POSITIVE    | Customer Service |
+|           69 | Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. Hope this review helps someone make up their mind.                              |               2 |                5 |                    20 | POSITIVE    | Customer Service |
+|           70 | Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. Packaging was decent.                                                           |               3 |                5 |                     7 | POSITIVE    | Customer Service |
+|           71 | Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. Thanks to the team for the prompt service!                                      |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|           72 | Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase. Would definitely recommend checking it out!                                     |               1 |                5 |                     4 | POSITIVE    | Customer Service |
+|           73 | Honestly, customer service was a nightmare. product died in a week, and they kept giving me the runaround instead of honoring the warranty.                                                             |               1 |                1 |                     0 | NEGATIVE    | Customer Service |
+|           74 | Honestly, do not buy this! cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. extremely disappointed.                                                |               1 |                1 |                     0 | NEGATIVE    | Quality          |
+|           75 | Honestly, expected much better from this brand. battery drains fast and audio is tinny with zero bass. two stars because shipping was fast.                                                             |               1 |                2 |                     1 | NEGATIVE    | Battery Life     |
+|           76 | Honestly, five stars without hesitation! incredible value, intuitive controls, and crystal-clear performance. you cannot beat this at this price point.                                                 |               3 |                5 |                     7 | POSITIVE    | Quality          |
+|           77 | Honestly, flawless performance. quiet, efficient, and beautifully built. best in class hands down!                                                                                                      |               3 |                5 |                     4 | POSITIVE    | Quality          |
+|           78 | Honestly, game changer! saves me so much time and effort. i have already recommended it to several colleagues and family members.                                                                       |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|           79 | Honestly, great value for money. minor learning curve with the controls, but once configured, it has been reliable every day.                                                                           |               1 |                4 |                     2 | POSITIVE    | Quality          |
+|           80 | Honestly, highest recommendation! customer support was also fantastic when i had a quick question about settings. 10/10 purchase.                                                                       |               2 |                5 |                     3 | POSITIVE    | Quality          |
+|           81 | Honestly, mediocre at best. it functions, but feels much cheaper than the pictures suggest. probably won't last more than a few months.                                                                 |               2 |                2 |                     1 | NEGATIVE    | Quality          |
+|           82 | Honestly, much better than my previous one. sleek, fast, and intuitive. dropped one star because the companion app occasionally desyncs.                                                                |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|           83 | Honestly, not great. setup was tedious and the companion app kept crashing. does the bare minimum, but i wouldn't recommend it to friends.                                                              |               1 |                2 |                     2 | NEGATIVE    | Quality          |
+|           84 | Honestly, remarkable craftsmanship. every detail feels thoughtful and refined. i use it every single day and couldn't be happier with it.                                                               |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|           85 | Honestly, superb product! packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. a+++                                                               |               4 |                5 |                    51 | POSITIVE    | Quality          |
+|           86 | Honestly, works like a charm! packaging was neat, delivered on time, and functionality meets all my expectations. minor software updates needed.                                                        |               1 |                4 |                    10 | POSITIVE    | Quality          |
+|           87 | Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people.                                                                               |               4 |                4 |                     8 | POSITIVE    | Quality          |
+|           88 | Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people. Hope this review helps someone make up their mind.                            |               2 |                4 |                     7 | POSITIVE    | Quality          |
+|           89 | Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people. Thanks to the team for the prompt service!                                    |               1 |                4 |                     2 | POSITIVE    | Quality          |
+|           90 | Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people. Would definitely recommend checking it out!                                   |               4 |                4 |                     2 | POSITIVE    | Quality          |
+|           91 | It is alright. Some features work really well, while others feel unfinished. You get what you pay for. #verifiedpurchase                                                                                |               1 |                3 |                     4 | POSITIVE    | Quality          |
+|           92 | It is alright. Some features work really well, while others feel unfinished. You get what you pay for. Would definitely recommend checking it out!                                                      |               1 |                3 |                     2 | POSITIVE    | Quality          |
+|           93 | Looks nice on the desk, but functionally quite lacking. Too many minor glitches and quirks that make daily use annoying.                                                                                |               1 |                2 |                     0 | NEGATIVE    | Quality          |
+|           94 | Mediocre at best. It functions, but feels much cheaper than the pictures suggest. Probably won't last more than a few months. Thanks to the team for the prompt service!                                |               1 |                2 |                     0 | POSITIVE    | Customer Service |
+|           95 | Middle-of-the-road purchase. Not terrible, but certainly not impressive. Build is acceptable, performance is passable. Packaging was decent.                                                            |               1 |                3 |                     1 | POSITIVE    | Quality          |
+|           96 | Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars. #verifiedpurchase                                                            |               1 |                3 |                     1 | NEGATIVE    | Quality          |
+|           97 | Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars. Hope this review helps someone make up their mind.                           |               1 |                3 |                     6 | NEGATIVE    | Quality          |
+|           98 | Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars. Thanks to the team for the prompt service!                                   |               1 |                3 |                     0 | NEGATIVE    | Quality          |
+|           99 | Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. #verifiedpurchase                                                        |               1 |                4 |                     0 | POSITIVE    | Quality          |
+|          100 | Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. Hope this review helps someone make up their mind.                       |               1 |                4 |                     2 | POSITIVE    | Quality          |
+|          101 | Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. Packaging was decent.                                                    |               1 |                4 |                     3 | POSITIVE    | Quality          |
+|          102 | Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. Thanks to the team for the prompt service!                               |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|          103 | Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs. Would definitely recommend checking it out!                              |               1 |                4 |                     2 | POSITIVE    | Quality          |
+|          104 | Not great. Setup was tedious and the companion app kept crashing. Does the bare minimum, but I wouldn't recommend it to friends. Would definitely recommend checking it out!                            |               1 |                2 |                     4 | NEGATIVE    | Quality          |
+|          105 | Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.                                                           |               4 |                5 |                     9 | POSITIVE    | Quality          |
+|          106 | Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal. Hope this review helps someone make up their mind.        |               2 |                5 |                     3 | POSITIVE    | Quality          |
+|          107 | Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal. Thanks to the team for the prompt service!                |               1 |                5 |                     6 | POSITIVE    | Quality          |
+|          108 | Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal. Would definitely recommend checking it out!               |               1 |                5 |                    10 | POSITIVE    | Quality          |
+|          109 | Poor design, frustrating setup instructions, and constantly disconnects. Avoid at all costs! Thanks to the team for the prompt service!                                                                 |               1 |                1 |                     1 | NEGATIVE    | Customer Service |
+|          110 | Poor design, frustrating setup instructions, and constantly disconnects. Avoid at all costs! Would definitely recommend checking it out!                                                                |               2 |                1 |                     1 | NEGATIVE    | Quality          |
+|          111 | Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day.                                                                            |               2 |                4 |                     1 | POSITIVE    | Quality          |
+|          112 | Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day. #verifiedpurchase                                                          |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|          113 | Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day. Packaging was decent.                                                      |               2 |                4 |                     4 | POSITIVE    | Quality          |
+|          114 | Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day. Thanks to the team for the prompt service!                                 |               3 |                4 |                    10 | POSITIVE    | Quality          |
+|          115 | Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it.                                                                         |               2 |                5 |                    21 | POSITIVE    | Quality          |
+|          116 | Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. #verifiedpurchase                                                       |               3 |                5 |                     9 | POSITIVE    | Quality          |
+|          117 | Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Hope this review helps someone make up their mind.                      |               3 |                5 |                    15 | POSITIVE    | Quality          |
+|          118 | Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Packaging was decent.                                                   |               2 |                5 |                     5 | POSITIVE    | Quality          |
+|          119 | Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Thanks to the team for the prompt service!                              |               2 |                5 |                    43 | POSITIVE    | Quality          |
+|          120 | Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it. Would definitely recommend checking it out!                             |               2 |                5 |                    12 | POSITIVE    | Quality          |
+|          121 | Review update after 3 months: Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly.                                        |               1 |                5 |                     6 | POSITIVE    | Quality          |
+|          122 | Review update after 3 months: Customer service was a nightmare. Product died in a week, and they kept giving me the runaround instead of honoring the warranty.                                         |               1 |                1 |                    41 | NEGATIVE    | Customer Service |
+|          123 | Review update after 3 months: Decent idea, flawed execution. The manual is poorly translated and several promised features are absent or locked behind a paywall.                                       |               1 |                2 |                     1 | NEGATIVE    | Quality          |
+|          124 | Review update after 3 months: Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative.                                                    |               1 |                3 |                     2 | POSITIVE    | Quality          |
+|          125 | Review update after 3 months: Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point.                             |               1 |                5 |                     3 | POSITIVE    | Quality          |
+|          126 | Review update after 3 months: Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down!                                                                                  |               2 |                5 |                     1 | POSITIVE    | Quality          |
+|          127 | Review update after 3 months: Highest recommendation! Customer support was also fantastic when I had a quick question about settings. 10/10 purchase.                                                   |               2 |                5 |                     7 | POSITIVE    | Customer Service |
+|          128 | Review update after 3 months: Impressive performance for the price. Clear sound, crisp buttons, and durable finish. Highly recommended for most people.                                                 |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|          129 | Review update after 3 months: It is alright. Some features work really well, while others feel unfinished. You get what you pay for.                                                                    |               1 |                3 |                     5 | POSITIVE    | Quality          |
+|          130 | Review update after 3 months: Middle-of-the-road purchase. Not terrible, but certainly not impressive. Build is acceptable, performance is passable.                                                    |               1 |                3 |                     7 | POSITIVE    | Quality          |
+|          131 | Review update after 3 months: Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs.                                            |               1 |                4 |                     0 | NEGATIVE    | Quality          |
+|          132 | Review update after 3 months: Not great. Setup was tedious and the companion app kept crashing. Does the bare minimum, but I wouldn't recommend it to friends.                                          |               1 |                2 |                     0 | NEGATIVE    | Quality          |
+|          133 | Review update after 3 months: Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.                             |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|          134 | Review update after 3 months: Remarkable craftsmanship. Every detail feels thoughtful and refined. I use it every single day and couldn't be happier with it.                                           |               3 |                5 |                    20 | POSITIVE    | Quality          |
+|          135 | Review update after 3 months: Very good product overall! Build quality is solid, setup took five minutes, and it performs reliably. Only minor gripe is the glossy finish which attracts fingerprints.  |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|          136 | Review update after 3 months: Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed.                                    |               2 |                4 |                     3 | POSITIVE    | Quality          |
+|          137 | Review update after 3 months: Zero stars if I could! Horrible experience, misleading specifications, and worst build quality I have ever seen on Amazon.                                                |               1 |                1 |                     0 | NEGATIVE    | Quality          |
+|          138 | Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered.                                                                         |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|          139 | Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. Hope this review helps someone make up their mind.                      |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|          140 | Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. Packaging was decent.                                                   |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|          141 | Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. Thanks to the team for the prompt service!                              |               1 |                5 |                     1 | POSITIVE    | Quality          |
+|          142 | Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. Would definitely recommend checking it out!                             |               1 |                5 |                     7 | POSITIVE    | Quality          |
+|          143 | Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short.                                                                     |               1 |                4 |                     0 | NEGATIVE    | Quality          |
+|          144 | Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short. #verifiedpurchase                                                   |               1 |                4 |                     8 | NEGATIVE    | Quality          |
+|          145 | Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short. Packaging was decent.                                               |               1 |                4 |                     0 | POSITIVE    | Quality          |
+|          146 | Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short. Thanks to the team for the prompt service!                          |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|          147 | Solid 4 stars. Great features and sleek design. The only reason I didn't give 5 stars is because the charging cable is a bit short. Would definitely recommend checking it out!                         |               2 |                4 |                     4 | POSITIVE    | Quality          |
+|          148 | Summary: Absolute perfection! Easily the best purchase I have made this year. High quality materials, elegant design, and works flawlessly.                                                             |               2 |                5 |                    40 | POSITIVE    | Quality          |
+|          149 | Summary: Awful product. Failed right after the return window closed. Classic planned obsolescence. Never buying from this brand again.                                                                  |               1 |                1 |                     4 | NEGATIVE    | Customer Service |
+|          150 | Summary: Complete rip-off. Battery life is barely an hour when it advertised ten hours. Save your hard-earned money and look elsewhere.                                                                 |               1 |                1 |                    28 | NEGATIVE    | Battery Life     |
+|          151 | Summary: Decent overall, but has noticeable trade-offs. The cord is too short and the instruction booklet is minimal.                                                                                   |               1 |                3 |                     3 | NEGATIVE    | Quality          |
+|          152 | Summary: Do not buy this! Cheap plastic construction, smells terrible out of the box, and doesn't match the description at all. Extremely disappointed.                                                 |               2 |                1 |                    42 | NEGATIVE    | Quality          |
+|          153 | Summary: Expected much better from this brand. Battery drains fast and audio is tinny with zero bass. Two stars because shipping was fast.                                                              |               1 |                2 |                     1 | NEGATIVE    | Battery Life     |
+|          154 | Summary: Fair product. Satisfactory for the price point. If you need top-tier reliability, spend more on a premium alternative.                                                                         |               2 |                3 |                     2 | POSITIVE    | Quality          |
+|          155 | Summary: Five stars without hesitation! Incredible value, intuitive controls, and crystal-clear performance. You cannot beat this at this price point.                                                  |               3 |                5 |                    51 | POSITIVE    | Quality          |
+|          156 | Summary: Flawless performance. Quiet, efficient, and beautifully built. Best in class hands down!                                                                                                       |               2 |                5 |                    23 | POSITIVE    | Quality          |
+|          157 | Summary: Mixed feelings. The hardware is sturdy, but software integration is clunky and requires frequent resets. 3 out of 5 stars.                                                                     |               1 |                3 |                     0 | NEGATIVE    | Quality          |
+|          158 | Summary: Much better than my previous one. Sleek, fast, and intuitive. Dropped one star because the companion app occasionally desyncs.                                                                 |               1 |                4 |                     0 | POSITIVE    | Quality          |
+|          159 | Summary: Outstanding! Exceeded all my expectations. The build quality is top-tier, performance is blazing fast, and battery life is simply phenomenal.                                                  |               2 |                5 |                     7 | POSITIVE    | Quality          |
+|          160 | Summary: Really happy with this purchase. Works seamlessly with my daily workflow. Battery life is solid and easily lasts a full day.                                                                   |               1 |                4 |                     5 | POSITIVE    | Quality          |
+|          161 | Summary: Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered.                                                                |               3 |                5 |                    42 | POSITIVE    | Quality          |
+|          162 | Summary: Subpar durability. After three weeks of normal use, one side stopped working properly. Might work as an emergency backup only.                                                                 |               1 |                2 |                     2 | NEGATIVE    | Quality          |
+|          163 | Summary: Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++                                                                |               3 |                5 |                     6 | POSITIVE    | Quality          |
+|          164 | Summary: Very good product overall! Build quality is solid, setup took five minutes, and it performs reliably. Only minor gripe is the glossy finish which attracts fingerprints.                       |               1 |                4 |                     0 | POSITIVE    | Quality          |
+|          165 | Summary: Works as described, but feels slightly overpriced for the performance delivered. Good for casual users, not for power users.                                                                   |               1 |                3 |                     0 | NEGATIVE    | Quality          |
+|          166 | Summary: Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed.                                                         |               2 |                4 |                     8 | POSITIVE    | Quality          |
+|          167 | Summary: Zero stars if I could! Horrible experience, misleading specifications, and worst build quality I have ever seen on Amazon.                                                                     |               1 |                1 |                    13 | NEGATIVE    | Quality          |
+|          168 | Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++ Packaging was decent.                                                   |               1 |                5 |                     0 | POSITIVE    | Quality          |
+|          169 | Superb product! Packaging was pristine, delivery was super quick, and it works straight out of the box without any hassle. A+++ Would definitely recommend checking it out!                             |               2 |                5 |                     2 | POSITIVE    | Quality          |
+|          170 | Terrible quality! It stopped working completely after just two days of light use. Customer support was unhelpful and refused a refund. Total waste of money. Packaging was decent.                      |               2 |                1 |                    15 | NEGATIVE    | Customer Service |
+|          171 | Terrible quality! It stopped working completely after just two days of light use. Customer support was unhelpful and refused a refund. Total waste of money. Thanks to the team for the prompt service! |               1 |                1 |                     2 | NEGATIVE    | Customer Service |
+|          172 | Underwhelming performance. The main features are buggy and sluggish. It gets lukewarm rather than hot. Not worth the full retail price. Thanks to the team for the prompt service!                      |               1 |                2 |                     0 | NEGATIVE    | Customer Service |
+|          173 | Very good product overall! Build quality is solid, setup took five minutes, and it performs reliably. Only minor gripe is the glossy finish which attracts fingerprints.                                |               2 |                4 |                     0 | POSITIVE    | Quality          |
+|          174 | Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again.                                                                                         |               1 |                4 |                     0 | POSITIVE    | Quality          |
+|          175 | Very pleased. The build feels premium and it does exactly what I needed it to do. Would happily purchase again. Packaging was decent.                                                                   |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|          176 | Works as described, but feels slightly overpriced for the performance delivered. Good for casual users, not for power users. Hope this review helps someone make up their mind.                         |               2 |                3 |                     5 | POSITIVE    | Quality          |
+|          177 | Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed.                                                                  |               1 |                4 |                     4 | POSITIVE    | Quality          |
+|          178 | Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed. Thanks to the team for the prompt service!                       |               1 |                4 |                    17 | POSITIVE    | Quality          |
+|          179 | Works like a charm! Packaging was neat, delivered on time, and functionality meets all my expectations. Minor software updates needed. Would definitely recommend checking it out!                      |               1 |                4 |                     1 | POSITIVE    | Quality          |
+|          180 | Zero stars if I could! Horrible experience, misleading specifications, and worst build quality I have ever seen on Amazon. #verifiedpurchase                                                            |               1 |                1 |                    30 | NEGATIVE    | Quality          |
+|          181 | Zero stars if I could! Horrible experience, misleading specifications, and worst build quality I have ever seen on Amazon. Thanks to the team for the prompt service!                                   |               1 |                1 |                     2 | NEGATIVE    | Quality          |
+        
+2026-10-24 19:23:10 - httpx - INFO - HTTP Request: POST https://ollama.com/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:23:10 - __main__ - INFO - Summary: **Amazon – Sony WH‑1000XM5 Noise‑Cancelling Headphones (Processed)**  
+
+| Aspect | What the data tells us |
+|--------|------------------------|
+| **Number of reviews** | 182 rows (including many duplicated “summary” copies). |
+| **Overall sentiment** | ≈ 68 % POSITIVE, ≈ 32 % NEGATIVE. |
+| **Average star rating (raw mean of the listed ratings)** | ~ 4.0 ★ (the bulk of the scores are 5 ★, 4 ★ and 3 ★; the few 1‑2 ★ ratings pull the mean down only slightly). |
+| **Helpful‑vote activity** | Positive 5‑star reviews tend to attract the most “helpful” votes (e.g., the “Absolute perfection” and “Five‑star without hesitation” groups have > 30‑50 votes each). Negative reviews receive far fewer votes. |
+| **Top‑level categories** | • **Quality / Performance** – 122 mentions (≈ 67 %).  <br>• **Customer Service** – 38 mentions (≈ 21 %). <br>• **Battery Life** – 9 mentions (≈ 5 %). <br>• **Other (price, cable length, software)** – the remainder. |
+| **Key positive themes** | • **Build & design** – “high‑quality materials”, “premium feel”, “elegant”, “sturdy”, “top‑tier build”. <br>• **Sound & noise‑cancelling** – “crystal‑clear performance”, “quiet, efficient”, “best in class”. <br>• **Value for money** – “incredible value”, “great value for money”. <br>• **Ease of use / setup** – “works straight out of the box”, “quick setup”. <br>• **Customer support (when good)** – “fantastic”, “prompt service”, “10/10 purchase”. |
+| **Key negative themes** | • **Durability / reliability** – “broke on first use”, “fragile”, “stops working after days/weeks”, “sub‑par durability”. <br>• **Battery life** – advertised 10 h vs. real‑world 1‑2 h, “drains fast”. <br>• **Customer‑service issues** – “nightmare”, “run‑around”, “refused refund”. <br>• **Software / app glitches** – “companion app crashes”, “frequent resets”, “short charging cable”. <br>• **Material quality complaints** – “cheap plastic”, “smells terrible”, “glossy finish attracts fingerprints”. |
+| **Common phrasing & duplicates** | • Several “Absolute perfection! …” blocks (identical text repeated 6‑7 times). <br>• Repeated “Five stars without hesitation! …” blocks (appearing many times). <br>• “Summary:” rows at the end are exact copies of the earlier headline statements, inflating the count of each narrative. |
+| **What the numbers suggest** | • The product enjoys strong advocacy from a core group of satisfied owners (high‑rating, high‑helpfulness reviews). <br>• There is a **significant minority** (roughly 1 in 3 reviewers) who experienced **serious reliability or service problems**, most often citing **short battery life** or **defective hardware**. <br>• The **most frequent driver of negative sentiment** is **post‑purchase support** (warranty, returns, refunds) rather than the acoustic performance itself. |
+| **Take‑away for potential buyers** | • If you value premium sound, sleek design and are comfortable with the price, the majority of users report a **5‑star experience**. <br>• Keep an eye on **battery‑life expectations** (real‑world use can be far below the advertised 10 h). <br>• Consider buying from a seller with a **generous return policy** or confirming warranty coverage, as **customer‑service experiences vary widely**. |
+| **Potential actions for the brand** | 1. **Improve battery‑life communication** and, if possible, extend actual runtime. <br>2. **Strengthen post‑sale support** (quick warranty handling, clearer return process). <br>3. **Address durability issues** (reinforced hinges/materials, better QC to reduce “broken on first use”). <br>4. **Fix software/App bugs** to reduce the “companion‑app crashes” complaints. |

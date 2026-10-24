@@ -1,9 +1,11 @@
 from ollama import Client
 from typing import List
-from IPython.display import display, Markdown
+# from IPython.display import display, Markdown
+import pandas as pd
 
 from src.sentimental_agent.Utilities.Logger import Logger
 from src.sentimental_agent.Utilities.Settings import settings
+from src.sentimental_agent.DataProcessor.DataClass import Profile
 
 
 class LLMAgent:
@@ -24,58 +26,39 @@ class LLMAgent:
         # declare Async Client.
         self.Client = Client(
             # cloud settings.
-            # host=self.cloud_host,
-            # headers=self.cloud_header
+            host=self.cloud_host,
+            headers=self.cloud_header
 
             # local settings.
-            host=self.local_host,
-            headers=self.local_header
+            # host=self.local_host,
+            # headers=self.local_header
         )
 
     
     def _call_ollama(self, prompt: str) -> str:
         response = self.Client.chat(
             model=self.cloud_model,
+            # model=self.local_model,
             messages=[{"role": "user", "content": prompt}]
             )
 
         summary = response['message']['content']
-        display(Markdown(summary))
-        print("\n")
 
         return summary
 
 
-    def summarize_profile(self, profile: dict) -> str:
-        # Send it to a local Ollama model
+    def summarize_views(self, profile: Profile) -> str:
+
         prompt = f"""
-        Summarize the content:
-
-        Content:
-        Platform:
-        {profile.get("Platform")}
-
-        Product:
-        {profile.get("Product")}
-
-        Category:
-        {profile.get("Category")}
-
-        Sentiment:
-        {profile.get("Sentiment")}
+        Generate an overview on the content, summarize the content by categories and sentiments and then gain insights from the reviews for the product called {profile.product} under the platform {profile.platform}. 
+        
+        Notes:
+        1. separate paragraphs should be provided for the overview, summaries for all categories by sentiments and insights should be provided in seperate paragraphs.
+        2. all the contents should be supported by figures.
 
         Reviews:
-        {profile.get("Reviews")}
-        """
-        summary = self._call_ollama(prompt=prompt)
+        {profile.processed_reviews.to_markdown(index=False)}
 
-        return summary
-
-
-    def summarize_views(self, views: List[str]) -> str:
-
-        prompt = f"""
-        summarize the following content: {views}
         """
 
         summary = self._call_ollama(prompt=prompt)
@@ -83,14 +66,3 @@ class LLMAgent:
         return summary
 
 
-    def get_insights_from_figures(self, markdown: str) -> str:
-
-        # Send it to a local Ollama model
-        prompt = f"""
-        Get insights from the following content:
-
-        {markdown}
-        """
-        summary = self._call_ollama(prompt=prompt)
-
-        return summary

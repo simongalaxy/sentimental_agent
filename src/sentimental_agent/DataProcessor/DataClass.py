@@ -7,7 +7,7 @@ from typing import List, Optional
 class Profile:
     platform: str
     product: str
-    reviews: pd.DataFrame
+    reviews: Optional[pd.DataFrame]
     processed_reviews: Optional[pd.DataFrame] = None
-    summaries: Optional[List[dict]] = None
+    summary: Optional[List[dict]] = None
     

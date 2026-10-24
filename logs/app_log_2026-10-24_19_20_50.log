@@ -1,0 +1,635 @@
+2026-10-24 19:20:50 - __main__ - INFO - Class Logger initiated.
+2026-10-24 19:20:50 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:20:50 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 200 OK"
+2026-10-24 19:20:51 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:20:51 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-24 19:20:51 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:20:51 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-24 19:20:51 - __main__ - INFO - FilePaths in folder - ./data/Processed_files: 
+['data/Processed_files/Amazon_Ninja_Air_Fryer_Pro_XL_Processed.csv', 'data/Processed_files/Google_Locations_Urban_Yoga_&_Wellness_Studio_Processed.csv', 'data/Processed_files/Google_Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed.csv', 'data/Processed_files/Google_Locations_Highland_Public_Library_&_Cultural_Center_Processed.csv', 'data/Processed_files/Google_Locations_City_View_Botanical_Gardens_&_Park_Processed.csv', 'data/Processed_files/Google_Locations_Precision_Auto_Mechanics_&_Body_Works_Processed.csv', "data/Processed_files/Amazon_Men's_Lightweight_Breathable_Running_Shoes_Processed.csv", 'data/Processed_files/Google_Locations_Golden_Dragon_Dim_Sum_Palace_Processed.csv', 'data/Processed_files/Google_Locations_Bella_Italia_Trattoria_Processed.csv', 'data/Processed_files/Amazon_Logitech_MX_Master_3S_Wireless_Mouse_Processed.csv', 'data/Processed_files/Amazon_Deep_Learning_with_Python_by_Francois_Chollet_Processed.csv', "data/Processed_files/Amazon_Columbia_Men's_Watertight_II_Rain_Jacket_Processed.csv", 'data/Processed_files/Google_Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed.csv', 'data/Processed_files/Amazon_Anker_65W_GaN_Fast_Charger_Processed.csv', 'data/Processed_files/Amazon_Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed.csv', 'data/Processed_files/Amazon_Atomic_Habits_by_James_Clear_Processed.csv', 'data/Processed_files/Amazon_Kindle_Paperwhite_(16_GB)_Processed.csv', 'data/Processed_files/Google_Locations_Sakura_Japanese_Sushi_&_Ramen_Processed.csv', 'data/Processed_files/Amazon_Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed.csv', 'data/Processed_files/Google_Locations_Metropolitan_Dental_Health_Clinic_Processed.csv', 'data/Processed_files/Google_Locations_Central_City_Fitness_&_CrossFit_Processed.csv', 'data/Processed_files/Amazon_Bedsure_Cooling_Bamboo_Bed_Sheets_Processed.csv', 'data/Processed_files/Amazon_Echo_Dot_Smart_Speaker_Processed.csv', 'data/Processed_files/Google_Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed.csv', 'data/Processed_files/Amazon_Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed.csv']
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE  Quality
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE  Quality
+2           2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE  Quality
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE  Quality
+4           4  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE  Quality
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Ninja_Air_Fryer_Pro_XL_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0             0  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE       Quality
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE       Quality
+2             2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE       Quality
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE       Quality
+4             4  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE       Quality
+..          ...                                                ...            ...             ...                  ...       ...           ...
+165         165  Works as described, but feels slightly overpri...              1             3.0                    1  NEGATIVE   Performance
+166         166  Works as described, but feels slightly overpri...              1             3.0                    2  POSITIVE   Performance
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE       Quality
+168         168  Works like a charm! Packaging was neat, delive...              2             4.0                    4  POSITIVE       Quality
+169         169  Works like a charm! Packaging was neat, delive...              3             4.0                    3  POSITIVE       Quality
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (162, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+2           2  Absolute 5-star experience! Our server was kno...              3             5.0                   27  POSITIVE  Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+4           4  Average experience overall. Convenient locatio...              1             3.0                    1  NEGATIVE  Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Urban_Yoga_&_Wellness_Studio_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+2             2  Absolute 5-star experience! Our server was kno...              3             5.0                   27  POSITIVE  Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    6  POSITIVE  Service
+4             4  Average experience overall. Convenient locatio...              1             3.0                    1  NEGATIVE  Service
+..          ...                                                ...            ...             ...                  ...       ...      ...
+157         157  Wonderful experience overall. The staff was co...              2             4.0                    2  POSITIVE  Service
+158         158  World-class care and professionalism. The staf...              2             5.0                    1  POSITIVE  Service
+159         159  World-class care and professionalism. The staf...              1             5.0                    2  POSITIVE  Service
+160         160  World-class care and professionalism. The staf...              2             5.0                   11  POSITIVE  Service
+161         161  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE  Service
+
+[162 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (145, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE  Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+4           4  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE  Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE  Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE  Service
+4             4  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE  Service
+..          ...                                                ...            ...             ...                  ...       ...      ...
+140         140  World-class care and professionalism. The staf...              4             5.0                   55  POSITIVE  Service
+141         141  World-class care and professionalism. The staf...              1             5.0                    2  POSITIVE  Service
+142         142  Worst dining experience of my life. The server...              1             1.0                   31  NEGATIVE  Service
+143         143  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE  Service
+144         144  Worst dining experience of my life. The server...              2             1.0                   36  NEGATIVE  Service
+
+[145 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (149, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4           4  Average experience overall. Convenient locatio...              1             3.0                    0  NEGATIVE       Battery Life
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Highland_Public_Library_&_Cultural_Center_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4             4  Average experience overall. Convenient locatio...              1             3.0                    0  NEGATIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+144         144  Wonderful experience overall. The staff was co...              1             4.0                    4  POSITIVE   Customer Service
+145         145  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+146         146  World-class care and professionalism. The staf...              1             5.0                   46  POSITIVE   Customer Service
+147         147  World-class care and professionalism. The staf...              2             5.0                    1  POSITIVE   Customer Service
+148         148  Worst dining experience of my life. The server...              1             1.0                    1  NEGATIVE   Customer Service
+
+[149 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (152, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment         Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+1           1  Absolute 5-star experience! Our server was kno...              3             5.0                    7  POSITIVE     Food Quality
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Staff Attitude
+4           4  Absolute 5-star experience! Our server was kno...              6             5.0                    7  POSITIVE     Food Quality
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_City_View_Botanical_Gardens_&_Park_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment         Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+1             1  Absolute 5-star experience! Our server was kno...              3             5.0                    7  POSITIVE     Food Quality
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE     Food Quality
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Staff Attitude
+4             4  Absolute 5-star experience! Our server was kno...              6             5.0                    7  POSITIVE     Food Quality
+..          ...                                                ...            ...             ...                  ...       ...              ...
+147         147  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Staff Attitude
+148         148  World-class care and professionalism. The staf...              3             5.0                    4  POSITIVE   Staff Attitude
+149         149  World-class care and professionalism. The staf...              4             5.0                   20  POSITIVE   Staff Attitude
+150         150  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Staff Attitude
+151         151  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Service Issues
+
+[152 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1           1  Absolute 5-star experience! Our server was kno...              4             5.0                   44  POSITIVE  Service
+2           2  Absolute 5-star experience! Our server was kno...              3             5.0                   36  POSITIVE  Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                   37  POSITIVE  Service
+4           4  Average experience overall. Convenient locatio...              1             3.0                    8  POSITIVE  Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Precision_Auto_Mechanics_&_Body_Works_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Service
+1             1  Absolute 5-star experience! Our server was kno...              4             5.0                   44  POSITIVE  Service
+2             2  Absolute 5-star experience! Our server was kno...              3             5.0                   36  POSITIVE  Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                   37  POSITIVE  Service
+4             4  Average experience overall. Convenient locatio...              1             3.0                    8  POSITIVE  Service
+..          ...                                                ...            ...             ...                  ...       ...      ...
+148         148  World-class care and professionalism. The staf...              3             5.0                   26  POSITIVE  Service
+149         149  World-class care and professionalism. The staf...              3             5.0                    2  POSITIVE  Service
+150         150  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE  Service
+151         151  Worst dining experience of my life. The server...              3             1.0                   39  NEGATIVE  Service
+152         152  Worst dining experience of my life. The server...              1             1.0                    3  NEGATIVE  Service
+
+[153 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (172, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE   Quality
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE   Quality
+2           2  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Quality
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    6  POSITIVE   Quality
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE   Quality
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': "Men's_Lightweight_Breathable_Running_Shoes_Processed", 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    5  POSITIVE   Quality
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE   Quality
+2             2  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Quality
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    6  POSITIVE   Quality
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE   Quality
+..          ...                                                ...            ...             ...                  ...       ...       ...
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    4  POSITIVE   Quality
+168         168  Works like a charm! Packaging was neat, delive...              1             4.0                    7  POSITIVE   Quality
+169         169  Works like a charm! Packaging was neat, delive...              1             4.0                    2  POSITIVE   Quality
+170         170  Zero stars if I could! Horrible experience, mi...              2             1.0                   38  NEGATIVE   Quality
+171         171  Zero stars if I could! Horrible experience, mi...              1             1.0                    3  NEGATIVE   Quality
+
+[172 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (144, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                    5  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              4             5.0                    6  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              3             5.0                    6  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              3             5.0                   39  POSITIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Golden_Dragon_Dim_Sum_Palace_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                    5  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              4             5.0                    6  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              3             5.0                    6  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              3             5.0                   39  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+139         139  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+140         140  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+141         141  World-class care and professionalism. The staf...              4             5.0                  102  POSITIVE   Customer Service
+142         142  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Customer Service
+143         143  Worst dining experience of my life. The server...              1             1.0                    4  NEGATIVE   Customer Service
+
+[144 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (155, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment          Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                   40  POSITIVE      Food Quality
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE      Food Quality
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                    8  POSITIVE  Customer Service
+4           4  Average experience overall. Convenient locatio...              2             3.0                    0  NEGATIVE  Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Bella_Italia_Trattoria_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment          Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                   40  POSITIVE      Food Quality
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE      Food Quality
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE  Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                    8  POSITIVE  Customer Service
+4             4  Average experience overall. Convenient locatio...              2             3.0                    0  NEGATIVE  Customer Service
+..          ...                                                ...            ...             ...                  ...       ...               ...
+150         150  World-class care and professionalism. The staf...              1             5.0                    3  POSITIVE  Customer Service
+151         151  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE  Customer Service
+152         152  World-class care and professionalism. The staf...              2             5.0                    5  POSITIVE  Customer Service
+153         153  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE      Food Quality
+154         154  Worst dining experience of my life. The server...              1             1.0                    4  NEGATIVE  Customer Service
+
+[155 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (180, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   26  POSITIVE   Customer Service
+3           3  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Customer Service
+4           4  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE            Pricing
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Logitech_MX_Master_3S_Wireless_Mouse_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   26  POSITIVE   Customer Service
+3             3  Absolute perfection! Easily the best purchase ...              3             5.0                    6  POSITIVE   Customer Service
+4             4  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE            Pricing
+..          ...                                                ...            ...             ...                  ...       ...                ...
+175         175  Works like a charm! Packaging was neat, delive...              1             4.0                    2  POSITIVE   Customer Service
+176         176  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+177         177  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Customer Service
+178         178  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+179         179  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+
+[180 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (169, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE        Design
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE        Design
+2           2  Absolute perfection! Easily the best purchase ...              3             5.0                    5  POSITIVE        Design
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE        Design
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE  Battery Life
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Deep_Learning_with_Python_by_Francois_Chollet_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE             Design
+2             2  Absolute perfection! Easily the best purchase ...              3             5.0                    5  POSITIVE             Design
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Design
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+164         164  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+165         165  Zero stars if I could! Horrible experience, mi...              1             1.0                   11  NEGATIVE             Design
+166         166  Zero stars if I could! Horrible experience, mi...              1             1.0                    3  NEGATIVE             Design
+167         167  Zero stars if I could! Horrible experience, mi...              1             1.0                    3  NEGATIVE   Customer Service
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE             Design
+
+[169 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                   15  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE          Packaging
+3           3  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': "Columbia_Men's_Watertight_II_Rain_Jacket_Processed", 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                   15  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE          Packaging
+3             3  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE   Customer Service
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+165         165  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE          Packaging
+166         166  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE          Packaging
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE          Packaging
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE   Customer Service
+169         169  Zero stars if I could! Horrible experience, mi...              1             1.0                    2  NEGATIVE   Customer Service
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                    2  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                    1  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                    0  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                    2  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                    1  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              2             5.0                   12  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+148         148  World-class care and professionalism. The staf...              3             5.0                    2  POSITIVE   Customer Service
+149         149  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE   Customer Service
+150         150  World-class care and professionalism. The staf...              1             5.0                    2  POSITIVE   Customer Service
+151         151  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE   Customer Service
+152         152  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Customer Service
+
+[153 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    2  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   41  POSITIVE   Customer Service
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Anker_65W_GaN_Fast_Charger_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    2  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   41  POSITIVE   Customer Service
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+165         165  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+166         166  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE   Customer Service
+167         167  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Customer Service
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                    1  NEGATIVE            Pricing
+169         169  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE   Customer Service
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (181, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE             Design
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    1  POSITIVE             Design
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   34  POSITIVE             Design
+3           3  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE       Battery Life
+4           4  Arrived damaged with a broken seal. Tried to u...              1             1.0                   24  NEGATIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    1  POSITIVE             Design
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   34  POSITIVE             Design
+3             3  Acceptable quality. Does what it says on the b...              1             3.0                    3  POSITIVE       Battery Life
+4             4  Arrived damaged with a broken seal. Tried to u...              1             1.0                   24  NEGATIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+176         176  Very pleased. The build feels premium and it d...              1             4.0                    2  POSITIVE             Design
+177         177  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE             Design
+178         178  Works like a charm! Packaging was neat, delive...              2             4.0                    0  POSITIVE             Design
+179         179  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Customer Service
+180         180  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE             Design
+
+[181 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (185, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                   18  POSITIVE        Design
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE        Design
+2           2  Acceptable quality. Does what it says on the b...              1             3.0                   12  POSITIVE  Battery Life
+3           3  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE  Battery Life
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    4  POSITIVE  Battery Life
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Atomic_Habits_by_James_Clear_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                   18  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    2  POSITIVE             Design
+2             2  Acceptable quality. Does what it says on the b...              1             3.0                   12  POSITIVE       Battery Life
+3             3  Acceptable quality. Does what it says on the b...              1             3.0                    0  POSITIVE       Battery Life
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    4  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+180         180  Very pleased. The build feels premium and it d...              1             4.0                    1  POSITIVE   Customer Service
+181         181  Works as described, but feels slightly overpri...              1             3.0                    2  NEGATIVE             Design
+182         182  Works like a charm! Packaging was neat, delive...              2             4.0                    4  POSITIVE   Customer Service
+183         183  Works like a charm! Packaging was neat, delive...              2             4.0                    6  POSITIVE             Design
+184         184  Zero stars if I could! Horrible experience, mi...              1             1.0                    1  NEGATIVE             Design
+
+[185 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (188, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment      Category
+0           0  Absolute perfection! Easily the best purchase ...              4             5.0                   33  POSITIVE        Design
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE        Design
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   44  POSITIVE        Design
+3           3  Absolute perfection! Easily the best purchase ...              4             5.0                    9  POSITIVE        Design
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    2  POSITIVE  Battery Life
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Kindle_Paperwhite_(16_GB)_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              4             5.0                   33  POSITIVE             Design
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                    4  POSITIVE             Design
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   44  POSITIVE             Design
+3             3  Absolute perfection! Easily the best purchase ...              4             5.0                    9  POSITIVE             Design
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    2  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+183         183  Works as described, but feels slightly overpri...              1             3.0                    4  NEGATIVE   Customer Service
+184         184  Works as described, but feels slightly overpri...              1             3.0                    0  NEGATIVE             Design
+185         185  Works like a charm! Packaging was neat, delive...              1             4.0                    8  POSITIVE   Customer Service
+186         186  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE             Design
+187         187  Zero stars if I could! Horrible experience, mi...              3             1.0                    4  NEGATIVE   Customer Service
+
+[188 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (142, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              2             5.0                   16  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              1             5.0                   24  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                   28  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                   25  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              1             5.0                   12  POSITIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Sakura_Japanese_Sushi_&_Ramen_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              2             5.0                   16  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              1             5.0                   24  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                   28  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                   25  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              1             5.0                   12  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+137         137  World-class care and professionalism. The staf...              1             5.0                    4  POSITIVE   Customer Service
+138         138  World-class care and professionalism. The staf...              2             5.0                    4  POSITIVE   Customer Service
+139         139  Worst dining experience of my life. The server...              1             1.0                    3  NEGATIVE   Customer Service
+140         140  Worst dining experience of my life. The server...              1             1.0                    2  NEGATIVE   Customer Service
+141         141  Worst dining experience of my life. The server...              1             1.0                    0  NEGATIVE   Customer Service
+
+[142 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              4             5.0                    0  POSITIVE   Customer Service
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    7  POSITIVE          Packaging
+4           4  Absolute perfection! Easily the best purchase ...              2             5.0                    1  POSITIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              2             5.0                   10  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              4             5.0                    0  POSITIVE   Customer Service
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    7  POSITIVE          Packaging
+4             4  Absolute perfection! Easily the best purchase ...              2             5.0                    1  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+165         165  Works as described, but feels slightly overpri...              1             3.0                    1  NEGATIVE   Customer Service
+166         166  Works like a charm! Packaging was neat, delive...              2             4.0                    1  POSITIVE          Packaging
+167         167  Works like a charm! Packaging was neat, delive...              2             4.0                    2  POSITIVE          Packaging
+168         168  Zero stars if I could! Horrible experience, mi...              1             1.0                   45  NEGATIVE   Customer Service
+169         169  Zero stars if I could! Horrible experience, mi...              2             1.0                   21  NEGATIVE   Customer Service
+
+[170 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (156, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              4             5.0                    8  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              4             5.0                   62  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Metropolitan_Dental_Health_Clinic_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              4             5.0                    8  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              4             5.0                   62  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              1             5.0                    3  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+151         151  World-class care and professionalism. The staf...              1             5.0                    5  POSITIVE   Customer Service
+152         152  World-class care and professionalism. The staf...              1             5.0                   38  POSITIVE   Customer Service
+153         153  Worst dining experience of my life. The server...              1             1.0                    1  NEGATIVE   Customer Service
+154         154  Worst dining experience of my life. The server...              1             1.0                    5  NEGATIVE   Customer Service
+155         155  Worst dining experience of my life. The server...              1             1.0                    2  NEGATIVE   Customer Service
+
+[156 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (139, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              2             5.0                   10  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              2             5.0                   25  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              3             5.0                    3  POSITIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Central_City_Fitness_&_CrossFit_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              1             5.0                    0  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              2             5.0                   10  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                    2  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              2             5.0                   25  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              3             5.0                    3  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+134         134  World-class care and professionalism. The staf...              3             5.0                    4  POSITIVE   Customer Service
+135         135  Worst dining experience of my life. The server...              1             1.0                    1  NEGATIVE   Customer Service
+136         136  Worst dining experience of my life. The server...              2             1.0                   44  NEGATIVE   Customer Service
+137         137  Worst dining experience of my life. The server...              2             1.0                   10  NEGATIVE   Customer Service
+138         138  Worst dining experience of my life. The server...              1             1.0                   43  NEGATIVE   Customer Service
+
+[139 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (175, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              2             5.0                    8  POSITIVE             Priced
+1           1  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE             Priced
+2           2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Priced
+3           3  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+4           4  Arrived damaged with a broken seal. Tried to u...              1             1.0                    0  NEGATIVE             Priced
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Bedsure_Cooling_Bamboo_Bed_Sheets_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              2             5.0                    8  POSITIVE             Priced
+1             1  Absolute perfection! Easily the best purchase ...              1             5.0                    3  POSITIVE             Priced
+2             2  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE             Priced
+3             3  Absolute perfection! Easily the best purchase ...              2             5.0                    0  POSITIVE   Customer Service
+4             4  Arrived damaged with a broken seal. Tried to u...              1             1.0                    0  NEGATIVE             Priced
+..          ...                                                ...            ...             ...                  ...       ...                ...
+170         170  Very pleased. The build feels premium and it d...              1             4.0                    1  POSITIVE             Priced
+171         171  Works like a charm! Packaging was neat, delive...              2             4.0                    3  POSITIVE             Priced
+172         172  Works like a charm! Packaging was neat, delive...              2             4.0                    3  POSITIVE             Priced
+173         173  Works like a charm! Packaging was neat, delive...              1             4.0                    7  POSITIVE   Customer Service
+174         174  Zero stars if I could! Horrible experience, mi...              1             1.0                    2  NEGATIVE             Priced
+
+[175 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (186, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE   Customer Service
+1           1  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE   Customer Service
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   38  POSITIVE          Packaging
+3           3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4           4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Echo_Dot_Smart_Speaker_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    4  POSITIVE   Customer Service
+1             1  Absolute perfection! Easily the best purchase ...              3             5.0                    4  POSITIVE   Customer Service
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   38  POSITIVE          Packaging
+3             3  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Customer Service
+4             4  Acceptable quality. Does what it says on the b...              1             3.0                    1  POSITIVE       Battery Life
+..          ...                                                ...            ...             ...                  ...       ...                ...
+181         181  Works like a charm! Packaging was neat, delive...              2             4.0                    3  POSITIVE          Packaging
+182         182  Works like a charm! Packaging was neat, delive...              1             4.0                    0  POSITIVE          Packaging
+183         183  Zero stars if I could! Horrible experience, mi...              1             1.0                    0  NEGATIVE   Customer Service
+184         184  Zero stars if I could! Horrible experience, mi...              2             1.0                   37  NEGATIVE          Packaging
+185         185  Zero stars if I could! Horrible experience, mi...              1             1.0                   44  NEGATIVE   Customer Service
+
+[186 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (160, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0           0  Absolute 5-star experience! Our server was kno...              5             5.0                   56  POSITIVE   Customer Service
+1           1  Absolute 5-star experience! Our server was kno...              2             5.0                   29  POSITIVE   Customer Service
+2           2  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE   Customer Service
+3           3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4           4  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE   Customer Service
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Google', 'product': 'Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment           Category
+0             0  Absolute 5-star experience! Our server was kno...              5             5.0                   56  POSITIVE   Customer Service
+1             1  Absolute 5-star experience! Our server was kno...              2             5.0                   29  POSITIVE   Customer Service
+2             2  Absolute 5-star experience! Our server was kno...              2             5.0                    9  POSITIVE   Customer Service
+3             3  Absolute 5-star experience! Our server was kno...              1             5.0                    1  POSITIVE   Customer Service
+4             4  Absolute 5-star experience! Our server was kno...              1             5.0                    4  POSITIVE   Customer Service
+..          ...                                                ...            ...             ...                  ...       ...                ...
+155         155  World-class care and professionalism. The staf...              2             5.0                    1  POSITIVE   Customer Service
+156         156  World-class care and professionalism. The staf...              2             5.0                    3  POSITIVE   Customer Service
+157         157  World-class care and professionalism. The staf...              1             5.0                   27  POSITIVE   Customer Service
+158         158  World-class care and professionalism. The staf...              1             5.0                    3  POSITIVE   Customer Service
+159         159  World-class care and professionalism. The staf...              1             5.0                    0  POSITIVE   Customer Service
+
+[160 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame shape: (182, 7)
+2026-10-24 19:20:51 - __main__ - INFO - DataFrame preview:
+   Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0           0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+1           1  Absolute perfection! Easily the best purchase ...              3             5.0                   14  POSITIVE   Quality
+2           2  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE   Quality
+3           3  Absolute perfection! Easily the best purchase ...              3             5.0                   34  POSITIVE   Quality
+4           4  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+2026-10-24 19:20:51 - __main__ - INFO - ##################################################
+2026-10-24 19:20:51 - __main__ - INFO - Profile: 
+{'platform': 'Amazon', 'product': 'Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed', 'reviews': None, 'processed_reviews':      Unnamed: 0                                        Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment  Category
+0             0  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+1             1  Absolute perfection! Easily the best purchase ...              3             5.0                   14  POSITIVE   Quality
+2             2  Absolute perfection! Easily the best purchase ...              2             5.0                   11  POSITIVE   Quality
+3             3  Absolute perfection! Easily the best purchase ...              3             5.0                   34  POSITIVE   Quality
+4             4  Absolute perfection! Easily the best purchase ...              1             5.0                    0  POSITIVE   Quality
+..          ...                                                ...            ...             ...                  ...       ...       ...
+177         177  Works like a charm! Packaging was neat, delive...              1             4.0                    4  POSITIVE   Quality
+178         178  Works like a charm! Packaging was neat, delive...              1             4.0                   17  POSITIVE   Quality
+179         179  Works like a charm! Packaging was neat, delive...              1             4.0                    1  POSITIVE   Quality
+180         180  Zero stars if I could! Horrible experience, mi...              1             1.0                   30  NEGATIVE   Quality
+181         181  Zero stars if I could! Horrible experience, mi...              1             1.0                    2  NEGATIVE   Quality
+
+[182 rows x 7 columns], 'summaries': None}
+2026-10-24 19:20:51 - __main__ - INFO - Data preparation completed.

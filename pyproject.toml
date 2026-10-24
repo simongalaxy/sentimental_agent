@@ -15,6 +15,7 @@ dependencies = [
     "pandas>=3.0.6",
     "pydantic>=2.14.1",
     "pydantic-settings>=2.16.0",
+    "tabulate>=0.10.0",
     "torch>=2.14.1",
     "transformers>=5.19.0",
 ]

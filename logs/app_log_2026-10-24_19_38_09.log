@@ -1,0 +1,588 @@
+2026-10-24 19:38:09 - __main__ - INFO - Class Logger initiated.
+2026-10-24 19:38:09 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:38:10 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 200 OK"
+2026-10-24 19:38:10 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:38:10 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-24 19:38:10 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:38:11 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-24 19:38:11 - __main__ - INFO - FilePaths in folder - ./data/Processed_files: 
+['data/Processed_files/Amazon_Ninja_Air_Fryer_Pro_XL_Processed.csv', 'data/Processed_files/Google_Locations_Urban_Yoga_&_Wellness_Studio_Processed.csv', 'data/Processed_files/Google_Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed.csv', 'data/Processed_files/Google_Locations_Highland_Public_Library_&_Cultural_Center_Processed.csv', 'data/Processed_files/Google_Locations_City_View_Botanical_Gardens_&_Park_Processed.csv', 'data/Processed_files/Google_Locations_Precision_Auto_Mechanics_&_Body_Works_Processed.csv', "data/Processed_files/Amazon_Men's_Lightweight_Breathable_Running_Shoes_Processed.csv", 'data/Processed_files/Google_Locations_Golden_Dragon_Dim_Sum_Palace_Processed.csv', 'data/Processed_files/Google_Locations_Bella_Italia_Trattoria_Processed.csv', 'data/Processed_files/Amazon_Logitech_MX_Master_3S_Wireless_Mouse_Processed.csv', 'data/Processed_files/Amazon_Deep_Learning_with_Python_by_Francois_Chollet_Processed.csv', "data/Processed_files/Amazon_Columbia_Men's_Watertight_II_Rain_Jacket_Processed.csv", 'data/Processed_files/Google_Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed.csv', 'data/Processed_files/Amazon_Anker_65W_GaN_Fast_Charger_Processed.csv', 'data/Processed_files/Amazon_Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed.csv', 'data/Processed_files/Amazon_Atomic_Habits_by_James_Clear_Processed.csv', 'data/Processed_files/Amazon_Kindle_Paperwhite_(16_GB)_Processed.csv', 'data/Processed_files/Google_Locations_Sakura_Japanese_Sushi_&_Ramen_Processed.csv', 'data/Processed_files/Amazon_Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed.csv', 'data/Processed_files/Google_Locations_Metropolitan_Dental_Health_Clinic_Processed.csv', 'data/Processed_files/Google_Locations_Central_City_Fitness_&_CrossFit_Processed.csv', 'data/Processed_files/Amazon_Bedsure_Cooling_Bamboo_Bed_Sheets_Processed.csv', 'data/Processed_files/Amazon_Echo_Dot_Smart_Speaker_Processed.csv', 'data/Processed_files/Google_Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed.csv', 'data/Processed_files/Amazon_Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed.csv']
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Ninja_Air_Fryer_Pro_XL_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (162, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Urban_Yoga_&_Wellness_Studio_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (145, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (149, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Highland_Public_Library_&_Cultural_Center_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (152, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_City_View_Botanical_Gardens_&_Park_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Precision_Auto_Mechanics_&_Body_Works_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (172, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Men's_Lightweight_Breathable_Running_Shoes_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (144, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Golden_Dragon_Dim_Sum_Palace_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (155, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Bella_Italia_Trattoria_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (180, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Logitech_MX_Master_3S_Wireless_Mouse_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (169, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Deep_Learning_with_Python_by_Francois_Chollet_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Columbia_Men's_Watertight_II_Rain_Jacket_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Anker_65W_GaN_Fast_Charger_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (181, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (185, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Atomic_Habits_by_James_Clear_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (188, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Kindle_Paperwhite_(16_GB)_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (142, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Sakura_Japanese_Sushi_&_Ramen_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (156, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Metropolitan_Dental_Health_Clinic_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (139, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Central_City_Fitness_&_CrossFit_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (175, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Bedsure_Cooling_Bamboo_Bed_Sheets_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (186, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Echo_Dot_Smart_Speaker_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (160, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Google, Product: Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:38:11 - __main__ - INFO - DataFrame shape: (182, 7)
+2026-10-24 19:38:11 - __main__ - INFO - ##################################################
+2026-10-24 19:38:11 - __main__ - INFO - Platform: Amazon, Product: Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed - csv file loaded.
+2026-10-24 19:38:11 - __main__ - INFO - Data preparation completed.
+2026-10-24 19:38:35 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:38:35 - __main__ - INFO - Summary: 
+ From the reviews provided, it appears that the majority of the products are rated positively for quality (141, 143, 144, 145, 147, 148, 149, 150, 151, 158, 159, 160, 161, 162, 163, 164), with some minor complaints about glossy finishes attracting fingerprints and the need for minor software updates. However, there are also negative reviews (142, 152, 155, 156, 165, 166) that mention poor quality, design issues, and underwhelming performance. The product is generally recommended for most people (1), but it seems that it might not meet the expectations of power users or those seeking exceptional performance (165). The positive reviews praise the product's build quality, reliability, and quick delivery, while the negative reviews criticize its quality, design, performance, and customer support. Overall, the product seems to be of high quality but may require improvements in software integration and customer support to address the issues mentioned in the negative reviews.
+2026-10-24 19:39:02 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:39:02 - __main__ - INFO - Summary: 
+ From the data provided, it appears that the reviews are customer feedback for various services or establishments, such as restaurants, hotels, or mechanics. The reviews are scored on a scale of 0 to 5 in three categories: Ambiance, Food Quality, and Service. A score of 0 indicates a negative review, while a score of 5 indicates a positive review. Additionally, some reviews have a summary statement describing the reviewer's experience.
+
+Here is a summary of the data:
+
+* There are 161 reviews in total.
+* The majority of reviews (129) have a positive rating in at least one category, with an average rating of 3.88 for Ambiance, 3.46 for Food Quality, and 3.53 for Service.
+* The most common category for positive reviews is Ambiance (71 reviews), followed by Service (55 reviews), and Food Quality (36 reviews).
+* Negative reviews are less frequent, with 32 reviews having at least one negative category rating, an average rating of 1.22 for Ambiance, 1.5 for Food Quality, and 1.25 for Service.
+* The most common category for negative reviews is Service (25 reviews), followed by Ambiance (7 reviews), and Food Quality (4 reviews).
+* Some reviews have a summary statement, which provides more detailed information about the reviewer's experience. These statements can be positive or negative and often highlight specific aspects of the service or establishment.
+
+Overall, the data suggests that customers tend to have positive experiences with the services or establishments in question, with Ambiance being the most frequently rated positive category. However, negative reviews are also present, particularly in the Service category.
+2026-10-24 19:39:46 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:39:46 - __main__ - INFO - Summary: 
+ This is a set of customer reviews for various establishments, each review containing a summary, a rating (1-5), a category (Flavor, Ambiance, or Service), and a sentiment (POSITIVE or NEGATIVE).
+
+Here are some examples of the reviews:
+
+1. A customer had a positive experience with a healthcare facility, praising the high quality service and cleanliness. (Flavor: N/A, Ambiance: N/A, Service: POSITIVE)
+2. A customer enjoyed visiting a beautiful garden, appreciating its breathtaking flora and peaceful tranquility. (Flavor: N/A, Ambiance: POSITIVE, Service: N/A)
+3. A customer had a mixed experience with a restaurant, finding the seating cramped during peak hours but appreciating the nice ambience and decent value for money. (Flavor: N/A, Ambiance: POSITIVE, Service: POSITIVE)
+4. A customer had a negative experience with a restaurant, finding the portions tiny, tasteless, and their orders mixed up twice. (Flavor: NEGATIVE, Ambiance: N/A, Service: NEGATIVE)
+5. A customer had a fantastic dining experience at a restaurant, praising every course as a culinary masterpiece, the service, and the ambience. (Flavor: POSITIVE, Ambiance: POSITIVE, Service: POSITIVE)
+6. A customer had a negative experience with a service provider, receiving negligent attention and sub-par quality despite paying premium prices. (Flavor: N/A, Ambiance: N/A, Service: NEGATIVE)
+7. A customer found a restaurant underwhelming, but appreciated the packaging. (Flavor: NEGATIVE, Ambiance: N/A, Service: N/A)
+8. A customer had an enjoyable visit at a coffee shop, loving the artisan coffee and pastries. (Flavor: N/A, Ambiance: POSITIVE, Service: N/A)
+9. A customer had a positive experience with a hotel, praising the service, cleanliness, and accommodation. (Flavor: N/A, Ambiance: N/A, Service: POSITIVE)
+10. A customer had a world-class experience with a service provider, appreciating their professionalism and courteous staff. (Flavor: N/A, Ambiance: N/A, Service: POSITIVE)
+11. A customer had a terrible experience at an establishment due to poor hygiene and unclean tables. (Flavor: N/A, Ambiance: NEGATIVE, Service: NEGATIVE)
+12. A customer had a terrible experience at an establishment due to poor hygiene and unclean tables, but appreciated the prompt service. (Flavor: N/A, Ambiance: NEGATIVE, Service: NEGATIVE)
+13. A customer had a terrible dining experience, with a cold and burnt steak and a rude server. (Flavor: NEGATIVE, Ambiance: N/A, Service: NEGATIVE)
+2026-10-24 19:40:13 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:40:13 - __main__ - INFO - Summary: 
+ This dataset contains 148 customer reviews for various services or products, such as restaurants, mechanics, and cafes. Each review includes a summary, rating for different aspects like customer service, pricing, and battery life (for electronics), and a comment about the overall experience.
+
+Here are some insights from the data:
+
+1. Customer service is a common topic of discussion, with 126 out of 148 reviews mentioning it. Rude management, indifferent staff, and negligent attention were some of the issues customers faced.
+
+2. Pricing is another popular topic, with 83 reviews mentioning it. Some customers felt they paid premium prices but received sub-par quality, while others appreciated the value for money.
+
+3. Battery life was mentioned in 30 reviews, with 22 of them being positive and 8 negative.
+
+4. There are mixed reviews about food, with some customers finding it bland, cold, or lacking seasoning, while others enjoyed it greatly.
+
+5. Some establishments were praised for their beautiful ambiance, cleanliness, and impressive service, making them highly recommended.
+
+6. A few reviews mention packaging, which is not a common aspect in most customer reviews, but it was noted in 3 reviews.
+
+7. Some reviews have positive comments and ratings, but also negative comments, suggesting that while some aspects of the service were good, others fell short.
+
+To gain more insights, further analysis can be done, such as calculating the average ratings for each aspect, identifying patterns in the reviews, and comparing the ratings across different categories. This information can help businesses improve their services and customer satisfaction.
+2026-10-24 19:40:30 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:40:30 - __main__ - INFO - Summary: 
+ This dataset contains 151 customer reviews for various services or establishments such as restaurants, hotels, and healthcare facilities. Each review includes a unique ID, a summary of the review, and ratings for various categories like Food Quality, Ambiance, Service Issues, Staff Attitude, Hygiene, and Packaging (only for product-related reviews).
+
+The ratings for each category range from 1 (negative) to 5 (positive). Additionally, some reviews have a 'verified purchase' label indicating that the customer made a purchase before writing the review.
+
+Overall, the dataset provides a snapshot of customer experiences and feedback, which can be useful for businesses looking to improve their services and for consumers making decisions.
+2026-10-24 19:41:02 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:41:02 - __main__ - INFO - Summary: 
+ This dataset consists of reviews for various services, such as restaurants, hotels, and spas. Each review has the following attributes:
+
+1. **ID**: A unique identifier for each review.
+2. **Summary**: A brief summary of the review.
+3. **Rating (1-5)**: The overall rating given by the reviewer for the service.
+4. **Category (Service or Pricing)**: The category the reviewer is commenting on, either service or pricing.
+5. **Sentiment (Positive or Negative)**: The sentiment of the review, whether it is positive or negative.
+
+The dataset contains a total of 151 reviews. The majority of reviews (123) are about service, while only a few (12) are about pricing. The sentiments of the reviews are mostly positive (85) compared to negative (66). The ratings for the reviews range from 1 to 5, with the majority of reviews receiving a rating of 4 or 5.
+
+To analyze this dataset, we can perform sentiment analysis on the summaries to understand the overall sentiment towards the services. We can also look into the specific aspects mentioned in the reviews, such as service, pricing, and flavors, to identify areas of improvement or strengths for each service.
+
+For instance, we can see that 12 reviews mention negative experiences related to service, while only 3 reviews mention negative experiences related to pricing. This suggests that service quality may be a more significant factor in shaping customers' experiences compared to pricing.
+
+Additionally, we can use the ratings to rank the services based on their performance. Services with higher ratings, such as those rated 4 or 5, are likely to have more positive reviews and be highly rated by customers. Conversely, services with lower ratings, such as those rated 1 or 2, are likely to have more negative reviews and be less popular among customers.
+
+Overall, this dataset provides valuable insights into customers' experiences with various services and can help businesses identify areas for improvement and leverage their strengths to attract more customers.
+2026-10-24 19:41:22 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:41:22 - __main__ - INFO - Summary: 
+ This dataset contains customer reviews for a product, each review having the following attributes:
+
+1. Review ID (142 - 171)
+2. Summary of the review (text description)
+3. Rating of the review on a scale of 1-5 (higher is better)
+4. Attribute rating: Quality (1-5, higher is better)
+5. Attribute rating: Customer Service (1-5, higher is better)
+6. Overall sentiment of the review (Positive or Negative)
+
+The reviews generally express positive sentiments towards the product's quality, with many customers praising its craftsmanship, design, and functionality. However, some reviews have expressed concerns about the product's quality, performance, and customer service.
+
+The dataset can be used for sentiment analysis, topic modeling, and text classification tasks to gain insights into customer opinions and experiences with the product, as well as to identify common issues and areas for improvement.
+2026-10-24 19:41:46 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:41:46 - __main__ - INFO - Summary: 
+ It appears you have a collection of customer reviews, each with a category (POSITIVE or NEGATIVE), a service or product (Customer Service, Battery Life, Pricing, etc.), a summary of the review, and a rating (1-5).
+
+Here are some examples of reviews:
+
+1. Positive Customer Service review: "Wonderful experience overall. The staff was courteous and accommodating. The rooms were spotless and nicely appointed. Will visit again."
+
+2. Negative Battery Life review: "Terrible hygiene and filthy tables. Saw flies around the counter and the bathroom had no soap or paper towels. Health department needs to inspect this."
+
+3. Positive Battery Life review: "Very enjoyable visit. Loved the artisan coffee and freshly baked pastries. A wonderful quiet corner to read or get work done."
+
+These reviews can be used for various purposes such as improving services or products, addressing customer complaints, or marketing and promotion. Analyzing patterns in the reviews can help businesses identify areas for improvement and make informed decisions. For example, if there are multiple negative reviews about parking, the business might consider improving parking facilities. Similarly, if there are numerous positive reviews about a specific restaurant dish, the restaurant might choose to highlight that dish in their marketing materials.
+2026-10-24 19:42:15 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:42:15 - __main__ - INFO - Summary: 
+ This data set consists of 154 reviews of various services and products, such as food, hotels, healthcare, and more. Each review is accompanied by a summary of the reviewer's experience, a score from 1 to 5 for Food Quality, Customer Service, or Pricing, and a rating of Positive or Negative.
+
+Here are some key observations:
+
+1. The majority of the reviews are positive, with a ratio of 122 positive to 32 negative reviews.
+
+2. The most common category is Food Quality, with 56 reviews, followed by Customer Service with 49 reviews, and Pricing with 43 reviews.
+
+3. The highest Food Quality score is 5, given to a hidden gem cafe serving freshly roasted beans and delicious avocado toast. The lowest Food Quality score is 1, given to a restaurant with muted flavors and small portions.
+
+4. The highest Customer Service score is also 5, given to a luxury hotel, a healthcare provider, and a mechanic who provided excellent service and honest pricing. The lowest Customer Service score is 1, given to a restaurant with poor service and a cafe with questionable hygiene.
+
+5. The highest Pricing score is 5, given to a breathtaking city garden, a luxury hotel, and a healthcare provider offering world-class care. The lowest Pricing score is 1, given to a hotel with outdated amenities and high prices, and a dining experience that was overpriced for negligent attention and sub-par quality.
+
+6. Many reviews include hashtags such as #verifiedpurchase, suggesting they may be genuine customer reviews.
+
+This data set could be used for sentiment analysis, product or service comparison, or to identify trends in customer satisfaction across different industries.
+2026-10-24 19:42:47 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:42:47 - __main__ - INFO - Summary: 
+ From the data provided, it appears that the majority of the reviews for this product are positive, with a significant number of customers giving it a rating of 5 out of 5. The most common positive sentiments expressed in the reviews are related to the product's quality, design, performance, and customer service. However, there are also some negative reviews, with customers expressing dissatisfaction with the product's quality, customer service, pricing, and performance. Overall, the product seems to be well-received by a large number of customers, but there are areas for improvement identified in the negative reviews.
+
+The most frequently mentioned positive aspects of the product are its quality, design, and performance. Customers frequently praise the product's sturdiness, reliability, and exceptional engineering. They also appreciate the sleek design and the fact that the product works without any hassle. In addition, many customers are pleased with the customer service they received.
+
+On the other hand, the most common negative aspects mentioned in the reviews are the product's quality, customer service, pricing, and performance. Customers have reported issues with the product breaking after a short period of time, and some have been disappointed with the customer service they received, with some reporting that customer support was unhelpful and refused refunds. Others have expressed concerns about the product's pricing, feeling that it is overpriced for the performance delivered.
+
+In terms of specific features, battery life and customer service are the most commonly mentioned positive aspects, while pricing is the most commonly mentioned negative aspect. It is worth noting that a significant number of reviews mention the product's packaging as being pristine, which could indicate that the company places a high importance on the presentation of the product.
+
+Overall, the data suggests that the product is well-received by a large number of customers, but there are areas for improvement identified in the negative reviews. It is important for the company to address these concerns and continue to improve the product in order to maintain a positive reputation and continue to attract customers.
+2026-10-24 19:43:16 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:43:16 - __main__ - INFO - Summary: 
+ This data set contains 168 customer reviews for a product, with each review having several fields:
+
+1. **Review ID**: A unique identifier for each review.
+2. **Summary**: A brief summary of the customer's experience with the product.
+3. **Positive/Negative**: Whether the customer's review was overall positive or negative.
+4. **Rating**: The rating given by the customer on a scale of 1 to 5.
+5. **Aspect**: The specific aspect the review is related to, in this case, either "Design" or "Customer Service".
+
+Here's an example of a positive review:
+
+| Review ID | Summary                | Positive/Negative | Rating | Aspect            |
+|-----------|------------------------|-------------------|-------|-------------------|
+| 140      | Simply brilliant. I was skeptical at first, but this product blew me away. Sturdy, reliable, and exceptionally well engineered. | POSITIVE          | 5            | Design           |
+
+And an example of a negative review:
+
+| Review ID | Summary                      | Positive/Negative | Rating | Aspect            |
+|-----------|------------------------------|-------------------|-------|-------------------|
+| 150      | Terrible quality! It stopped working completely after just two days of light use. Customer support was unhelpful and refused a refund. Total waste of money. | NEGATIVE           | 1            | Customer Service |
+
+You can analyze this data set to understand the general sentiment towards the product, identify common issues, and gather insights to improve the product or customer service. For instance, you might find that the majority of negative reviews concern issues with product quality, while the positive reviews highlight the design and reliability. This information can help guide product development and customer service strategies.
+2026-10-24 19:43:58 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:43:58 - __main__ - INFO - Summary: 
+ It appears you have a dataset of customer reviews for a product. Each review includes a summary, ratings for various aspects such as performance, battery life, packaging, customer service, and a final overall score.
+
+To analyze this data, we can perform the following tasks:
+
+1. Calculate the average rating for each aspect (Positive, Battery Life, Customer Service, Packaging)
+2. Determine the percentage of positive vs negative reviews based on the overall score (4 or 5 stars vs 1 or 2 stars)
+3. Find out the most common phrases or sentiments in the summary section using text analysis techniques such as frequency distribution, sentiment analysis, or topic modeling.
+
+Here's how to calculate the average rating for each aspect:
+
+1. Initialize a dictionary to store the total count and sum of ratings for each aspect:
+
+```python
+ratings = {
+    'Positive': (0, 0),
+    'Battery Life': (0, 0),
+    'Customer Service': (0, 0),
+    'Packaging': (0, 0)
+}
+```
+
+2. Iterate through each review and update the total count and sum of ratings for the respective aspects:
+
+```python
+for review_id, (positive, aspect, score, overall) in enumerate(reviews):
+    ratings[aspect][0] += 1
+    ratings[aspect][1] += score
+```
+
+3. Calculate the average rating for each aspect by dividing the sum of ratings by the total count:
+
+```python
+for aspect, (count, sum_ratings) in ratings.items():
+    average_rating = sum_ratings / count
+    print(f"Average rating for {aspect}: {average_rating}")
+```
+
+This will give you the average rating for each aspect based on the given reviews.
+
+To determine the percentage of positive vs negative reviews and find out the most common phrases or sentiments in the summary section, you can use various text analysis techniques such as frequency distribution, sentiment analysis, or topic modeling.
+
+For example, using Python's NLTK library, you can calculate the frequency distribution of words in the summary section:
+
+```python
+from collections import Counter
+
+# Initialize a counter to store the frequency of words in the summary section
+word_counter = Counter()
+
+# Iterate through each review and update the counter with words in the summary section
+for review_id, (_, summary) in enumerate(reviews):
+    for word in summary.split():
+        word_counter[word.lower()] += 1
+
+# Print the 10 most common words
+print(word_counter.most_common(10))
+```
+
+This will give you the 10 most common words in the summary section based on the given reviews. You can further analyze the text data using sentiment analysis or topic modeling to gain more insights.
+2026-10-24 19:44:22 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:44:22 - __main__ - INFO - Summary: 
+ This data consists of customer reviews for various services and products, along with ratings for different categories such as Pricing, Customer Service, Battery Life, etc. Here's a summary of the data:
+
+1. The majority of the reviews are for customer service (12 out of 15 reviews).
+2. The reviews cover a wide range of sentiments, from extremely positive (5) to extremely negative (1).
+3. Some reviews mention specific issues or positive aspects, such as food quality, staff behavior, pricing, and packaging.
+4. Some reviews include a hashtag "#verifiedpurchase", which may indicate that they were written by verified customers.
+
+To analyze this data, we could:
+
+1. Calculate the average ratings for each category (Pricing, Customer Service, Battery Life, etc.) for positive and negative reviews.
+2. Identify common themes or issues in the reviews, such as recurring customer complaints or praise for specific aspects of a service or product.
+3. Compare the ratings and themes across different services or products to identify patterns or trends.
+4. Use sentiment analysis to automatically categorize reviews as positive, negative, or neutral based on the language used in the review.
+5. Use this analysis to make informed decisions, such as improving customer service or adjusting pricing based on customer feedback.
+2026-10-24 19:44:44 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:44:44 - __main__ - INFO - Summary: 
+ This dataset contains 169 customer reviews for a product, each review contains the following information:
+
+1. Review ID: Unique identifier for each review.
+2. Summary: Brief overview of the review, usually a sentence or two about the customer's experience.
+3. Star Rating: A score out of 5, indicating the reviewer's overall opinion of the product.
+4. Detailed Rating (for specific categories): A score out of 7 for specific categories such as Battery Life, Customer Service, Pricing, etc. These ratings provide more detailed insights into the customer's experience with each category.
+5. Category (for detailed ratings): The specific category being rated (e.g., Battery Life, Customer Service, Pricing, etc.).
+6. Verified Purchase: Some reviews include a "#verifiedpurchase" tag, indicating that the reviewer made a verified purchase through Amazon.
+
+This dataset can be used for sentiment analysis, topic modeling, and other text mining tasks to gain insights into customer opinions about the product and specific aspects of it. It can also be used to evaluate the effectiveness of customer service and identify areas for improvement.
+2026-10-24 19:45:34 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:45:34 - __main__ - INFO - Summary: 
+ It appears that you have a dataset of customer reviews for various products, each with a unique ID, a summary of the review, and ratings for several categories: Design, Battery Life, and Customer Service. The ratings range from 1 (Negative) to 5 (Positive).
+
+To analyze the data, we can perform the following steps:
+
+1. Calculate the total number of positive and negative reviews for each category. This can help us understand which aspects of the products are most appreciated and criticized.
+
+2. Calculate the average rating for each category. This can help us determine the overall satisfaction level for each category.
+
+3. Analyze the most common words used in positive and negative reviews for each category. This can give insights into specific issues or features that are frequently mentioned in the reviews.
+
+Here's a Python code example that demonstrates these steps:
+
+```python
+import collections
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from collections import Counter
+
+# Initialize counters for positive and negative reviews
+positive_reviews = collections.defaultdict(int)
+negative_reviews = collections.defaultdict(int)
+
+# Initialize lemmatizer
+lemmatizer = WordNetLemmatizer()
+
+# Stopwords list
+stop_words = set(stopwords.words('english'))
+
+# Loop through reviews
+for review_id, review in enumerate(reviews):
+    summary = review['summary']
+    category = review['category']
+
+    # Tokenize the summary
+    tokens = [lemmatizer.lemmatize(word.lower()) for word in summary.split() if word.lower() not in stop_words]
+
+    # Increment the counters for positive and negative reviews
+    if review['rating'] == 'POSITIVE':
+        positive_reviews[category] += len(tokens)
+    elif review['rating'] == 'NEGATIVE':
+        negative_reviews[category] += len(tokens)
+
+# Calculate the total number of reviews for each category
+total_reviews = sum(positive_reviews.values()) + sum(negative_reviews.values())
+
+# Calculate the percentage of positive and negative reviews for each category
+positive_percentage = {category: (positive_reviews[category] / total_reviews) * 100 for category in positive_reviews}
+negative_percentage = {category: (negative_reviews[category] / total_reviews) * 100 for category in negative_reviews}
+
+# Calculate the average rating for each category
+average_rating = {category: (positive_reviews[category] + (total_reviews - negative_reviews[category])) / total_reviews for category in positive_reviews}
+
+# Print the results
+for category, data in positive_percentage.items():
+    print(f"Category: {category}")
+    print(f"Total Reviews: {total_reviews}")
+    print(f"Positive Reviews: {positive_reviews[category]} ({data}%)")
+    print(f"Negative Reviews: {negative_reviews[category]} (-{100 - data}%)")
+    print(f"Average Rating: {average_rating[category]}")
+    print()
+```
+
+This code will output the total number of reviews, the percentage of positive and negative reviews, and the average rating for each category. It also tokenizes the reviews to calculate the most common words used in positive and negative reviews for each category. You can further analyze these words to gain insights into the specific issues or features that are frequently mentioned in the reviews.
+2026-10-24 19:46:00 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:46:00 - __main__ - INFO - Summary: 
+ Based on the reviews provided, the overall sentiment towards the product is generally positive, with many customers praising its design, performance, and battery life. Here's a summary of the feedback:
+
+1. **Design**: Most customers find the product to have a high-quality build, with a clear and crisp finish. Some customers have mentioned a minor issue with the glossy finish attracting fingerprints.
+
+2. **Performance**: Customers have reported that the product performs impressively, with some even going as far as saying it exceeds their expectations. A few customers have experienced bugs and sluggishness in the main features.
+
+3. **Battery Life**: The battery life of the product is consistently praised by customers, with many stating that it lasts a full day or more.
+
+4. **Customer Service**: The majority of customers have had positive experiences with the customer service, with many expressing appreciation for the prompt service and helpfulness. However, there are a few instances where customers have had negative experiences, with customer support being unhelpful and refusing refunds.
+
+5. **Value for Money**: Some customers find the product to be slightly overpriced for the performance they received, while others find it to be a worthwhile investment.
+
+Overall, the product seems to be well-regarded by its users, with many positive reviews. However, it's important for potential buyers to consider the occasional reports of bugs and issues, as well as the varying opinions on value for money.
+2026-10-24 19:46:23 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:46:23 - __main__ - INFO - Summary: 
+ Based on the reviews provided, here's a summary of the product's performance and customer sentiment:
+
+1. The product is a construction item made of ABS plastic, but some customers have reported a terrible smell and disappointing performance that doesn't match the product description. The overall sentiment is negative (11 reviews) with a focus on the design aspect.
+
+2. The product is rated positively by many customers, with praise for its performance, build quality, and reliability. However, some customers have pointed out minor issues such as short charging cables, glossy finishes attracting fingerprints, and occasional software bugs. The positive sentiment outweighs the negative (45 reviews).
+
+3. Some customers have provided detailed reviews, highlighting the product's benefits and drawbacks, and even sharing their experiences with the customer service team. This suggests that the company values customer feedback and is actively seeking to improve the product.
+
+In conclusion, while the product has some room for improvement, the majority of customers are satisfied with its performance and quality. The company should consider addressing the issues raised by the minority of dissatisfied customers to maintain a positive reputation.
+2026-10-24 19:46:43 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:46:43 - __main__ - INFO - Summary: 
+ From the provided data, it appears that these are customer reviews for various establishments, such as restaurants, hotels, and parks. Each review is accompanied by a summary, a rating for several categories (POSITIVE or NEGATIVE), and a category for what the review pertains to (e.g., Pricetag, Customer Service, Battery Life).
+
+The ratings for each category indicate the level of satisfaction customers have had with the respective establishment. For example, a rating of 3 for "POSITIVE" means the customer had a very good experience, while a rating of 1 for "NEGATIVE" means the customer had a very poor experience.
+
+In addition, some reviews include the "#verifiedpurchase" hashtag, which suggests that the reviewer may have made a purchase before writing the review.
+
+This data could be useful for businesses to analyze customer feedback and identify areas for improvement, or for consumers to make informed decisions about where to visit or shop.
+2026-10-24 19:47:15 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:47:15 - __main__ - INFO - Summary: 
+ It appears you have a dataset of customer reviews for a product with various categories such as Customer Service, Battery Life, and Packaging. Here's an analysis of the data:
+
+1. **Overall sentiment:** The majority of reviews (136 out of 169) are positive, with only 33 being negative. This suggests that the product is generally well-received by customers.
+
+2. **Positive categories:** Customer Service and Battery Life are the most frequently positive categories, with 72 and 57 positive reviews respectively. This indicates that customers are pleased with the product's performance and customer support.
+
+3. **Negative categories:** Customer Service is the only category with a significant number of negative reviews (21). This could be an area for improvement for the product's team.
+
+4. **Packaging:** The packaging of the product is generally well-regarded, with 66 positive reviews. This suggests that customers appreciate a well-designed and high-quality packaging experience.
+
+5. **Verified purchases:** Some reviews have the "#verifiedpurchase" tag, which might indicate that these reviews are from customers who purchased the product directly from the manufacturer. These reviews seem to have a slightly higher positive sentiment than the overall average, with 22 out of 28 reviews being positive.
+
+6. **Product issues:** Some reviews mention specific issues with the product, such as performance bugs, build quality concerns, or tedious setup processes. These issues could be addressed by the product's team to improve customer satisfaction.
+
+7. **Recommendations:** Many customers have recommended the product to others, suggesting a high level of satisfaction and confidence in the product.
+
+Overall, the product seems to be performing well and is generally well-liked by customers. However, there are areas for improvement, particularly in terms of customer service and potential product issues mentioned in some reviews. It would be beneficial for the product's team to address these concerns to further improve customer satisfaction.
+2026-10-24 19:47:50 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:47:50 - __main__ - INFO - Summary: 
+ The data provided consists of customer reviews for various establishments, such as restaurants, hotels, and a mechanic shop, with ratings for different aspects like customer service, pricing, and cleanliness.
+
+Here are some key observations and insights from the data:
+
+1. **Customer Service** - Overall, the majority of reviews (78%) for customer service are positive, with an average rating of 4.13. This suggests that customers generally have a good experience with the staff and service at these establishments. However, 22% of reviews are negative, with an average rating of 1.67, indicating room for improvement in certain cases.
+
+2. **Pricing** - The pricing ratings are more split, with 47% of reviews being positive, an average rating of 2.64. On the other hand, 53% of reviews are negative, with an average rating of 1.51, suggesting that many customers feel overcharged or underwhelmed with the quality of service they receive.
+
+3. **Battery Life** - This category is unrelated to the establishments, and it appears that some reviews have been accidentally categorized incorrectly. It is likely that this category should have been labeled as "Experience," "Quality," or similar.
+
+4. **Outliers** - There are a few reviews that stand out as outliers, such as the ones with very high ratings (5) for customer service. These reviews seem to indicate exceptional experiences, possibly from loyal customers or employees. Conversely, there are reviews with very low ratings (1) for customer service that seem to indicate severe dissatisfaction.
+
+5. **Sentiment Analysis** - By analyzing the sentiments expressed in the reviews, we can gain a deeper understanding of customers' feelings towards these establishments. For example, many reviews mention feeling welcomed, well-cared-for, and satisfied with their experiences, while other reviews express frustration, disappointment, and anger due to poor service, long wait times, or overpriced offerings.
+
+Overall, the data suggests that the establishments have a generally positive reputation for customer service, but there is room for improvement in terms of pricing and addressing customer complaints promptly. A more detailed analysis of the reviews can help businesses identify specific areas where they can make improvements to enhance the overall customer experience.
+2026-10-24 19:48:13 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:48:13 - __main__ - INFO - Summary: 
+ It appears you have a collection of customer reviews, each with a unique ID, summary, sentiment (POSITIVE or NEGATIVE), category (Customer Service, Battery Life), and a score from 1 to 5 for the quality of the service or product.
+
+To analyze these reviews, I'd suggest the following steps:
+
+1. Calculate the average scores for each category (Customer Service, Battery Life) to get an idea of the overall customer satisfaction for each category.
+
+2. Count the number of positive and negative reviews in each category. This will help identify if there are any categories that consistently receive more positive or negative feedback.
+
+3. Analyze the sentiments and categories of the reviews to identify trends, common issues, or areas of improvement for the business.
+
+4. For the negative reviews, consider reaching out to the customers to offer assistance or apologies, as it may help improve their perception of the business and potentially lead to a more positive review in the future.
+
+5. Highlight the positive reviews to showcase them on the business's website or social media channels to boost their reputation and attract more customers.
+
+6. Use the insights gained from the analysis to make data-driven decisions and improve customer service or products accordingly.
+2026-10-24 19:48:33 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:48:33 - __main__ - INFO - Summary: 
+ This dataset contains 174 customer reviews for an unspecified product, each review having the following attributes:
+
+1. ID: A unique identifier for each review.
+2. Summary: A brief overview of the customer's experience with the product.
+3. Positive/Negative: Whether the review is positive or negative.
+4. Category: The category the review belongs to, either "Priced" (related to pricing), "Battery Life", or "Customer Service".
+5. Rating: The star rating given by the customer to the product, ranging from 1 to 5.
+6. Verified Purchase: An indicator if the reviewer is a verified purchaser of the product.
+
+The dataset can be used for various text analysis and sentiment analysis tasks, such as determining the overall sentiment towards the product, analyzing customer feedback on specific categories, or predicting the star rating based on the review text. It can also help businesses identify common pain points and areas of improvement in their products.
+2026-10-24 19:49:02 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:49:02 - __main__ - INFO - Summary: 
+ This data represents customer reviews for an unspecified product, with each row representing a single review. The columns are:
+
+1. Review ID: A unique identifier for each review.
+2. Summary: A brief summary of the customer's experience with the product.
+3. Overall Rating: A score from 1 to 5 indicating the reviewer's overall satisfaction with the product.
+4. Rating Category: The specific aspect of the product being reviewed (Customer Service, Battery Life, etc.).
+5. Verified Purchase: An indicator (#verifiedpurchase) for reviews from verified purchasers.
+
+Here's a brief summary of the overall sentiment and common themes found in these reviews:
+
+1. Most reviews have positive sentiment, with a majority of them awarding 4 or 5 stars in the overall rating category.
+2. Customers frequently mention the product's high-quality build, performance, and intuitive design.
+3. The companion app occasionally experiences syncing issues, which is a minor complaint for some customers.
+4. Some customers feel the product is overpriced compared to its performance, although this is not a widespread complaint.
+5. A smaller number of reviews have negative sentiment, with customers complaining about misleading specifications, poor build quality, and sluggish performance.
+6. Packaging is generally well-regarded, with many customers praising its neatness and quick delivery.
+7. Customer service is generally well-received, with many customers appreciating the prompt service they received.
+
+Overall, the product appears to be well-regarded by customers, with most reviews praising its high-quality build, performance, and design. However, a small number of customers have had negative experiences due to misleading specifications and poor build quality.
+2026-10-24 19:49:37 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:49:37 - __main__ - INFO - Summary: 
+ From the data provided, it appears that the reviews are related to various businesses such as restaurants, hotels, attractions, and services. Each review includes a summary of the experience, a rating for various categories (like Battery Life, Pricings, Customer Service, etc.), and a sentiment label (Positive or Negative).
+
+To analyze these reviews, we can perform sentiment analysis on the summaries to determine the overall sentiment of each review, and then compare the ratings in each category to gain insights into the strengths and weaknesses of the businesses.
+
+Here's a summary of the findings based on the data provided:
+
+1. Restaurants:
+   - The majority of the reviews for restaurants are positive, with several mentions of good food, excellent service, and pleasant atmospheres. However, there are also negative reviews that highlight issues like bland food, sluggish service, and poor hygiene.
+
+2. Hotels:
+   - Most hotel reviews are positive, praising exceptional service, cleanliness, and comfortable rooms. Some reviews also mention beautiful views and unique features like spas.
+
+3. Attractions:
+   - All reviews for attractions are positive, with mentions of breathtaking flora, immaculately manicured gardens, and peaceful tranquility.
+
+4. Services:
+   - Reviews for services (car repair, coffee shop) are generally positive, with praise for professionalism, honest pricing, and prompt service. However, there are also negative reviews that mention sub-par quality and negligent attention.
+
+In terms of ratings, the categories with the highest average scores are Customer Service (4.13) and Pricings (3.76), while the categories with the lowest average scores are Battery Life (1.33) and Customer Service (0.92). This suggests that businesses should focus on improving their battery life and customer service, particularly in the context of services and attractions.
+
+The sentiment analysis shows that the majority of the reviews are positive (90.7%), with only 9.3% being negative. This indicates that overall, the businesses are doing a good job in providing satisfactory experiences to their customers. However, it's important to address the negative reviews to maintain a high level of customer satisfaction and prevent potential damage to the business's reputation.
+2026-10-24 19:49:58 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:49:58 - __main__ - INFO - Summary: 
+ Based on the reviews analyzed, it appears that there is a mix of positive and negative feedback regarding the product quality.
+
+Here are some key findings:
+
+1. Positive Reviews:
+   - Many users have praised the product for its sturdy build, clear performance, and fast delivery.
+   - Some have highlighted the intuitive controls and satisfactory battery life.
+   - A few users have expressed their happiness with the product's performance and build quality, exceeding their expectations.
+
+2. Negative Reviews:
+   - Several users have reported issues with the product's quality, including poor construction, fast battery drain, and tinny audio.
+   - Some have experienced hardware or software malfunctions, requiring frequent resets or customer support.
+   - A few users have been disappointed with the product, as it did not match the description provided or had misleading specifications.
+
+It seems that while the majority of users are satisfied with their purchase, there are some issues that need to be addressed, particularly concerning the product's quality and customer service.

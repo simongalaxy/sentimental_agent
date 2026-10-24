@@ -1,0 +1,144 @@
+2026-10-24 19:52:27 - __main__ - INFO - Class Logger initiated.
+2026-10-24 19:52:27 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:52:27 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english "HTTP/1.1 200 OK"
+2026-10-24 19:52:27 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:52:28 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-24 19:52:28 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-24 19:52:28 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-24 19:52:29 - __main__ - INFO - FilePaths in folder - ./data/Processed_files: 
+['data/Processed_files/Amazon_Ninja_Air_Fryer_Pro_XL_Processed.csv', 'data/Processed_files/Google_Locations_Urban_Yoga_&_Wellness_Studio_Processed.csv', 'data/Processed_files/Google_Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed.csv', 'data/Processed_files/Google_Locations_Highland_Public_Library_&_Cultural_Center_Processed.csv', 'data/Processed_files/Google_Locations_City_View_Botanical_Gardens_&_Park_Processed.csv', 'data/Processed_files/Google_Locations_Precision_Auto_Mechanics_&_Body_Works_Processed.csv', "data/Processed_files/Amazon_Men's_Lightweight_Breathable_Running_Shoes_Processed.csv", 'data/Processed_files/Google_Locations_Golden_Dragon_Dim_Sum_Palace_Processed.csv', 'data/Processed_files/Google_Locations_Bella_Italia_Trattoria_Processed.csv', 'data/Processed_files/Amazon_Logitech_MX_Master_3S_Wireless_Mouse_Processed.csv', 'data/Processed_files/Amazon_Deep_Learning_with_Python_by_Francois_Chollet_Processed.csv', "data/Processed_files/Amazon_Columbia_Men's_Watertight_II_Rain_Jacket_Processed.csv", 'data/Processed_files/Google_Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed.csv', 'data/Processed_files/Amazon_Anker_65W_GaN_Fast_Charger_Processed.csv', 'data/Processed_files/Amazon_Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed.csv', 'data/Processed_files/Amazon_Atomic_Habits_by_James_Clear_Processed.csv', 'data/Processed_files/Amazon_Kindle_Paperwhite_(16_GB)_Processed.csv', 'data/Processed_files/Google_Locations_Sakura_Japanese_Sushi_&_Ramen_Processed.csv', 'data/Processed_files/Amazon_Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed.csv', 'data/Processed_files/Google_Locations_Metropolitan_Dental_Health_Clinic_Processed.csv', 'data/Processed_files/Google_Locations_Central_City_Fitness_&_CrossFit_Processed.csv', 'data/Processed_files/Amazon_Bedsure_Cooling_Bamboo_Bed_Sheets_Processed.csv', 'data/Processed_files/Amazon_Echo_Dot_Smart_Speaker_Processed.csv', 'data/Processed_files/Google_Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed.csv', 'data/Processed_files/Amazon_Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed.csv']
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Ninja_Air_Fryer_Pro_XL_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (162, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Urban_Yoga_&_Wellness_Studio_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (145, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (149, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Highland_Public_Library_&_Cultural_Center_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (152, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_City_View_Botanical_Gardens_&_Park_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Precision_Auto_Mechanics_&_Body_Works_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (172, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Men's_Lightweight_Breathable_Running_Shoes_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (144, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Golden_Dragon_Dim_Sum_Palace_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (155, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Bella_Italia_Trattoria_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (180, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Logitech_MX_Master_3S_Wireless_Mouse_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (169, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Deep_Learning_with_Python_by_Francois_Chollet_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Columbia_Men's_Watertight_II_Rain_Jacket_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Anker_65W_GaN_Fast_Charger_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (181, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (185, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Atomic_Habits_by_James_Clear_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (188, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Kindle_Paperwhite_(16_GB)_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (142, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Sakura_Japanese_Sushi_&_Ramen_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (156, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Metropolitan_Dental_Health_Clinic_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (139, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Central_City_Fitness_&_CrossFit_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (175, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Bedsure_Cooling_Bamboo_Bed_Sheets_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (186, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Echo_Dot_Smart_Speaker_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (160, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Google, Product: Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data loaded successfully.
+2026-10-24 19:52:29 - __main__ - INFO - DataFrame shape: (182, 7)
+2026-10-24 19:52:29 - __main__ - INFO - ##################################################
+2026-10-24 19:52:29 - __main__ - INFO - Platform: Amazon, Product: Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed - csv file loaded.
+2026-10-24 19:52:29 - __main__ - INFO - Data preparation completed.
+2026-10-24 19:52:45 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:52:45 - __main__ - INFO - Summary: 
+ Based on the provided reviews, here's a summary of the product's aspects:
+
+1. Quality: Most reviews praise the product's quality, with many mentioning excellent build, craftsmanship, and packaging. However, there are some negative reviews stating poor quality, with issues such as products stopping working after a short period of time and unhelpful customer support.
+
+2. Performance: The performance of the product is somewhat mixed. Some reviews praise the performance as blazing fast, while others mention bugs, sluggishness, and underwhelming performance.
+
+3. Design: The design of the product is generally well-received, with many complimenting the product's look and feel. However, there are some negative reviews about the design, including poor design and frustrating setup instructions.
+
+4. Setup: The setup process seems to be straightforward for most users, with many reviews mentioning it took only a few minutes to set up.
+
+5. Customer Support: Some reviews praise the customer support for being prompt and helpful, while others criticize it for being unhelpful and refusing refunds.
+
+In conclusion, the product appears to have generally positive reviews for its quality, design, and setup, but the performance seems to be a bit of a concern for some users. It's also worth noting that customer support seems to be a mixed bag, with both positive and negative experiences reported.
+2026-10-24 19:53:05 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-24 19:53:05 - __main__ - INFO - Summary: 
+ From the provided data, it appears that the feedback is about various services, including restaurants, accommodations, and mechanic shops. The feedback is categorized into positive and negative, with some specific subcategories such as service, ambiance, food quality, and hygiene.
+
+Here are some general observations based on the data:
+
+1. Restaurants and cafes seem to be the most common type of service reviewed. The positive feedback often mentions good service, delicious food, and a pleasant atmosphere, while the negative feedback often mentions poor service, bad food, and dirty facilities.
+
+2. Accommodations, such as hotels, are also reviewed. The positive feedback often mentions excellent service, clean and well-appointed rooms, and beautiful ambiance, while the negative feedback often mentions poor service, outdated amenities, and dirty facilities.
+
+3. Mechanic shops also receive reviews. The positive feedback often mentions honest pricing, accurate diagnosis, and quick service, while the negative feedback often mentions high prices, inaccurate diagnosis, and poor service.
+
+4. Some reviews include specific hashtags like #verifiedpurchase, which might indicate that they are from customers who have made a purchase.
+
+5. There are also some reviews that express dissatisfaction with the service, but include a thanks to the team for the prompt service, which could indicate that the customer is acknowledging the effort made by the staff, despite their dissatisfaction with the service.
+
+6. There are a few reviews that mention the same issue (terrible hygiene and filthy tables) from two different users, which could suggest a systemic problem at the establishment.
+
+Overall, the data suggests that service quality, particularly in terms of service and cleanliness, is a major factor in customer satisfaction for these types of businesses.
