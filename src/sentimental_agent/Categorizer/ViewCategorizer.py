@@ -2,6 +2,7 @@ import torch
 import pandas as pd
 from typing import List
 from transformers import pipeline
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 from src.sentimental_agent.Utilities.Logger import Logger
 from src.sentimental_agent.Utilities.Settings import settings
@@ -10,9 +11,9 @@ from src.sentimental_agent.Utilities.Settings import settings
 class ViewCategorizer:
     def __init__(self, logger: Logger):
         self.logger = logger
-        self.categorizer_model = settings.categorizier_model
-        self.labeller_model = settings.labeller_model
+        self.categorizer_model_name = settings.categorizier_model
         self.processed_files_folderpath = settings.processed_files_folderPath
+        self.model = AutoModelForSequenceClassification.from_pretrained(self.categorizer_model_name)
         
 
     def _get_categories_from_reviews(self, review_texts: List[str]) -> List[str]:
@@ -43,8 +44,8 @@ class ViewCategorizer:
 
         views_categorizer = pipeline(
                         "text-generation",
-                        model=self.categorizer_model,
-                        torch_dtype=torch.float32, # Optimal for CPU environments
+                        model=self.model,
+                        dtype=torch.float32, # Optimal for CPU environments
                         device_map="auto"
                     )
 
@@ -72,7 +73,8 @@ class ViewCategorizer:
         # Uses 'facebook/bart-large-mnli' as a highly capable, default model
         views_labeller = pipeline(
             "zero-shot-classification", 
-            model=self.labeller_model
+            model=self.model,
+            dtype=torch.float16
             )
 
         # 3. Classify Review texts.

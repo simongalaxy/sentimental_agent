@@ -25,10 +25,11 @@ class Settings(BaseSettings):
     processed_files_folderPath: str
 
     # HuggingFace settings.
+    hf_token: str
     # 1. sentimental model.
     sentimental_model: str
     categorizier_model: str
-    labeller_model: str
+    # labeller_model: str
 
     # ollama cloud settings.
     cloud_model: str

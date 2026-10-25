@@ -1,0 +1,405 @@
+2026-10-25 15:41:23 - __main__ - INFO - Class Logger initiated.
+2026-10-25 15:41:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment "HTTP/1.1 200 OK"
+2026-10-25 15:41:24 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-10-25 15:41:24 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-25 15:41:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment "HTTP/1.1 200 OK"
+2026-10-25 15:41:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-25 15:41:24 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/commits/main "HTTP/1.1 200 OK"
+2026-10-25 15:41:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-25 15:41:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/discussions?p=0 "HTTP/1.1 200 OK"
+2026-10-25 15:41:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/commits/refs%2Fpr%2F19 "HTTP/1.1 200 OK"
+2026-10-25 15:41:25 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/refs%2Fpr%2F19/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-10-25 15:41:25 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/refs%2Fpr%2F19/model.safetensors "HTTP/1.1 302 Found"
+2026-10-25 15:41:25 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-10-25 15:41:26 - __main__ - INFO - File path: ./data/original/amazon_google_reviews.csv
+2026-10-25 15:41:26 - __main__ - INFO - Data loaded successfully.
+2026-10-25 15:41:26 - __main__ - INFO - DataFrame shape: (6200, 7)
+2026-10-25 15:41:26 - __main__ - INFO - ##################################################
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Metropolitan Dental Health Clinic', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              4             5.0                    8
+1    Absolute 5-star experience! Our server was kno...              4             5.0                   62
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    3
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+4    Absolute 5-star experience! Our server was kno...              2             5.0                    2
+..                                                 ...            ...             ...                  ...
+151  World-class care and professionalism. The staf...              1             5.0                    5
+152  World-class care and professionalism. The staf...              1             5.0                   38
+153  Worst dining experience of my life. The server...              1             1.0                    1
+154  Worst dining experience of my life. The server...              1             1.0                    5
+155  Worst dining experience of my life. The server...              1             1.0                    2
+
+[156 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Blue Bottle Artisan Coffee Bar', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    2
+2    Absolute 5-star experience! Our server was kno...              2             5.0                    1
+3    Absolute 5-star experience! Our server was kno...              2             5.0                   12
+4    Absolute 5-star experience! Our server was kno...              2             5.0                   12
+..                                                 ...            ...             ...                  ...
+148  World-class care and professionalism. The staf...              3             5.0                    2
+149  World-class care and professionalism. The staf...              2             5.0                    3
+150  World-class care and professionalism. The staf...              1             5.0                    2
+151  World-class care and professionalism. The staf...              2             5.0                    3
+152  Worst dining experience of my life. The server...              1             1.0                    0
+
+[153 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Bella Italia Trattoria', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                   40
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    4
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+3    Absolute 5-star experience! Our server was kno...              2             5.0                    8
+4    Average experience overall. Convenient locatio...              2             3.0                    0
+..                                                 ...            ...             ...                  ...
+150  World-class care and professionalism. The staf...              1             5.0                    3
+151  World-class care and professionalism. The staf...              2             5.0                    3
+152  World-class care and professionalism. The staf...              2             5.0                    5
+153  Worst dining experience of my life. The server...              1             1.0                    0
+154  Worst dining experience of my life. The server...              1             1.0                    4
+
+[155 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Highland Public Library & Cultural Center', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    3
+1    Absolute 5-star experience! Our server was kno...              2             5.0                    0
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+4    Average experience overall. Convenient locatio...              1             3.0                    0
+..                                                 ...            ...             ...                  ...
+144  Wonderful experience overall. The staff was co...              1             4.0                    4
+145  World-class care and professionalism. The staf...              1             5.0                    0
+146  World-class care and professionalism. The staf...              1             5.0                   46
+147  World-class care and professionalism. The staf...              2             5.0                    1
+148  Worst dining experience of my life. The server...              1             1.0                    1
+
+[149 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Golden Dragon Dim Sum Palace', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                    5
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+2    Absolute 5-star experience! Our server was kno...              4             5.0                    6
+3    Absolute 5-star experience! Our server was kno...              3             5.0                    6
+4    Absolute 5-star experience! Our server was kno...              3             5.0                   39
+..                                                 ...            ...             ...                  ...
+139  World-class care and professionalism. The staf...              1             5.0                    0
+140  World-class care and professionalism. The staf...              1             5.0                    0
+141  World-class care and professionalism. The staf...              4             5.0                  102
+142  Worst dining experience of my life. The server...              1             1.0                    0
+143  Worst dining experience of my life. The server...              1             1.0                    4
+
+[144 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'City View Botanical Gardens & Park', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              3             5.0                    7
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+3    Absolute 5-star experience! Our server was kno...              2             5.0                    2
+4    Absolute 5-star experience! Our server was kno...              6             5.0                    7
+..                                                 ...            ...             ...                  ...
+147  World-class care and professionalism. The staf...              1             5.0                    0
+148  World-class care and professionalism. The staf...              3             5.0                    4
+149  World-class care and professionalism. The staf...              4             5.0                   20
+150  World-class care and professionalism. The staf...              1             5.0                    0
+151  Worst dining experience of my life. The server...              1             1.0                    0
+
+[152 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Greenwich Boutique Bed & Breakfast', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              5             5.0                   56
+1    Absolute 5-star experience! Our server was kno...              2             5.0                   29
+2    Absolute 5-star experience! Our server was kno...              2             5.0                    9
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+4    Absolute 5-star experience! Our server was kno...              1             5.0                    4
+..                                                 ...            ...             ...                  ...
+155  World-class care and professionalism. The staf...              2             5.0                    1
+156  World-class care and professionalism. The staf...              2             5.0                    3
+157  World-class care and professionalism. The staf...              1             5.0                   27
+158  World-class care and professionalism. The staf...              1             5.0                    3
+159  World-class care and professionalism. The staf...              1             5.0                    0
+
+[160 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'The Grand Vista Luxury Hotel & Spa', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+2    Absolute 5-star experience! Our server was kno...              1             5.0                    3
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+4    Absolute 5-star experience! Our server was kno...              2             5.0                    9
+..                                                 ...            ...             ...                  ...
+140  World-class care and professionalism. The staf...              4             5.0                   55
+141  World-class care and professionalism. The staf...              1             5.0                    2
+142  Worst dining experience of my life. The server...              1             1.0                   31
+143  Worst dining experience of my life. The server...              1             1.0                    0
+144  Worst dining experience of my life. The server...              2             1.0                   36
+
+[145 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Sakura Japanese Sushi & Ramen', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              2             5.0                   16
+1    Absolute 5-star experience! Our server was kno...              1             5.0                   24
+2    Absolute 5-star experience! Our server was kno...              2             5.0                   28
+3    Absolute 5-star experience! Our server was kno...              1             5.0                   25
+4    Absolute 5-star experience! Our server was kno...              1             5.0                   12
+..                                                 ...            ...             ...                  ...
+137  World-class care and professionalism. The staf...              1             5.0                    4
+138  World-class care and professionalism. The staf...              2             5.0                    4
+139  Worst dining experience of my life. The server...              1             1.0                    3
+140  Worst dining experience of my life. The server...              1             1.0                    2
+141  Worst dining experience of my life. The server...              1             1.0                    0
+
+[142 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Precision Auto Mechanics & Body Works', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    1
+1    Absolute 5-star experience! Our server was kno...              4             5.0                   44
+2    Absolute 5-star experience! Our server was kno...              3             5.0                   36
+3    Absolute 5-star experience! Our server was kno...              1             5.0                   37
+4    Average experience overall. Convenient locatio...              1             3.0                    8
+..                                                 ...            ...             ...                  ...
+148  World-class care and professionalism. The staf...              3             5.0                   26
+149  World-class care and professionalism. The staf...              3             5.0                    2
+150  World-class care and professionalism. The staf...              2             5.0                    3
+151  Worst dining experience of my life. The server...              3             1.0                   39
+152  Worst dining experience of my life. The server...              1             1.0                    3
+
+[153 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Central City Fitness & CrossFit', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              2             5.0                   10
+2    Absolute 5-star experience! Our server was kno...              2             5.0                    2
+3    Absolute 5-star experience! Our server was kno...              2             5.0                   25
+4    Absolute 5-star experience! Our server was kno...              3             5.0                    3
+..                                                 ...            ...             ...                  ...
+134  World-class care and professionalism. The staf...              3             5.0                    4
+135  Worst dining experience of my life. The server...              1             1.0                    1
+136  Worst dining experience of my life. The server...              2             1.0                   44
+137  Worst dining experience of my life. The server...              2             1.0                   10
+138  Worst dining experience of my life. The server...              1             1.0                   43
+
+[139 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Google Locations', 'product': 'Urban Yoga & Wellness Studio', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute 5-star experience! Our server was kno...              1             5.0                    0
+1    Absolute 5-star experience! Our server was kno...              1             5.0                    6
+2    Absolute 5-star experience! Our server was kno...              3             5.0                   27
+3    Absolute 5-star experience! Our server was kno...              1             5.0                    6
+4    Average experience overall. Convenient locatio...              1             3.0                    1
+..                                                 ...            ...             ...                  ...
+157  Wonderful experience overall. The staff was co...              2             4.0                    2
+158  World-class care and professionalism. The staf...              2             5.0                    1
+159  World-class care and professionalism. The staf...              1             5.0                    2
+160  World-class care and professionalism. The staf...              2             5.0                   11
+161  Worst dining experience of my life. The server...              1             1.0                    0
+
+[162 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Bedsure Cooling Bamboo Bed Sheets', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    8
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    3
+2    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              2             5.0                    0
+4    Arrived damaged with a broken seal. Tried to u...              1             1.0                    0
+..                                                 ...            ...             ...                  ...
+170  Very pleased. The build feels premium and it d...              1             4.0                    1
+171  Works like a charm! Packaging was neat, delive...              2             4.0                    3
+172  Works like a charm! Packaging was neat, delive...              2             4.0                    3
+173  Works like a charm! Packaging was neat, delive...              1             4.0                    7
+174  Zero stars if I could! Horrible experience, mi...              1             1.0                    2
+
+[175 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Instant Pot Duo 7-in-1 Pressure Cooker', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    0
+1    Absolute perfection! Easily the best purchase ...              2             5.0                   10
+2    Absolute perfection! Easily the best purchase ...              4             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    7
+4    Absolute perfection! Easily the best purchase ...              2             5.0                    1
+..                                                 ...            ...             ...                  ...
+165  Works as described, but feels slightly overpri...              1             3.0                    1
+166  Works like a charm! Packaging was neat, delive...              2             4.0                    1
+167  Works like a charm! Packaging was neat, delive...              2             4.0                    2
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                   45
+169  Zero stars if I could! Horrible experience, mi...              2             1.0                   21
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Deep Learning with Python by Francois Chollet', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+1    Absolute perfection! Easily the best purchase ...              2             5.0                   11
+2    Absolute perfection! Easily the best purchase ...              3             5.0                    5
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    0
+..                                                 ...            ...             ...                  ...
+164  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+165  Zero stars if I could! Horrible experience, mi...              1             1.0                   11
+166  Zero stars if I could! Horrible experience, mi...              1             1.0                    3
+167  Zero stars if I could! Horrible experience, mi...              1             1.0                    3
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+
+[169 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Logitech MX Master 3S Wireless Mouse', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                   10
+1    Absolute perfection! Easily the best purchase ...              2             5.0                    4
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   26
+3    Absolute perfection! Easily the best purchase ...              3             5.0                    6
+4    Absolute perfection! Easily the best purchase ...              1             5.0                    4
+..                                                 ...            ...             ...                  ...
+175  Works like a charm! Packaging was neat, delive...              1             4.0                    2
+176  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+177  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+178  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+179  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+
+[180 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Keurig K-Elite Single Serve Coffee Maker', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    4
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    1
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   34
+3    Acceptable quality. Does what it says on the b...              1             3.0                    3
+4    Arrived damaged with a broken seal. Tried to u...              1             1.0                   24
+..                                                 ...            ...             ...                  ...
+176  Very pleased. The build feels premium and it d...              1             4.0                    2
+177  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+178  Works like a charm! Packaging was neat, delive...              2             4.0                    0
+179  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+180  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+
+[181 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Atomic Habits by James Clear', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                   18
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    2
+2    Acceptable quality. Does what it says on the b...              1             3.0                   12
+3    Acceptable quality. Does what it says on the b...              1             3.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    4
+..                                                 ...            ...             ...                  ...
+180  Very pleased. The build feels premium and it d...              1             4.0                    1
+181  Works as described, but feels slightly overpri...              1             3.0                    2
+182  Works like a charm! Packaging was neat, delive...              2             4.0                    4
+183  Works like a charm! Packaging was neat, delive...              2             4.0                    6
+184  Zero stars if I could! Horrible experience, mi...              1             1.0                    1
+
+[185 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': "Columbia Men's Watertight II Rain Jacket", 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    3
+1    Absolute perfection! Easily the best purchase ...              2             5.0                   15
+2    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              2             5.0                    4
+4    Acceptable quality. Does what it says on the b...              1             3.0                    0
+..                                                 ...            ...             ...                  ...
+165  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+166  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+169  Zero stars if I could! Horrible experience, mi...              1             1.0                    2
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': "Men's Lightweight Breathable Running Shoes", 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    5
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    2
+2    Absolute perfection! Easily the best purchase ...              3             5.0                    6
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    6
+4    Acceptable quality. Does what it says on the b...              1             3.0                    3
+..                                                 ...            ...             ...                  ...
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    4
+168  Works like a charm! Packaging was neat, delive...              1             4.0                    7
+169  Works like a charm! Packaging was neat, delive...              1             4.0                    2
+170  Zero stars if I could! Horrible experience, mi...              2             1.0                   38
+171  Zero stars if I could! Horrible experience, mi...              1             1.0                    3
+
+[172 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Sony WH-1000XM5 Noise Canceling Headphones', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+1    Absolute perfection! Easily the best purchase ...              3             5.0                   14
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   11
+3    Absolute perfection! Easily the best purchase ...              3             5.0                   34
+4    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+..                                                 ...            ...             ...                  ...
+177  Works like a charm! Packaging was neat, delive...              1             4.0                    4
+178  Works like a charm! Packaging was neat, delive...              1             4.0                   17
+179  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+180  Zero stars if I could! Horrible experience, mi...              1             1.0                   30
+181  Zero stars if I could! Horrible experience, mi...              1             1.0                    2
+
+[182 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Kindle Paperwhite (16 GB)', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              4             5.0                   33
+1    Absolute perfection! Easily the best purchase ...              2             5.0                    4
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   44
+3    Absolute perfection! Easily the best purchase ...              4             5.0                    9
+4    Acceptable quality. Does what it says on the b...              1             3.0                    2
+..                                                 ...            ...             ...                  ...
+183  Works as described, but feels slightly overpri...              1             3.0                    4
+184  Works as described, but feels slightly overpri...              1             3.0                    0
+185  Works like a charm! Packaging was neat, delive...              1             4.0                    8
+186  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+187  Zero stars if I could! Horrible experience, mi...              3             1.0                    4
+
+[188 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Ninja Air Fryer Pro XL', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              3             5.0                    4
+1    Absolute perfection! Easily the best purchase ...              2             5.0                    5
+2    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Absolute perfection! Easily the best purchase ...              1             5.0                    3
+..                                                 ...            ...             ...                  ...
+165  Works as described, but feels slightly overpri...              1             3.0                    1
+166  Works as described, but feels slightly overpri...              1             3.0                    2
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+168  Works like a charm! Packaging was neat, delive...              2             4.0                    4
+169  Works like a charm! Packaging was neat, delive...              3             4.0                    3
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Echo Dot Smart Speaker', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              1             5.0                    4
+1    Absolute perfection! Easily the best purchase ...              3             5.0                    4
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   38
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    1
+..                                                 ...            ...             ...                  ...
+181  Works like a charm! Packaging was neat, delive...              2             4.0                    3
+182  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+183  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+184  Zero stars if I could! Horrible experience, mi...              2             1.0                   37
+185  Zero stars if I could! Horrible experience, mi...              1             1.0                   44
+
+[186 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - profile: 
+{'platform': 'Amazon', 'product': 'Anker 65W GaN Fast Charger', 'reviews':                                            Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes
+0    Absolute perfection! Easily the best purchase ...              2             5.0                    2
+1    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+2    Absolute perfection! Easily the best purchase ...              2             5.0                   41
+3    Absolute perfection! Easily the best purchase ...              1             5.0                    0
+4    Acceptable quality. Does what it says on the b...              1             3.0                    1
+..                                                 ...            ...             ...                  ...
+165  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+166  Works like a charm! Packaging was neat, delive...              1             4.0                    0
+167  Works like a charm! Packaging was neat, delive...              1             4.0                    1
+168  Zero stars if I could! Horrible experience, mi...              1             1.0                    1
+169  Zero stars if I could! Horrible experience, mi...              1             1.0                    0
+
+[170 rows x 4 columns], 'processed_reviews': None, 'summary': None}
+2026-10-25 15:41:26 - __main__ - INFO - total profiles created: 25
+2026-10-25 15:41:26 - __main__ - INFO - No. 1/25: Start processing profile - Platform: Google Locations, Product: Metropolitan Dental Health Clinic
+2026-10-25 15:41:26 - __main__ - INFO - Obtaining sentimental from reviews.
+2026-10-25 15:41:26 - __main__ - INFO - DataFrame with Sentiment column: 
+                                         Review_Text  Total_Reviews  Average_Rating  Total_Helpful_Votes Sentiment
+0  Absolute 5-star experience! Our server was kno...              4             5.0                    8   LABEL_2
+1  Absolute 5-star experience! Our server was kno...              4             5.0                   62   LABEL_2
+2  Absolute 5-star experience! Our server was kno...              1             5.0                    3   LABEL_2
+3  Absolute 5-star experience! Our server was kno...              1             5.0                    0   LABEL_2
+4  Absolute 5-star experience! Our server was kno...              2             5.0                    2   LABEL_2
+2026-10-25 15:41:26 - __main__ - INFO - Sentimental from reviews finished.
+2026-10-25 15:41:26 - __main__ - INFO - Categorize
+2026-10-25 15:41:26 - __main__ - INFO - Loading local Hugging Face Text-generation Model....

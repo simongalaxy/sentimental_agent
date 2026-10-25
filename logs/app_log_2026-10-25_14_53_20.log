@@ -1,0 +1,205 @@
+2026-10-25 14:53:20 - __main__ - INFO - Class Logger initiated.
+2026-10-25 14:53:20 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment "HTTP/1.1 200 OK"
+2026-10-25 14:53:21 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-25 14:53:21 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-25 14:53:21 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/config.json?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fconfig.json=&etag=%22f1e21eb05e56dc207001d6684f988a75a29e66b1%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:21 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/config.json?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fconfig.json=&etag=%22f1e21eb05e56dc207001d6684f988a75a29e66b1%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:21 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/model.safetensors "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:21 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:22 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-10-25 14:53:22 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/xet-read-token/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f "HTTP/1.1 200 OK"
+2026-10-25 14:53:31 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:31 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment "HTTP/1.1 200 OK"
+2026-10-25 14:53:31 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/commits/main "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/discussions?p=0 "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/commits/refs%2Fpr%2F19 "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/vocab.json?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fvocab.json=&etag=%220a39732b2d8be8e493cab3da68b68cc3e28221de%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/vocab.json?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fvocab.json=&etag=%220a39732b2d8be8e493cab3da68b68cc3e28221de%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/refs%2Fpr%2F19/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/merges.txt?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fmerges.txt=&etag=%22226b0752cac7789c48f0cb3ec53eda48b7be36cc%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/merges.txt?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fmerges.txt=&etag=%22226b0752cac7789c48f0cb3ec53eda48b7be36cc%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:32 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/refs%2Fpr%2F19/model.safetensors "HTTP/1.1 302 Found"
+2026-10-25 14:53:33 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/tokenizer.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:33 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/models/cardiffnlp/twitter-roberta-base-sentiment/xet-read-token/5ecd13590450ab163e43547492b0cfc49f16629b "HTTP/1.1 200 OK"
+2026-10-25 14:53:33 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:33 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-25 14:53:33 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/special_tokens_map.json?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fspecial_tokens_map.json=&etag=%226cd1d9021e10d47aed59399af6b0e30312b46ca4%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:33 - httpx2 - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cardiffnlp/twitter-roberta-base-sentiment/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/special_tokens_map.json?%2Fcardiffnlp%2Ftwitter-roberta-base-sentiment%2Fresolve%2Fdaefdd1f6ae931839bce4d0f3db0a1a4265cd50f%2Fspecial_tokens_map.json=&etag=%226cd1d9021e10d47aed59399af6b0e30312b46ca4%22 "HTTP/1.1 200 OK"
+2026-10-25 14:53:33 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:34 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/processor_config.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:34 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:34 - httpx2 - INFO - HTTP Request: HEAD https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment/resolve/daefdd1f6ae931839bce4d0f3db0a1a4265cd50f/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-10-25 14:53:34 - __main__ - INFO - FilePaths in folder - ./data/Processed_files: 
+['data/Processed_files/Amazon_Ninja_Air_Fryer_Pro_XL_Processed.csv', 'data/Processed_files/Google_Locations_Urban_Yoga_&_Wellness_Studio_Processed.csv', 'data/Processed_files/Google_Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed.csv', 'data/Processed_files/Google_Locations_Highland_Public_Library_&_Cultural_Center_Processed.csv', 'data/Processed_files/Google_Locations_City_View_Botanical_Gardens_&_Park_Processed.csv', 'data/Processed_files/Google_Locations_Precision_Auto_Mechanics_&_Body_Works_Processed.csv', "data/Processed_files/Amazon_Men's_Lightweight_Breathable_Running_Shoes_Processed.csv", 'data/Processed_files/Google_Locations_Golden_Dragon_Dim_Sum_Palace_Processed.csv', 'data/Processed_files/Google_Locations_Bella_Italia_Trattoria_Processed.csv', 'data/Processed_files/Amazon_Logitech_MX_Master_3S_Wireless_Mouse_Processed.csv', 'data/Processed_files/Amazon_Deep_Learning_with_Python_by_Francois_Chollet_Processed.csv', "data/Processed_files/Amazon_Columbia_Men's_Watertight_II_Rain_Jacket_Processed.csv", 'data/Processed_files/Google_Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed.csv', 'data/Processed_files/Amazon_Anker_65W_GaN_Fast_Charger_Processed.csv', 'data/Processed_files/Amazon_Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed.csv', 'data/Processed_files/Amazon_Atomic_Habits_by_James_Clear_Processed.csv', 'data/Processed_files/Amazon_Kindle_Paperwhite_(16_GB)_Processed.csv', 'data/Processed_files/Google_Locations_Sakura_Japanese_Sushi_&_Ramen_Processed.csv', 'data/Processed_files/Amazon_Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed.csv', 'data/Processed_files/Google_Locations_Metropolitan_Dental_Health_Clinic_Processed.csv', 'data/Processed_files/Google_Locations_Central_City_Fitness_&_CrossFit_Processed.csv', 'data/Processed_files/Amazon_Bedsure_Cooling_Bamboo_Bed_Sheets_Processed.csv', 'data/Processed_files/Amazon_Echo_Dot_Smart_Speaker_Processed.csv', 'data/Processed_files/Google_Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed.csv', 'data/Processed_files/Amazon_Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed.csv']
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Ninja_Air_Fryer_Pro_XL_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (162, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Urban_Yoga_&_Wellness_Studio_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (145, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_The_Grand_Vista_Luxury_Hotel_&_Spa_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (149, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Highland_Public_Library_&_Cultural_Center_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (152, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_City_View_Botanical_Gardens_&_Park_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Precision_Auto_Mechanics_&_Body_Works_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (172, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Men's_Lightweight_Breathable_Running_Shoes_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (144, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Golden_Dragon_Dim_Sum_Palace_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (155, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Bella_Italia_Trattoria_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (180, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Logitech_MX_Master_3S_Wireless_Mouse_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (169, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Deep_Learning_with_Python_by_Francois_Chollet_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Columbia_Men's_Watertight_II_Rain_Jacket_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (153, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Blue_Bottle_Artisan_Coffee_Bar_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Anker_65W_GaN_Fast_Charger_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (181, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Keurig_K-Elite_Single_Serve_Coffee_Maker_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (185, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Atomic_Habits_by_James_Clear_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (188, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Kindle_Paperwhite_(16_GB)_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (142, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Sakura_Japanese_Sushi_&_Ramen_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (170, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Instant_Pot_Duo_7-in-1_Pressure_Cooker_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (156, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Metropolitan_Dental_Health_Clinic_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (139, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Central_City_Fitness_&_CrossFit_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (175, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Bedsure_Cooling_Bamboo_Bed_Sheets_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (186, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Echo_Dot_Smart_Speaker_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (160, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Google, Product: Locations_Greenwich_Boutique_Bed_&_Breakfast_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data loaded successfully.
+2026-10-25 14:53:34 - __main__ - INFO - DataFrame shape: (182, 7)
+2026-10-25 14:53:34 - __main__ - INFO - ##################################################
+2026-10-25 14:53:34 - __main__ - INFO - Platform: Amazon, Product: Sony_WH-1000XM5_Noise_Canceling_Headphones_Processed - csv file loaded.
+2026-10-25 14:53:34 - __main__ - INFO - Data preparation completed.
+2026-10-25 14:53:57 - httpx - INFO - HTTP Request: POST https://ollama.com/api/chat "HTTP/1.1 200 OK"
+2026-10-25 14:53:57 - __main__ - INFO - Summary: 
+**Overview**
+
+The Ninja Air Fryer Pro XL Processed has been reviewed **265 times** on Amazon (the sum of the *Total_Reviews* column). The overall **weighted‑average rating** ( Σ Rating × Reviews ÷ Σ Reviews ) is **≈ 3.98 ★**. Reviewers have cast **≈ 986 helpful votes** in total, indicating strong community engagement. Sentiment is split: **173 positive** mentions versus **92 negative** mentions. The data separate naturally into three main categories – **Quality (218 reviews)**, **Performance (44 reviews)** and **Design (3 reviews)** – each showing distinct patterns of praise and pain points.
+
+---
+
+### Summary by Category & Sentiment  
+
+| Category | Total Reviews | Weighted Avg Rating | Helpful Votes | Positive Mentions | Negative Mentions |
+|----------|---------------|--------------------|---------------|-------------------|-------------------|
+| **Quality** | **218** | **4.35 ★** | **848** | **109** | **21** |
+| **Performance** | **44** | **2.25 ★** | **134** | **13** | **24** |
+| **Design** | **3** | **2.0 ★** | **4** | **0** | **2** |
+| **All Categories** | **265** | **3.98 ★** | **986** | **173** | **92** |
+
+*Figures are derived from the weighted‐average of the “Average_Rating” column multiplied by the “Total_Reviews” column for each row.*
+
+---
+
+### Insights  
+
+1. **Core Strength – Build Quality & Aesthetics**  
+   - The **Quality** bucket dominates the conversation (≈ 82 % of all reviews) and carries a high average rating (4.35 ★).  
+   - Repeated phrases such as “high‑quality materials”, “elegant design”, “flawless”, “remarkable craftsmanship” and “top‑tier build” appear in **≈ 70 % of the positive Quality reviews**, driving the high scores.  
+   - Many users also highlight rapid delivery and pristine packaging, which reinforce the premium perception.
+
+2. **Value‑for‑Money & Usability**  
+   - Positive Quality comments frequently mention “incredible value”, “game‑changer”, “saves me time” and “easy‑to‑use”.  
+   - The “very good / great” segment (ratings 3–4) often notes a short learning curve but satisfactory day‑to‑day performance, suggesting the product meets expectations for casual users.
+
+3. **Recurring Weaknesses – Battery Life & Power**  
+   - The **Performance** category is the only one with a markedly low average rating (2.25 ★) and a negative‑majority sentiment.  
+   - **Battery life** is the most cited defect: “barely an hour vs. advertised ten hours”, “drains fast”, “solid vs. weak”. These complaints appear in **≈ 60 % of all negative Performance reviews** and are accompanied by high helpful‑vote counts (e.g., 46‑vote “Awful product” post).  
+
+4. **Reliability & Durability Issues**  
+   - Negative Performance reviews also reference **fragile construction**, “cheap plastic”, “knock‑off feel”, and “failed right after the return window”.  
+   - A minority of Quality‑negative entries (≈ 20 % of Quality negatives) echo similar durability concerns (e.g., “glossy finish attracts fingerprints”, “short cord”, “manual poorly translated”), indicating that while the overall build is praised, a subset of users experience material shortcomings.
+
+5. **Software/Companion‑App Friction**  
+   - Several reviews (both Positive and Negative) mention the **companion app**: “occasional desyncs”, “clunky integration”, “frequent resets”. These issues are the primary reason a few otherwise satisfied users drop from 5 ★ to 4 ★, hinting at an opportunity for firmware‑level improvements.
+
+6. **Customer Service – Mixed Signals**  
+   - Positive sentiment often includes “prompt service”, “great support”, especially in Quality‑positive reviews (≈ 30 % of positive Quality mentions).  
+   - Conversely, the most heavily‑voted negative reviews (46 helpful votes each) criticize **warranty handling** and **unhelpful support**, suggesting inconsistent post‑sale experiences that can amplify negative perception.
+
+7. **Design‑Specific Feedback**  
+   - The tiny Design sample (3 reviews) is uniformly negative, complaining about a **short charging cable**, **poor instructions**, and an overall **unattractive/unfinished look**. Although a small slice, it signals that any future hardware revisions should prioritize ergonomic ergonomics and clearer documentation.
+
+8. **Overall Sentiment Balance**  
+   - Although the product enjoys a strong **positive‑bias** (≈ 65 % of mentions), the **Performance** segment drags the overall average down. The disparity (Quality 4.35 ★ vs. Performance 2.25 ★) suggests that marketing should continue to highlight the product’s high‑quality build while addressing the battery and durability pain points that dominate the lower‑scoring reviews.
+
+---
+
+**Actionable Take‑aways for the Brand**
+
+| Issue | Suggested Action | Expected Impact |
+|-------|------------------|-----------------|
+| **Battery life far below claim** | Re‑evaluate battery spec, improve firmware power‑management, update product description to set realistic expectations. | Reduce the volume of high‑helpful‑vote negative reviews; lift Performance rating. |
+| **Companion‑app instability** | Release a stable app update, improve sync reliability, add clearer UI prompts. | Convert 4‑★ “dropped one star” reviews back to 5‑★, improve overall rating. |
+| **Short/low‑quality charging cable & manual** | Include longer, higher‑gauge cable; redesign/expand user manual, add quick‑start guide. | Address Design‑negative feedback, increase perceived value. |
+| **Inconsistent customer‑service experience** | Standardize warranty handling, train support staff, provide faster resolution timelines. | Mitigate “nightmare” service reviews, retain customers. |
+| **Durability of plastics** | Source higher‑grade plastics for housing, reinforce stress points, run accelerated life‑cycle testing. | Reduce “fragile” and “knock‑off” complaints, improve long‑term reliability perception. |
+
+By **leveraging the strong Quality perception** while **targeting the identified Performance and Design shortcomings**, the Ninja Air Fryer Pro XL can consolidate its premium image, raise the overall weighted rating closer to 4.5 ★, and sustain the high volume of positive, helpful‑voted endorsements seen on Amazon.

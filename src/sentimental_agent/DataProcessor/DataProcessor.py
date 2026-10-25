@@ -92,7 +92,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     df[str_columns] = df[str_columns].apply(lambda x: x.str.strip())
 
     # 2. set up date datatype.
-    df["Date"] = df["Date"].apply(pd.to_datetime, dayfirst=False)
+    df["Date"] = pd.to_datetime(df["Date"], format="%d.%m.%Y")
 
     return df
 
