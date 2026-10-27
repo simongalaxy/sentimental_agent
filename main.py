@@ -3,79 +3,40 @@ import os
 
 from src.sentimental_agent.Utilities.Settings import settings
 from src.sentimental_agent.Utilities.Logger import Logger
-from src.sentimental_agent.DataProcessor.DataProcessor import load_and_prepare_datasets, save_df_to_csv, load_processed_data
-from src.sentimental_agent.Sentimental.SentimentalClassifier import SentimentalClassifier
-from src.sentimental_agent.Categorizer.ViewCategorizer import ViewCategorizer
-from src.sentimental_agent.LLM_Agent.LLMAgent import LLMAgent
+from src.sentimental_agent.DataProcessor.DataProcessor import load_clean_split_data_from_csv, get_filePath
+from src.sentimental_agent.ReviewsClassifier.DuplicatesRemover import DuplicatesRemover
+from src.sentimental_agent.ReviewsClassifier.SentimentalClassifier import SentimentalClassifier
+from src.sentimental_agent.ReviewsClassifier.TopicsIdentifier import TopicsIdentifier
+# from src.sentimental_agent.LLM_Agent.LLMAgent import LLMAgent
 
 
 def main():
     """
     Main function to execute the data processing tasks.
     """
-    os.environ["HF_Token"] = settings.hf_token
+    # os.environ["HF_Token"] = settings.hf_token
 
     # initiate instance.
     logger = Logger(__name__).get_logger()
-    senti_classifer = SentimentalClassifier(logger=logger)
-    categorizer = ViewCategorizer(logger=logger)
-    agent = LLMAgent(logger=logger)
+    deduplicator = DuplicatesRemover(logger=logger)
+    classifier = SentimentalClassifier(logger=logger)
+    identifier = TopicsIdentifier(logger=logger)
+
+    # agent = LLMAgent(logger=logger)
    
 
     # Load and Prepare data.
-    profiles = load_and_prepare_datasets(
-        filename=settings.source_filename, 
-        folderpath=settings.source_folderpath, 
-        logger=logger
-        )
+    path = get_filePath(filename=settings.source_filename, folderpath=settings.source_folderpath, logger=logger)
+    dfs = load_clean_split_data_from_csv(path=path, logger=logger)
 
-    # obtain sentimental and label the categories.
-    for i, profile in enumerate(profiles, start=1):
-        logger.info(f"No. {i}/{len(profiles)}: Start processing profile - Platform: {profile.platform}, Product: {profile.product}")
+    # remove duplicate and similar semantic meanings reviews.
+    df_deduplicated = deduplicator.remove_duplicate_reviews(dfs=dfs)
 
-        # obtain sentimental from reviews.
-        logger.info("Obtaining sentimental from reviews.")
-        df_sentimental = senti_classifer.get_sentimental_from_review(df=profile.reviews, review_col="Review_Text")
-        logger.info("Sentimental from reviews finished.")
-        
-        # get categories from reviews.
-        logger.info("Categorize")
-        processed_df = categorizer.label_views_by_categories(df=df_sentimental)
+    # get sentiments from reviews.
+    df_sentiment = classifier.label_sentimental(df=df_deduplicated)
 
-        logger.info(f"Processed df: \n%s", processed_df.head(5))
-        logger.info("\n")
-        
-        profile.processed_reviews = processed_df
-        logger.info("#"*50)
-        
-        save_df_to_csv(
-            df=processed_df, 
-            platform=profile.platform, 
-            product=profile.product, 
-            status="Processed", 
-            folderpath=settings.processed_files_folderPath, 
-            logger=logger
-            )
-
-    # to load processed dataframe direct.
-    # profiles = load_processed_data(folderpath=settings.processed_files_folderPath, logger=logger)
-    
-    logger.info(f"Data preparation completed.")
-
-    # obtain summary of views.
-    for profile in profiles:
-        summary = agent.summarize_views(profile=profile)
-        profile.summary = summary
-        logger.info(f"Summary: \n%s", profile.summary)
-    # obtain insights.
-
-
-        
-
-    
-
-    # Analysis
-
+    # label categories by reviews.
+    df_categorized = identifier.get_and_label_categories(df=df_sentiment)
 
     return
 

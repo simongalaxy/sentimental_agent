@@ -18,22 +18,25 @@ class Settings(BaseSettings):
     source_filename: str
     source_folderpath: str
 
-    # Temporary files configurations.
-    tempfiles_folderpath: str
-
-    # Processed Data configurations.
+    # Processed data storage location.
     processed_files_folderPath: str
+   
+    # HuggingFace settings for ReviewsClassifer.
+    # hf_token: str
 
-    # HuggingFace settings.
-    hf_token: str
-    # 1. sentimental model.
+    # 1. DuplicatesRemover.
+    duplicates_embedding_model: str
+
+    # 2. SentimentalClassifier.
+    sentimental_task: str
     sentimental_model: str
-    categorizier_model: str
-    # labeller_model: str
 
-    # ollama cloud settings.
+    # 3. TopicIdentifier.
+    topic_embedding_model: str
+
+    # ollama cloud settings for insights and report generation.
     cloud_model: str
-    cloud_api_key: str
+    # cloud_api_key: str
     cloud_host: str
 
     # ollama local settings.
