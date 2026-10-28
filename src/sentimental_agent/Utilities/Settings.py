@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     processed_files_folderPath: str
    
     # HuggingFace settings for ReviewsClassifer.
-    # hf_token: str
+    hf_token: str
 
     # 1. DuplicatesRemover.
     duplicates_embedding_model: str
@@ -36,7 +36,7 @@ class Settings(BaseSettings):
 
     # ollama cloud settings for insights and report generation.
     cloud_model: str
-    # cloud_api_key: str
+    cloud_api_key: str
     cloud_host: str
 
     # ollama local settings.
